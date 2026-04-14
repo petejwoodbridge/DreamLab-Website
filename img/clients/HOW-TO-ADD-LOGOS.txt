@@ -1,0 +1,46 @@
+═══════════════════════════════════════════════════════════════
+  ADDING CLIENT LOGOS
+═══════════════════════════════════════════════════════════════
+
+Drop logo files into this folder. Name them to match the client
+in js/content.js — lowercase, dashes for spaces, no special chars.
+
+EXAMPLES
+────────────────────────────────────────────────────────────────
+  Client name in content.js  →  Filename to use
+  ────────────────────────────────────────────────────────────
+  BBC                        →  bbc.svg
+  MSG Sphere                 →  msg-sphere.svg
+  Aardman Animations         →  aardman-animations.svg
+  Corporation Pop            →  corporation-pop.svg
+  United Nations             →  united-nations.svg
+  Red Bull                   →  red-bull.svg
+
+FILE FORMATS
+────────────────────────────────────────────────────────────────
+  .svg  – best (scales perfectly, supports the auto B&W filter)
+  .png  – good (use transparent background)
+  .webp – good
+
+BEHAVIOUR
+────────────────────────────────────────────────────────────────
+  - Logos render in monochrome/desaturated by default
+  - On hover they go full colour and scale slightly
+  - If a logo file is missing, the client name shows as text
+    (so adding logos one-at-a-time works fine)
+
+CUSTOM PATHS
+────────────────────────────────────────────────────────────────
+  If you need to point at a specific file, edit js/content.js
+  and use the object form instead of a string:
+
+    clients: [
+      'BBC',
+      { name: 'MSG Sphere', logo: 'img/clients/msg-custom.png' },
+      ...
+    ]
+
+ORDER
+────────────────────────────────────────────────────────────────
+  Clients display in the order they appear in js/content.js.
+  Keep the most prestigious brands at the top of that array.
