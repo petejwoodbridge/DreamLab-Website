@@ -702,18 +702,17 @@ window.DREAMLAB_CONTENT = {
     'Monster', 'Topshop',
   ],
 
+  // Companies with logo files — shown as logo wall on Work page
   clients: [
-    // Global / household-name brands — shown first
     'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'Monster', 'Topshop', 'MediaCity',
+    'Monster', 'Topshop', 'MediaCity', 'Dock10', 'Realtime',
+  ],
 
-    // Established studios & production partners
-    'Dock10', 'Supermassive', 'Realtime', 'Rezzil',
-    'Corporation Pop', 'Salsa Sound', 'Immersify Education',
-
-    // Regional / specialist innovation partners
+  // SME / studio partners — shown as text section on Work page
+  smes: [
+    'Supermassive', 'Rezzil', 'Corporation Pop', 'Salsa Sound', 'Immersify Education',
     'Krygon Studios', 'Scenegraph Studios', 'PlayXD', 'MyManu',
     'MK-V', 'AIX', 'Xpllor', 'FeedAR',
     'Inspatial', 'Sparkle Street', 'Toasted Productions',

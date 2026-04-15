@@ -104,6 +104,14 @@
   }
 
   // ──────────────────────────────────────────────────────────
+  // SME TEXT LIST (Work page)
+  // ──────────────────────────────────────────────────────────
+  const smesGrid = el('smes-grid');
+  if (smesGrid) {
+    smesGrid.innerHTML = (C.smes || []).map(name => `<span class="sme-tag">${esc(name)}</span>`).join('');
+  }
+
+  // ──────────────────────────────────────────────────────────
   // SECTORS GRID (Work page)
   // ──────────────────────────────────────────────────────────
   const sectorsGrid = el('sectors-grid');
