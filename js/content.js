@@ -696,7 +696,7 @@ window.DREAMLAB_CONTENT = {
   // ──────────────────────────────────────────────────────────
   clients: [
     // Global / household-name brands — shown first
-    'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV',
+    'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
     'Monster', 'Topshop', 'MediaCity',
