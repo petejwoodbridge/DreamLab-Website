@@ -73,79 +73,7 @@
     @media (max-width: 768px) {
       .contact-intro-grid { grid-template-columns: 1fr; }
     }
-    .map-placeholder {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      color: var(--text-dim);
-      font-size: 14px;
-      margin-top: 40px;
-      position: relative;
-      overflow: hidden;
-    }
-    .map-placeholder::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-    .map-placeholder__icon { font-size: 40px; position: relative; }
-    .map-placeholder__text { position: relative; }
-    .map-placeholder__text strong { display: block; color: var(--text); font-size: 16px; margin-bottom: 4px; }
-    .map-placeholder a {
-      color: var(--purple);
-      font-size: 13px;
-      text-decoration: underline;
-    }
-    .faq { margin-top: 80px; }
-    .faq__list { display: flex; flex-direction: column; gap: 2px; }
-    .faq__item {
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      overflow: hidden;
-    }
-    .faq__question {
-      width: 100%;
-      padding: 20px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: var(--bg-card);
-      cursor: pointer;
-      font-family: var(--font-body);
-      font-size: 15px;
-      font-weight: 500;
-      color: var(--text);
-      text-align: left;
-      transition: background 0.2s;
-    }
-    .faq__question:hover { background: var(--bg-card-h); }
-    .faq__question .arrow {
-      font-size: 20px;
-      transition: transform 0.25s;
-      flex-shrink: 0;
-      margin-left: 16px;
-      color: var(--text-dim);
-    }
-    .faq__item.open .faq__question .arrow { transform: rotate(45deg); }
-    .faq__answer {
-      display: none;
-      padding: 0 24px 20px;
-      background: var(--bg-card);
-      font-size: 14px;
-      color: var(--text-dim);
-      line-height: 1.65;
-    }
-    .faq__item.open .faq__answer { display: block; }
+
   </style>
 </head>
 <body>
@@ -265,13 +193,6 @@
             </div>
           </div>
 
-          <div class="map-placeholder">
-            <span class="map-placeholder__icon">📍</span>
-            <div class="map-placeholder__text">
-              <strong>MediaCity, Salford</strong>
-              Manchester, United Kingdom
-            </div>
-          </div>
         </div>
 
         <!-- Form column -->
@@ -365,19 +286,6 @@
     </div>
   </section>
 
-  <!-- ── FAQ ───────────────────────────────────────────────── -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
-      <div class="container-sm" style="padding: 0;">
-        <div class="section-label-row reveal">
-          <span class="label">FAQs</span>
-        </div>
-        <h2 class="title reveal reveal-delay-1" style="margin-bottom: 40px;">Common questions</h2>
-        <div class="faq__list reveal reveal-delay-2" id="faq-list"></div>
-      </div>
-    </div>
-  </section>
-
   <!-- ── FOOTER ────────────────────────────────────────────── -->
   <footer class="footer">
     <div class="container">
@@ -428,17 +336,6 @@
   <script src="../js/content.js"></script>
   <script src="../js/render.js"></script>
   <script src="../js/main.js"></script>
-  <script>
-    // FAQ accordion
-    document.querySelectorAll('.faq__question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq__item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('open'));
-        if (!isOpen) item.classList.add('open');
-      });
-    });
-  </script>
   <script src="/js/cursor-particles.js"></script>
 </body>
 </html>
