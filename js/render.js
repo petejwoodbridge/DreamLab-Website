@@ -23,10 +23,21 @@
   // ──────────────────────────────────────────────────────────
   const teamGrid = el('team-grid');
   if (teamGrid) {
-    teamGrid.innerHTML = C.team.map((m, i) => `
-      <div class="team-card reveal ${revealDelay(i)}">
+    // Stable sort: keep original order but push entries without a LinkedIn to the bottom.
+    // Leadership appears first in the source array and all have LinkedIns, so they stay on top.
+    const teamSorted = C.team
+      .map((m, i) => ({ m, i }))
+      .sort((a, b) => {
+        const la = a.m.linkedin ? 0 : 1;
+        const lb = b.m.linkedin ? 0 : 1;
+        if (la !== lb) return la - lb;
+        return a.i - b.i;
+      })
+      .map(x => x.m);
+    teamGrid.innerHTML = teamSorted.map((m, i) => `
+      <div class="team-card reveal ${revealDelay(i % 3)}">
         <div class="team-card__header">
-          <div class="team-card__avatar"${m.avatarGradient ? ` style="background: ${m.avatarGradient};"` : ''}>${esc(m.initials)}</div>
+          <div class="team-card__avatar${m.image ? ' team-card__avatar--img' : ''}"${!m.image && m.avatarGradient ? ` style="background: ${m.avatarGradient};"` : ''}>${m.image ? `<img src="${esc(m.image)}" alt="${esc(m.name)}" loading="lazy" onerror="this.parentElement.classList.remove('team-card__avatar--img'); this.parentElement.style.background='${esc(m.avatarGradient || 'var(--grad-1)')}'; this.outerHTML='${esc(m.initials || '')}';">` : esc(m.initials)}</div>
           <div>
             <div class="team-card__name">${esc(m.name)}</div>
             <div class="team-card__role">${esc(m.role)}</div>
@@ -53,21 +64,37 @@
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 
+  const clientLogoExts = ['svg', 'png', 'webp'];
+  const tryNextLogo = (img, name) => {
+    const exts = img.dataset.exts ? img.dataset.exts.split(',') : [];
+    if (exts.length) {
+      img.dataset.exts = exts.slice(1).join(',');
+      img.src = `img/clients/${img.dataset.slug}.${exts[0]}`;
+    } else {
+      const span = document.createElement('span');
+      span.className = img.classList.contains('client-item__logo') ? 'client-item__name' : 'ticker__item-text';
+      span.textContent = name;
+      img.replaceWith(span);
+    }
+  };
+  window.__dlClientFallback = tryNextLogo;
+
   const renderClient = (c, i) => {
     const name = typeof c === 'string' ? c : c.name;
-    const logoPath = (typeof c === 'object' && c.logo)
-      ? c.logo
-      : `img/clients/${slug(name)}.svg`;
-    // If the logo image fails to load, swap in a text fallback
-    const fallback = `<span class=\\"client-item__name\\">${esc(name)}</span>`;
-    const onerror = `this.outerHTML = '${fallback}';`;
+    const s = slug(name);
+    const custom = typeof c === 'object' && c.logo;
+    const initialSrc = custom ? c.logo : `img/clients/${s}.${clientLogoExts[0]}`;
+    const exts = custom ? '' : clientLogoExts.slice(1).join(',');
     return `
       <div class="client-item reveal reveal-delay-${i % 4}" title="${esc(name)}">
         <img class="client-item__logo"
-             src="${logoPath}"
+             src="${initialSrc}"
              alt="${esc(name)}"
+             data-slug="${s}"
+             data-exts="${exts}"
+             data-name="${esc(name)}"
              loading="lazy"
-             onerror="${onerror}">
+             onerror="window.__dlClientFallback(this, this.dataset.name)">
       </div>`;
   };
 
@@ -91,12 +118,27 @@
   }
 
   // ──────────────────────────────────────────────────────────
-  // HOMEPAGE TICKER
+  // HOMEPAGE TICKER — scrolling logo marquee with text fallback
   // ──────────────────────────────────────────────────────────
   const tickerTrack = el('ticker-track');
   if (tickerTrack) {
-    // Duplicate for seamless loop
-    const items = C.clients.map(c => `<div class="ticker__item">${esc(c)}</div>`).join('');
+    const renderTickerItem = (c) => {
+      const name = typeof c === 'string' ? c : c.name;
+      const s = slug(name);
+      const custom = typeof c === 'object' && c.logo;
+      const initialSrc = custom ? c.logo : `img/clients/${s}.${clientLogoExts[0]}`;
+      const exts = custom ? '' : clientLogoExts.slice(1).join(',');
+      return `<div class="ticker__item" title="${esc(name)}">
+        <img src="${initialSrc}" alt="${esc(name)}"
+             data-slug="${s}"
+             data-exts="${exts}"
+             data-name="${esc(name)}"
+             loading="lazy"
+             onerror="window.__dlClientFallback(this, this.dataset.name)">
+      </div>`;
+    };
+    const items = C.clients.map(renderTickerItem).join('');
+    // Duplicate for seamless infinite scroll
     tickerTrack.innerHTML = items + items;
   }
 
