@@ -157,17 +157,16 @@ h1, h2, h3, h4, h5 {
 .nav__logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   line-height: 1;
   text-decoration: none;
 }
-/* DreamLab wordmark — clean corporate, brand colors preserved */
+/* DreamLab wordmark */
 .nav__logo-text {
-  font-family: var(--font-display);        /* Syne — already loaded */
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-weight: 400;
   font-style: normal;
-  font-size: 22px;
-  letter-spacing: 0.02em;
+  font-size: clamp(28px, 2.8vw, 38px);
+  letter-spacing: 0.06em;
   color: var(--pink);
   text-transform: uppercase;
   display: inline-block;
@@ -175,25 +174,12 @@ h1, h2, h3, h4, h5 {
   transition: color 0.25s var(--ease-out);
 }
 .nav__logo:hover .nav__logo-text { color: #ff5ff5; }
-/* Cyan dot accent — the corporate brand bullet */
-.nav__logo-dot {
-  display: inline-block;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: var(--cyan);
-  box-shadow: 0 0 12px rgba(0, 229, 255, 0.55);
-  flex-shrink: 0;
-  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
-}
-.nav__logo:hover .nav__logo-dot {
-  transform: scale(1.15);
-  box-shadow: 0 0 18px rgba(0, 229, 255, 0.85);
-}
-/* Hide any stray img tags from the previous logo iteration */
+/* Dot removed */
+.nav__logo-dot { display: none; }
+/* Hide any stray img tags */
 .nav__logo-img { display: none; }
-/* Footer variant — slightly smaller */
-.footer .nav__logo-text { font-size: 20px; }
-.footer .nav__logo-dot  { width: 8px; height: 8px; }
+/* Footer variant */
+.footer .nav__logo-text { font-size: clamp(24px, 2.4vw, 32px); }
 .nav__links {
   display: flex;
   align-items: center;
