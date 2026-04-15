@@ -1121,7 +1121,7 @@ h1, h2, h3, h4, h5 {
 /* Capability strip — "One partner, everything" */
 .capability-strip {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -1644,7 +1644,7 @@ h1, h2, h3, h4, h5 {
   .contrast-row { grid-template-columns: 1fr; }
   .future-block { padding: 48px 32px; }
   .pillar-card { padding: 36px; }
-  .capability-strip { grid-template-columns: repeat(3, 1fr); }
+  .capability-strip { grid-template-columns: repeat(2, 1fr); }
   .engagement-grid { grid-template-columns: repeat(2, 1fr); }
   .benefits-grid  { grid-template-columns: repeat(2, 1fr); }
   .final-cta { padding: 72px 48px; }
