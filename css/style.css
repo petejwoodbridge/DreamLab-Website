@@ -1161,8 +1161,15 @@ h1, h2, h3, h4, h5 {
   background: var(--bg-2);
 }
 .capability-tile__icon {
-  font-size: 26px;
-  line-height: 1;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
 }
 .capability-tile__name {
   font-family: var(--font-body);
