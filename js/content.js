@@ -699,7 +699,7 @@ window.DREAMLAB_CONTENT = {
     'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'Monster', 'Topshop',
+    'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi',
   ],
 
   // Companies with logo files — shown as logo wall on Work page
@@ -707,7 +707,7 @@ window.DREAMLAB_CONTENT = {
     'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'Monster', 'Topshop', 'MediaCity', 'Dock10', 'Realtime',
+    'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'MediaCity', 'Dock10', 'Realtime',
   ],
 
   // SME / studio partners — shown as text section on Work page
