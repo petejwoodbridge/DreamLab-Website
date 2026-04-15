@@ -867,11 +867,6 @@ window.DREAMLAB_CONTENT = {
       },
       {
         year: '2024',
-        title: 'Epic Games partnership',
-        body: 'Recognised as an Epic Games partner, deepening our work with Unreal Engine for virtual production, realtime content and immersive experiences.',
-      },
-      {
-        year: '2024',
         title: 'Featured in Verizon 500 Trailblazers',
         body: 'Named in the Verizon 500 UK Trailblazers report — a marker of the UK companies building the next wave of meaningful technology.',
       },
