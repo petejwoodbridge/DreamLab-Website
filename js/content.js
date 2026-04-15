@@ -740,6 +740,7 @@ window.DREAMLAB_CONTENT = {
     { name: 'Sairo',                    desc: 'Shopify plugin and AI workflow to create custom fashion assets for Roblox.' },
     { name: 'VisioningLab',             desc: 'Macro photogrammetry rig and AI workflow for capturing small objects at high fidelity.' },
     { name: 'ImmersivEye',              desc: 'Immersive technology innovation.' },
+    { name: 'Bright and Shiny',         desc: 'AI avatars and an immersive 3D world for viking experience Havelocks Kingdom.' },
   ],
 
   // ──────────────────────────────────────────────────────────
