@@ -48,7 +48,7 @@ window.DREAMLAB_CONTENT = {
   // ──────────────────────────────────────────────────────────
   team: [
     {
-      image: 'img/team/04.webp',
+      image: '/img/team/04.webp',
       initials: 'JO',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#7c3aed)',
       name: "Dr John O'Hare",
@@ -64,7 +64,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/jjohare/',
     },
     {
-      image: 'img/team/03.webp',
+      image: '/img/team/03.webp',
       initials: 'SM',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#ec4899)',
       name: 'Ste Moyler',
@@ -80,7 +80,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://uk.linkedin.com/in/steve-moyler-53254517',
     },
     {
-      image: 'img/team/02.webp',
+      image: '/img/team/02.webp',
       initials: 'PW',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#ec4899,#06b6d4)',
       name: 'Pete Woodbridge',
@@ -96,7 +96,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/petewoodbridge/',
     },
     {
-      image: 'img/team/18.webp',
+      image: '/img/team/18.webp',
       initials: 'DH',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#7c3aed)',
       name: 'Dr Derek Hales',
@@ -112,7 +112,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/derekhales/',
     },
     {
-      image: 'img/team/29.webp',
+      image: '/img/team/29.webp',
       initials: 'BS',
       avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
       name: 'Bernard Steer',
@@ -128,7 +128,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/bernard-steer-36857b30/',
     },
     {
-      image: 'img/team/01.webp',
+      image: '/img/team/01.webp',
       initials: 'JJ',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#06b6d4)',
       name: 'JunkieJarvis',
@@ -142,7 +142,7 @@ window.DREAMLAB_CONTENT = {
       award: 'Agentic Alliance',
     },
     {
-      image: 'img/team/05.webp',
+      image: '/img/team/05.webp',
       initials: 'JL',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#f59e0b)',
       name: 'Jing Li',
@@ -157,7 +157,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/jingliaideveloper/',
     },
     {
-      image: 'img/team/06.webp',
+      image: '/img/team/06.webp',
       initials: 'MG',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#10b981)',
       name: 'Marco E. Ghilardi',
@@ -173,7 +173,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/marco-ghilard',
     },
     {
-      image: 'img/team/07.webp',
+      image: '/img/team/07.webp',
       initials: 'JC',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#10b981)',
       name: 'Jon Cooke',
@@ -186,7 +186,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/08.webp',
+      image: '/img/team/08.webp',
       initials: 'KD',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#06b6d4)',
       name: 'Kriss Dunk',
@@ -201,7 +201,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/byronslabs/',
     },
     {
-      image: 'img/team/09.webp',
+      image: '/img/team/09.webp',
       initials: 'NT',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#7c3aed)',
       name: 'Nick Tipping',
@@ -214,7 +214,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/10.webp',
+      image: '/img/team/10.webp',
       initials: 'RM',
       avatarGradient: 'linear-gradient(135deg,#10b981,#7c3aed)',
       name: 'Roger McKinley',
@@ -228,7 +228,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/roger-mckinley-3373b01a/',
     },
     {
-      image: 'img/team/11.webp',
+      image: '/img/team/11.webp',
       initials: 'AN',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#7c3aed)',
       name: 'Arpana Nandakumar',
@@ -242,7 +242,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/arpana-n/',
     },
     {
-      image: 'img/team/12.webp',
+      image: '/img/team/12.webp',
       initials: 'BH',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#ec4899)',
       name: 'Bradley Harris',
@@ -258,7 +258,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/bradley-harris-71520517/',
     },
     {
-      image: 'img/team/13.webp',
+      image: '/img/team/13.webp',
       initials: 'DM',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#f59e0b)',
       name: 'Daniel Maktabi',
@@ -272,7 +272,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/danielmktb/',
     },
     {
-      image: 'img/team/14.webp',
+      image: '/img/team/14.webp',
       initials: 'HS',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#10b981)',
       name: 'Haydn Secker',
@@ -287,7 +287,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/haydn-secker-6a0622160/',
     },
     {
-      image: 'img/team/15.webp',
+      image: '/img/team/15.webp',
       initials: 'GW',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#7c3aed)',
       name: 'Garth Williams',
@@ -301,7 +301,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/garth-williams-49146373/',
     },
     {
-      image: 'img/team/16.webp',
+      image: '/img/team/16.webp',
       initials: 'DA',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#06b6d4)',
       name: 'David Afolabi',
@@ -315,7 +315,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/david-afolabi/',
     },
     {
-      image: 'img/team/17.webp',
+      image: '/img/team/17.webp',
       initials: 'CF',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#ec4899)',
       name: 'Christian G H Frost',
@@ -329,7 +329,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/cghfrost/',
     },
     {
-      image: 'img/team/19.webp',
+      image: '/img/team/19.webp',
       initials: 'NN',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#f59e0b)',
       name: 'Noelle Nurdin',
@@ -343,7 +343,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/noelle-nurdin/',
     },
     {
-      image: 'img/team/20.webp',
+      image: '/img/team/20.webp',
       initials: 'AR',
       avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
       name: 'Annabeth Robinson',
@@ -358,7 +358,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/annabethrobinson/',
     },
     {
-      image: 'img/team/21.webp',
+      image: '/img/team/21.webp',
       initials: 'LH',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#7c3aed)',
       name: 'Lewis Hackett',
@@ -372,7 +372,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/lewishackett/',
     },
     {
-      image: 'img/team/22.webp',
+      image: '/img/team/22.webp',
       initials: 'UA',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#ec4899)',
       name: 'Dr Umran Ali',
@@ -387,7 +387,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/dr-umran-ali/',
     },
     {
-      image: 'img/team/23.webp',
+      image: '/img/team/23.webp',
       initials: 'JS',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#10b981)',
       name: 'James Spiers',
@@ -401,7 +401,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/james-spiers-953a9a6b/',
     },
     {
-      image: 'img/team/24.webp',
+      image: '/img/team/24.webp',
       initials: 'NS',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#06b6d4)',
       name: 'Dr Natasha Stott',
@@ -415,7 +415,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/drnatashastott/',
     },
     {
-      image: 'img/team/25.webp',
+      image: '/img/team/25.webp',
       initials: 'CC',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#ec4899)',
       name: 'Chris Croft',
@@ -429,7 +429,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/chris-croft-988a1738/',
     },
     {
-      image: 'img/team/26.webp',
+      image: '/img/team/26.webp',
       initials: 'TM',
       avatarGradient: 'linear-gradient(135deg,#10b981,#7c3aed)',
       name: 'Thadeous Matthews',
@@ -443,7 +443,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/thadeous-matthews-35b69653/',
     },
     {
-      image: 'img/team/27.webp',
+      image: '/img/team/27.webp',
       initials: 'DT',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#f59e0b)',
       name: 'Dr David Tully',
@@ -458,7 +458,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/davidtullyscenegraph/',
     },
     {
-      image: 'img/team/28.webp',
+      image: '/img/team/28.webp',
       initials: 'CB',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#10b981)',
       name: 'Cheryl Blake',
@@ -473,7 +473,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/katukastudios/',
     },
     {
-      image: 'img/team/30.webp',
+      image: '/img/team/30.webp',
       initials: 'SH',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#06b6d4)',
       name: 'Dr Sean LCM Hill',
@@ -488,7 +488,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/seanmandrake/',
     },
     {
-      image: 'img/team/31.webp',
+      image: '/img/team/31.webp',
       initials: 'AB',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#10b981)',
       name: 'Dr Andy Bennett',
@@ -501,7 +501,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/32.webp',
+      image: '/img/team/32.webp',
       initials: 'SP',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#7c3aed)',
       name: 'Stephen Prince',
@@ -514,7 +514,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/33.webp',
+      image: '/img/team/33.webp',
       initials: 'WL',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#10b981)',
       name: 'Will Lewis-Clarke',
@@ -527,7 +527,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/34.webp',
+      image: '/img/team/34.webp',
       initials: 'AA',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#f59e0b)',
       name: 'Anthony Ashton',
@@ -541,7 +541,7 @@ window.DREAMLAB_CONTENT = {
       award: 'Certified UK Drone Pilot',
     },
     {
-      image: 'img/team/35.webp',
+      image: '/img/team/35.webp',
       initials: 'LB',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#06b6d4)',
       name: 'Lawrance Butterworth',
@@ -554,7 +554,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/36.webp',
+      image: '/img/team/36.webp',
       initials: 'TD',
       avatarGradient: 'linear-gradient(135deg,#10b981,#ec4899)',
       name: 'Dr Toby Duckworth',
@@ -567,7 +567,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/37.webp',
+      image: '/img/team/37.webp',
       initials: 'JD',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#06b6d4)',
       name: 'John Donlon',
@@ -581,7 +581,7 @@ window.DREAMLAB_CONTENT = {
       award: 'Cisco Certified',
     },
     {
-      image: 'img/team/38.webp',
+      image: '/img/team/38.webp',
       initials: 'MK',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#ec4899)',
       name: 'Magnus Kemp',
@@ -594,7 +594,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/39.webp',
+      image: '/img/team/39.webp',
       initials: 'KC',
       avatarGradient: 'linear-gradient(135deg,#10b981,#7c3aed)',
       name: 'Kat Cook',
@@ -607,7 +607,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/40.webp',
+      image: '/img/team/40.webp',
       initials: 'JS',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#f59e0b)',
       name: 'Dr Jessica Symons',
@@ -621,7 +621,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/jessica-symons-63622229/',
     },
     {
-      image: 'img/team/41.webp',
+      image: '/img/team/41.webp',
       initials: 'MW',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#10b981)',
       name: 'Mandy Wang',
@@ -634,7 +634,7 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
-      image: 'img/team/42.webp',
+      image: '/img/team/42.webp',
       initials: 'PR',
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#7c3aed)',
       name: 'Pip Rustage',
@@ -648,7 +648,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/piprustage/',
     },
     {
-      image: 'img/team/43.webp',
+      image: '/img/team/43.webp',
       initials: 'SG',
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#06b6d4)',
       name: 'Simon Graham',
@@ -663,7 +663,7 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/s-graham/',
     },
     {
-      image: 'img/team/44.webp',
+      image: '/img/team/44.webp',
       initials: 'PL',
       avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
       name: 'Our Physical Labs',
