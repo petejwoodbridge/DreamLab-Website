@@ -127,24 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // ── Contact form ──────────────────────────────────────────
-  const form = document.querySelector('.contact-form form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('[type="submit"]');
-      const originalText = btn.innerHTML;
-      btn.innerHTML = '✓ Message sent — we\'ll be in touch!';
-      btn.disabled = true;
-      btn.style.background = 'linear-gradient(135deg, #10b981, #06b6d4)';
-      setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-        btn.style.background = '';
-        form.reset();
-      }, 4000);
-    });
-  }
+  // Contact form submission handled by Formsubmit.co (see contact.html)
 
   // ── Smooth hover cursor glow (optional subtle effect) ──────
   const cards = document.querySelectorAll('.card, .service-card, .team-card, .sector-card, .client-item');
