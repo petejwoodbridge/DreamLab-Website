@@ -256,7 +256,13 @@
         <!-- Form column -->
         <div class="contact-form reveal reveal-delay-1">
           <h3>Send us a message</h3>
-          <form novalidate>
+          <form action="https://formsubmit.co/woodbridgepj@gmail.com" method="POST">
+            <!-- Formsubmit config -->
+            <input type="hidden" name="_subject" value="New DreamLab enquiry">
+            <input type="hidden" name="_next" value="https://petejwoodbridge.github.io/DreamLab-Website/contact.html?sent=1">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div class="form-row">
               <div class="form-group">
                 <label for="first-name">First name</label>
@@ -298,6 +304,18 @@
               </button>
             </div>
           </form>
+
+          <!-- Success message (shown when ?sent=1 in URL) -->
+          <div id="form-success" style="display:none; margin-top: 24px; padding: 24px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: var(--radius);">
+            <p style="color: #10b981; font-weight: 600; margin-bottom: 4px;">✓ Message sent!</p>
+            <p style="color: var(--text-dim); font-size: 14px;">Thanks for getting in touch — we'll respond within one working day.</p>
+          </div>
+          <script>
+            if (new URLSearchParams(window.location.search).get('sent') === '1') {
+              document.getElementById('form-success').style.display = 'block';
+              document.querySelector('.contact-form form').style.display = 'none';
+            }
+          </script>
         </div>
 
       </div>
