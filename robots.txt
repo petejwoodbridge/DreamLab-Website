@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.dreamlab.org.uk/sitemap.xml
+Sitemap: https://dreamlab.org.uk/sitemap.xml
