@@ -878,29 +878,38 @@ h1, h2, h3, h4, h5 {
   .client-item__name { font-size: 13px; }
 }
 
-/* SME tag list */
-.sme-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* SME card grid */
+.sme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
   margin-top: 8px;
 }
-.sme-tag {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 18px;
+.sme-card {
   background: var(--bg-2);
   border: 1px solid var(--border);
-  border-radius: 100px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-dim);
-  transition: color 0.2s var(--ease-out), border-color 0.2s var(--ease-out);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  transition: border-color 0.2s var(--ease-out), background 0.2s var(--ease-out);
 }
-.sme-tag:hover {
+.sme-card:hover {
+  background: var(--bg-3, var(--bg-2));
+  border-color: rgba(124,58,237,0.4);
+}
+.sme-card__name {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
   color: var(--text);
-  border-color: rgba(124,58,237,0.45);
+  margin-bottom: 6px;
+}
+.sme-card__desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+@media (max-width: 640px) {
+  .sme-grid { grid-template-columns: 1fr; }
 }
 
 .recognition-bar {

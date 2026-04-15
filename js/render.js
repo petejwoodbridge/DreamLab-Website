@@ -108,7 +108,14 @@
   // ──────────────────────────────────────────────────────────
   const smesGrid = el('smes-grid');
   if (smesGrid) {
-    smesGrid.innerHTML = (C.smes || []).map(name => `<span class="sme-tag">${esc(name)}</span>`).join('');
+    smesGrid.innerHTML = (C.smes || []).map((s, i) => {
+      const name = typeof s === 'string' ? s : s.name;
+      const desc = typeof s === 'object' && s.desc ? s.desc : '';
+      return `<div class="sme-card reveal reveal-delay-${i % 4}">
+        <div class="sme-card__name">${esc(name)}</div>
+        ${desc ? `<div class="sme-card__desc">${esc(desc)}</div>` : ''}
+      </div>`;
+    }).join('');
   }
 
   // ──────────────────────────────────────────────────────────
