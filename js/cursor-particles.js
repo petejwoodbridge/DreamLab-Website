@@ -1,150 +1,145 @@
 /* ============================================================
-   DREAMLAB — CURSOR SPARKLE PARTICLES
-   Magical 4-pointed star trail following the cursor.
-   Canvas overlay, pointer-events: none, touch-safe.
+   DREAMLAB — CURSOR TRAIL PARTICLES
+   Elegant comet-tail sparkle that traces cursor movement.
+   Spawns only when moving; slow drift, long fade.
    ============================================================ */
 
 (function () {
-  // Only on non-touch devices
   if (window.matchMedia('(hover: none)').matches) return;
 
   const COLORS = [
+    '#c4b5fd', // lavender
     '#a78bfa', // purple-light
     '#7c3aed', // purple
     '#06b6d4', // cyan
     '#67e8f9', // cyan-light
     '#ec4899', // pink
-    '#f0abfc', // pink-light
+    '#f9a8d4', // pink-light
     '#ffffff',  // white
   ];
 
-  const MAX_PARTICLES = 120;
-  const SPAWN_INTERVAL = 30; // ms between spawns
-  let lastSpawn = 0;
+  // How far the cursor must move before spawning another particle
+  const DIST_THRESHOLD = 6;
+  const MAX_PARTICLES  = 180;
 
-  // Canvas setup
   const canvas = document.createElement('canvas');
   canvas.style.cssText = [
-    'position:fixed', 'inset:0', 'width:100%', 'height:100%',
-    'pointer-events:none', 'z-index:99999', 'mix-blend-mode:screen',
+    'position:fixed','inset:0','width:100%','height:100%',
+    'pointer-events:none','z-index:99999','mix-blend-mode:screen',
   ].join(';');
   document.body.appendChild(canvas);
 
   const ctx = canvas.getContext('2d');
   let W = 0, H = 0;
-
-  function resize() {
-    W = canvas.width  = window.innerWidth;
-    H = canvas.height = window.innerHeight;
-  }
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
   resize();
   window.addEventListener('resize', resize);
 
-  // Mouse tracking
-  let mx = -999, my = -999;
+  let mx = -999, my = -999, lx = -999, ly = -999;
   window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
   window.addEventListener('mouseleave', () => { mx = -999; my = -999; });
 
-  // Particle pool
   const particles = [];
 
-  function Particle(x, y) {
-    this.x = x;
-    this.y = y;
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 0.6 + Math.random() * 1.8;
-    this.vx = Math.cos(angle) * speed;
-    this.vy = Math.sin(angle) * speed - 1.2; // drift upward
-    this.size = 3 + Math.random() * 5;
-    this.alpha = 1;
-    this.decay = 0.018 + Math.random() * 0.022;
-    this.rotation = Math.random() * Math.PI;
-    this.rotSpeed = (Math.random() - 0.5) * 0.12;
-    this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
-    this.type = Math.random() < 0.6 ? 'star' : 'dot';
-  }
-
-  // Draw a 4-pointed star (cross shape)
-  function drawStar(ctx, x, y, r, rotation) {
+  // ── 4-pointed star shape ──────────────────────────────────
+  function drawStar(x, y, r, rot) {
     ctx.save();
     ctx.translate(x, y);
-    ctx.rotate(rotation);
+    ctx.rotate(rot);
     ctx.beginPath();
-    const arms = 4;
-    const innerR = r * 0.25;
-    for (let i = 0; i < arms * 2; i++) {
-      const a = (i * Math.PI) / arms;
-      const radius = i % 2 === 0 ? r : innerR;
-      if (i === 0) ctx.moveTo(Math.cos(a) * radius, Math.sin(a) * radius);
-      else ctx.lineTo(Math.cos(a) * radius, Math.sin(a) * radius);
+    const inner = r * 0.28;
+    for (let i = 0; i < 8; i++) {
+      const a = (i * Math.PI) / 4;
+      const radius = i % 2 === 0 ? r : inner;
+      i === 0 ? ctx.moveTo(Math.cos(a) * radius, Math.sin(a) * radius)
+              : ctx.lineTo(Math.cos(a) * radius, Math.sin(a) * radius);
     }
     ctx.closePath();
     ctx.fill();
     ctx.restore();
   }
 
-  // Draw a glowing dot
-  function drawDot(ctx, x, y, r, color, alpha) {
-    const grd = ctx.createRadialGradient(x, y, 0, x, y, r);
-    grd.addColorStop(0, color);
-    grd.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = grd;
-    ctx.globalAlpha = alpha;
+  // ── Glowing orb ──────────────────────────────────────────
+  function drawOrb(x, y, r, color, alpha) {
+    const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0,   color);
+    g.addColorStop(0.4, color);
+    g.addColorStop(1,   'rgba(0,0,0,0)');
+    ctx.globalAlpha = alpha * 0.85;
+    ctx.fillStyle = g;
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
     ctx.fill();
   }
 
-  function spawnParticle() {
-    if (mx < 0 || my < 0) return;
-    if (particles.length >= MAX_PARTICLES) particles.splice(0, 5);
-    // Spawn a small cluster each tick for density
-    const count = 1 + Math.floor(Math.random() * 2);
+  function spawnAt(x, y) {
+    if (particles.length >= MAX_PARTICLES) particles.splice(0, 3);
+
+    // Each mouse-move event spawns 2-3 particles in a tight cluster
+    const count = 2 + Math.floor(Math.random() * 2);
     for (let i = 0; i < count; i++) {
-      particles.push(new Particle(
-        mx + (Math.random() - 0.5) * 8,
-        my + (Math.random() - 0.5) * 8
-      ));
+      const angle  = Math.random() * Math.PI * 2;
+      const speed  = 0.15 + Math.random() * 0.55;
+      const isStar = Math.random() < 0.55;
+      particles.push({
+        x: x + (Math.random() - 0.5) * 5,
+        y: y + (Math.random() - 0.5) * 5,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed - 0.55, // gentle upward drift
+        size:  isStar ? (2.5 + Math.random() * 4) : (3 + Math.random() * 5),
+        alpha: 0.85 + Math.random() * 0.15,
+        decay: 0.010 + Math.random() * 0.012, // slow fade = classy
+        rot:   Math.random() * Math.PI,
+        rotV:  (Math.random() - 0.5) * 0.06,
+        color: COLORS[Math.floor(Math.random() * COLORS.length)],
+        star:  isStar,
+      });
     }
   }
 
-  function tick(ts) {
+  function tick() {
     requestAnimationFrame(tick);
-
     ctx.clearRect(0, 0, W, H);
 
-    // Spawn
-    if (ts - lastSpawn > SPAWN_INTERVAL) {
-      spawnParticle();
-      lastSpawn = ts;
+    // Spawn along movement path
+    if (mx > 0 && my > 0) {
+      const dx = mx - lx, dy = my - ly;
+      const dist = Math.hypot(dx, dy);
+      if (dist > DIST_THRESHOLD) {
+        // Interpolate spawn points for smooth trails at high cursor speed
+        const steps = Math.ceil(dist / DIST_THRESHOLD);
+        for (let s = 1; s <= steps; s++) {
+          const t = s / steps;
+          spawnAt(lx + dx * t, ly + dy * t);
+        }
+        lx = mx; ly = my;
+      } else if (lx < 0) {
+        lx = mx; ly = my;
+      }
     }
 
-    // Update & draw
     for (let i = particles.length - 1; i >= 0; i--) {
       const p = particles[i];
-      p.x += p.vx;
-      p.y += p.vy;
-      p.vy += 0.04; // subtle gravity
-      p.rotation += p.rotSpeed;
+      p.x   += p.vx;
+      p.y   += p.vy;
+      p.vy  += 0.018; // very light gravity
+      p.rot += p.rotV;
       p.alpha -= p.decay;
-      p.size *= 0.992;
+      p.size  *= 0.995;
 
-      if (p.alpha <= 0 || p.size < 0.4) {
-        particles.splice(i, 1);
-        continue;
-      }
+      if (p.alpha <= 0 || p.size < 0.3) { particles.splice(i, 1); continue; }
 
-      ctx.globalAlpha = Math.max(0, p.alpha);
-      ctx.fillStyle = p.color;
+      ctx.globalAlpha = p.alpha;
+      ctx.fillStyle   = p.color;
 
-      if (p.type === 'star') {
-        drawStar(ctx, p.x, p.y, p.size, p.rotation);
+      if (p.star) {
+        drawStar(p.x, p.y, p.size, p.rot);
+        ctx.globalAlpha = 1;
       } else {
-        drawDot(ctx, p.x, p.y, p.size * 1.4, p.color, p.alpha);
-        ctx.globalAlpha = 1; // reset after radial gradient draw
+        drawOrb(p.x, p.y, p.size, p.color, p.alpha);
+        ctx.globalAlpha = 1;
       }
     }
-
     ctx.globalAlpha = 1;
   }
 
