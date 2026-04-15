@@ -1131,10 +1131,10 @@ h1, h2, h3, h4, h5 {
   line-height: 1;
 }
 .capability-tile__name {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  letter-spacing: 0;
   line-height: 1.25;
 }
 .capability-tile__hint {
