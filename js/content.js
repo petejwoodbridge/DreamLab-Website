@@ -29,8 +29,8 @@ window.DREAMLAB_CONTENT = {
     tagline: 'Applied Innovation Lab at MediaCity Manchester. Co-creating the future of AI, immersive tech and creative technology.',
     email: 'info@dreamlab-ai.com',
     linkedin: 'https://www.linkedin.com/company/thedreamlabuk/',
-    location: 'MediaCity, Salford, Manchester',
-    alsoIn: 'Liverpool, Merseyside & Cumbria',
+    location: 'Manchester, Liverpool, Cumbria & London',
+    alsoIn: '',
   },
 
   // ──────────────────────────────────────────────────────────
