@@ -137,7 +137,7 @@
              onerror="window.__dlClientFallback(this, this.dataset.name)">
       </div>`;
     };
-    const items = C.clients.map(renderTickerItem).join('');
+    const items = (C.ticker || C.clients).map(renderTickerItem).join('');
     // Duplicate for seamless infinite scroll
     tickerTrack.innerHTML = items + items;
   }

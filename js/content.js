@@ -694,6 +694,14 @@ window.DREAMLAB_CONTENT = {
   // Order below is shown top-left → bottom-right, so keep the most
   // prestigious / recognisable brands at the start.
   // ──────────────────────────────────────────────────────────
+  // Top brands with logo files — used for homepage ticker only
+  ticker: [
+    'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
+    'Intel', 'NHS', 'Red Bull', 'United Nations',
+    'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
+    'Monster', 'Topshop',
+  ],
+
   clients: [
     // Global / household-name brands — shown first
     'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
