@@ -42,10 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Active nav link ────────────────────────────────────────
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const pathSegment = window.location.pathname.split('/').filter(Boolean)[0] || '';
   document.querySelectorAll('.nav__link, .nav__mobile .nav__link').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+    const hrefSegment = href.split('/').filter(Boolean)[0] || '';
+    if (hrefSegment === pathSegment) {
       link.classList.add('active');
     }
   });
