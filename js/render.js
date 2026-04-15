@@ -64,12 +64,12 @@
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 
-  const clientLogoExts = ['svg', 'png', 'webp'];
+  const clientLogoExts = ['svg', 'png', 'webp', 'jpg'];
   const tryNextLogo = (img, name) => {
     const exts = img.dataset.exts ? img.dataset.exts.split(',') : [];
     if (exts.length) {
       img.dataset.exts = exts.slice(1).join(',');
-      img.src = `img/clients/${img.dataset.slug}.${exts[0]}`;
+      img.src = `/img/clients/${img.dataset.slug}.${exts[0]}`;
     } else {
       const span = document.createElement('span');
       span.className = img.classList.contains('client-item__logo') ? 'client-item__name' : 'ticker__item-text';
@@ -83,7 +83,7 @@
     const name = typeof c === 'string' ? c : c.name;
     const s = slug(name);
     const custom = typeof c === 'object' && c.logo;
-    const initialSrc = custom ? c.logo : `img/clients/${s}.${clientLogoExts[0]}`;
+    const initialSrc = custom ? c.logo : `/img/clients/${s}.${clientLogoExts[0]}`;
     const exts = custom ? '' : clientLogoExts.slice(1).join(',');
     return `
       <div class="client-item reveal reveal-delay-${i % 4}" title="${esc(name)}">
@@ -126,7 +126,7 @@
       const name = typeof c === 'string' ? c : c.name;
       const s = slug(name);
       const custom = typeof c === 'object' && c.logo;
-      const initialSrc = custom ? c.logo : `img/clients/${s}.${clientLogoExts[0]}`;
+      const initialSrc = custom ? c.logo : `/img/clients/${s}.${clientLogoExts[0]}`;
       const exts = custom ? '' : clientLogoExts.slice(1).join(',');
       return `<div class="ticker__item" title="${esc(name)}">
         <img src="${initialSrc}" alt="${esc(name)}"
