@@ -891,12 +891,12 @@ h1, h2, h3, h4, h5 {
 }
 .client-item__filler-text {
   font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--text-dim);
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.55;
   position: relative;
   z-index: 1;
   transition: color 0.3s var(--ease-out), opacity 0.3s var(--ease-out), transform 0.3s var(--ease-out);
@@ -917,7 +917,7 @@ h1, h2, h3, h4, h5 {
   .client-item { min-height: 90px; padding: 16px 12px; }
   .client-item__logo { max-height: 36px; }
   .client-item__name { font-size: 13px; }
-  .client-item__filler-text { font-size: 13px; }
+  .client-item__filler-text { font-size: 24px; }
   .client-item--filler::before { inset: 10px; }
 }
 
