@@ -98,47 +98,42 @@
       </div>`;
   };
 
+  // Each filler tile reads like a tiny brand mark — distinct font/case.
+  const FILLER_VARIANTS = [
+    { text: 'YOU?',  cls: 'filler-style-0' }, // Bebas Neue (condensed)
+    { text: 'you?',  cls: 'filler-style-1' }, // Playfair italic serif
+    { text: 'you',   cls: 'filler-style-2' }, // Pacifico script
+    { text: 'YOU?',  cls: 'filler-style-3' }, // Space Mono
+    { text: 'YOU?',  cls: 'filler-style-4' }, // Anton heavy
+    { text: 'you',   cls: 'filler-style-5' }, // Lobster
+    { text: 'you?',  cls: 'filler-style-6' }, // Righteous
+  ];
+  // Fill any trailing empty cells in the last row of a logo grid with
+  // ego-tickling "you?" placeholders. Column count is responsive so we
+  // recompute the right number whenever the viewport changes.
+  const fillEmptyCells = (grid) => {
+    grid.querySelectorAll('.client-item--filler').forEach(n => n.remove());
+    const cols = getComputedStyle(grid)
+      .gridTemplateColumns.split(' ').filter(Boolean).length;
+    if (!cols) return;
+    const realCount = grid.children.length;
+    const need = (cols - (realCount % cols)) % cols;
+    const offset = Math.floor(Math.random() * FILLER_VARIANTS.length);
+    for (let i = 0; i < need; i++) {
+      const v = FILLER_VARIANTS[(offset + i) % FILLER_VARIANTS.length];
+      const a = document.createElement('a');
+      a.href = '/contact/';
+      a.className = 'client-item client-item--filler';
+      a.title = 'Could be you — get in touch';
+      a.innerHTML = `<span class="client-item__filler-text ${v.cls}">${v.text}</span>`;
+      grid.appendChild(a);
+    }
+  };
+
   const clientsGrid = el('clients-grid');
   if (clientsGrid) {
     clientsGrid.innerHTML = C.clients.map(renderClient).join('');
-
-    // Fill any trailing empty cells in the last row with "you?" placeholders.
-    // Each filler uses a different font so they read like miniature brand marks.
-    // Column count is responsive, so recompute on resize.
-    const FILLER_VARIANTS = [
-      { text: 'YOU?',  cls: 'filler-style-0' }, // Bebas Neue (condensed)
-      { text: 'you?',  cls: 'filler-style-1' }, // Playfair italic serif
-      { text: 'you',   cls: 'filler-style-2' }, // Pacifico script
-      { text: 'YOU?',  cls: 'filler-style-3' }, // Space Mono
-      { text: 'YOU?',  cls: 'filler-style-4' }, // Anton heavy
-      { text: 'you',   cls: 'filler-style-5' }, // Lobster
-      { text: 'you?',  cls: 'filler-style-6' }, // Righteous
-    ];
-    const fillEmptyClientCells = () => {
-      clientsGrid.querySelectorAll('.client-item--filler').forEach(n => n.remove());
-      const cols = getComputedStyle(clientsGrid)
-        .gridTemplateColumns.split(' ').filter(Boolean).length;
-      if (!cols) return;
-      const realCount = clientsGrid.children.length;
-      const need = (cols - (realCount % cols)) % cols;
-      // Random offset per render so the order of fonts shifts on resize/refresh
-      const offset = Math.floor(Math.random() * FILLER_VARIANTS.length);
-      for (let i = 0; i < need; i++) {
-        const v = FILLER_VARIANTS[(offset + i) % FILLER_VARIANTS.length];
-        const a = document.createElement('a');
-        a.href = '/contact/';
-        a.className = 'client-item client-item--filler';
-        a.title = 'Could be you — get in touch';
-        a.innerHTML = `<span class="client-item__filler-text ${v.cls}">${v.text}</span>`;
-        clientsGrid.appendChild(a);
-      }
-    };
-    fillEmptyClientCells();
-    let _fillerTimer;
-    window.addEventListener('resize', () => {
-      clearTimeout(_fillerTimer);
-      _fillerTimer = setTimeout(fillEmptyClientCells, 150);
-    });
+    fillEmptyCells(clientsGrid);
   }
 
   // ──────────────────────────────────────────────────────────
@@ -147,6 +142,19 @@
   const publicSectorGrid = el('public-sector-grid');
   if (publicSectorGrid && C.publicSector) {
     publicSectorGrid.innerHTML = C.publicSector.map(renderClient).join('');
+    fillEmptyCells(publicSectorGrid);
+  }
+
+  // Re-run filler logic for both grids when the viewport changes
+  if (clientsGrid || publicSectorGrid) {
+    let _fillerTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(_fillerTimer);
+      _fillerTimer = setTimeout(() => {
+        if (clientsGrid)       fillEmptyCells(clientsGrid);
+        if (publicSectorGrid)  fillEmptyCells(publicSectorGrid);
+      }, 150);
+    });
   }
 
   // ──────────────────────────────────────────────────────────
