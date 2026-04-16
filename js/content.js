@@ -696,18 +696,18 @@ window.DREAMLAB_CONTENT = {
   // ──────────────────────────────────────────────────────────
   // Top brands with logo files — used for homepage ticker only
   ticker: [
-    'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
+    'Apple', 'Google', 'Sony', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag',
+    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag',
   ],
 
   // Companies with logo files — shown as logo wall on Work page
   clients: [
-    'Apple', 'Google', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
+    'Apple', 'Google', 'Sony', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10', 'Realtime',
+    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10', 'Realtime',
   ],
 
   // SME / studio partners — shown as cards on Work page
@@ -741,6 +741,9 @@ window.DREAMLAB_CONTENT = {
     { name: 'VisioningLab',             desc: 'Macro photogrammetry rig and AI workflow for capturing small objects at high fidelity.' },
     { name: 'ImmersivEye',              desc: 'Immersive technology innovation.' },
     { name: 'Bright and Shiny',         desc: 'AI avatars and an immersive 3D world for viking experience Havelocks Kingdom.' },
+    { name: 'Pathway XR',               desc: 'Virtual production, networking and AI services.' },
+    { name: 'Neuron',                   desc: 'Virtual production, networking and AI services.' },
+    { name: 'Quasi Science',            desc: 'Testing of new virtual production lighting solutions.' },
   ],
 
   // ──────────────────────────────────────────────────────────
