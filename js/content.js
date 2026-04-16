@@ -707,7 +707,7 @@ window.DREAMLAB_CONTENT = {
     'Apple', 'Google', 'Sony', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10', 'Realtime',
+    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10',
   ],
 
   // SME / studio partners — shown as cards on Work page
@@ -744,6 +744,7 @@ window.DREAMLAB_CONTENT = {
     { name: 'Pathway XR',               desc: 'Virtual production, networking and AI services.' },
     { name: 'Neuron',                   desc: 'Virtual production, networking and AI services.' },
     { name: 'Quasi Science',            desc: 'Testing of new virtual production lighting solutions.' },
+    { name: 'Realtime',                 desc: 'R&D work on remotely accessible virtual production and previsualisation tools.' },
   ],
 
   // ──────────────────────────────────────────────────────────
