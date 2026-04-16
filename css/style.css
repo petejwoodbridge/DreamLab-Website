@@ -533,7 +533,7 @@ h1, h2, h3, h4, h5 {
   opacity: 1;
 }
 /* Wide, short wordmarks need a taller cap so they don't look tiny */
-.ticker__item img[data-slug="sony"] { max-height: 56px; max-width: 200px; }
+.ticker__item img[data-slug="sony"] { max-height: 56px; max-width: 320px; }
 .ticker__item-text {
   font-family: var(--font-display);
   font-size: 18px;
