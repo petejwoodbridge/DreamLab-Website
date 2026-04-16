@@ -893,8 +893,9 @@ h1, h2, h3, h4, h5 {
 }
 .client-item__filler-text {
   text-align: center;
-  color: var(--text-dim);
-  opacity: 0.55;
+  /* Match the monochrome filtered logos (pure white at 70% opacity) */
+  color: #fff;
+  opacity: 0.7;
   position: relative;
   z-index: 1;
   line-height: 1;
@@ -906,7 +907,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -0.02em;
 }
 .client-item--filler:hover .client-item__filler-text {
-  color: var(--text);
+  color: #fff;
   opacity: 1;
   transform: scale(1.06);
 }
