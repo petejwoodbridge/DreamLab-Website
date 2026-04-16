@@ -142,6 +142,14 @@
   }
 
   // ──────────────────────────────────────────────────────────
+  // PUBLIC SECTOR GRID (Work page) — same logo-wall pattern as clients
+  // ──────────────────────────────────────────────────────────
+  const publicSectorGrid = el('public-sector-grid');
+  if (publicSectorGrid && C.publicSector) {
+    publicSectorGrid.innerHTML = C.publicSector.map(renderClient).join('');
+  }
+
+  // ──────────────────────────────────────────────────────────
   // SME TEXT LIST (Work page)
   // ──────────────────────────────────────────────────────────
   const smesGrid = el('smes-grid');

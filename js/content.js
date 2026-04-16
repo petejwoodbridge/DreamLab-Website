@@ -747,6 +747,33 @@ window.DREAMLAB_CONTENT = {
   ],
 
   // ──────────────────────────────────────────────────────────
+  // PUBLIC SECTOR COLLABORATORS — universities, councils,
+  // research bodies and innovation agencies (Work page)
+  // Logos rendered the same as `clients` — drop a file into
+  // img/clients/ named after the slugified org name.
+  // ──────────────────────────────────────────────────────────
+  publicSector: [
+    'University of Manchester',
+    'University of Salford',
+    'Nottingham Trent University',
+    'University of Liverpool',
+    'Liverpool John Moores University',
+    'Staffordshire University',
+    'LIPA',
+    'UKIE',
+    'Greater Manchester Combined Authority',
+    'Liverpool City Region Combined Authority',
+    'Innovate UK',
+    'UKRI',
+    'AHRC',
+    'Arts Council',
+    'Digital Catapult',
+    'Immerse UK',
+    'National Lottery Heritage Fund',
+    'National Museums Liverpool',
+  ],
+
+  // ──────────────────────────────────────────────────────────
   // SECTORS (Work page)
   // ──────────────────────────────────────────────────────────
   sectors: [
