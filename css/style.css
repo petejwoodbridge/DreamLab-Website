@@ -870,6 +870,43 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.04);
 }
 
+/* Filler cells — invite future clients into the empty trailing slots */
+.client-item--filler {
+  text-decoration: none;
+  cursor: pointer;
+}
+.client-item--filler::before {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  pointer-events: none;
+  transition: border-color 0.3s var(--ease-out), inset 0.3s var(--ease-out);
+}
+.client-item--filler:hover { background: var(--bg); }
+.client-item--filler:hover::before {
+  border-color: var(--text-dim);
+  inset: 9px;
+}
+.client-item__filler-text {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-dim);
+  text-align: center;
+  opacity: 0.5;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s var(--ease-out), opacity 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+.client-item--filler:hover .client-item__filler-text {
+  color: var(--text);
+  opacity: 1;
+  transform: scale(1.06);
+}
+
 @media (max-width: 1024px) {
   .clients-grid { grid-template-columns: repeat(4, 1fr); }
   .client-item { min-height: 110px; }
@@ -880,6 +917,8 @@ h1, h2, h3, h4, h5 {
   .client-item { min-height: 90px; padding: 16px 12px; }
   .client-item__logo { max-height: 36px; }
   .client-item__name { font-size: 13px; }
+  .client-item__filler-text { font-size: 13px; }
+  .client-item--filler::before { inset: 10px; }
 }
 
 /* SME card grid */

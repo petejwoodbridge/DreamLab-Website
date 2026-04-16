@@ -101,6 +101,31 @@
   const clientsGrid = el('clients-grid');
   if (clientsGrid) {
     clientsGrid.innerHTML = C.clients.map(renderClient).join('');
+
+    // Fill any trailing empty cells in the last row with "you?" placeholders.
+    // Column count is responsive, so recompute on resize.
+    const fillEmptyClientCells = () => {
+      clientsGrid.querySelectorAll('.client-item--filler').forEach(n => n.remove());
+      const cols = getComputedStyle(clientsGrid)
+        .gridTemplateColumns.split(' ').filter(Boolean).length;
+      if (!cols) return;
+      const realCount = clientsGrid.children.length;
+      const need = (cols - (realCount % cols)) % cols;
+      for (let i = 0; i < need; i++) {
+        const a = document.createElement('a');
+        a.href = '/contact/';
+        a.className = 'client-item client-item--filler';
+        a.title = 'Could be you — get in touch';
+        a.innerHTML = '<span class="client-item__filler-text">you?</span>';
+        clientsGrid.appendChild(a);
+      }
+    };
+    fillEmptyClientCells();
+    let _fillerTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(_fillerTimer);
+      _fillerTimer = setTimeout(fillEmptyClientCells, 150);
+    });
   }
 
   // ──────────────────────────────────────────────────────────
