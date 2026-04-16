@@ -530,6 +530,8 @@ h1, h2, h3, h4, h5 {
 .ticker__item:hover img {
   opacity: 1;
 }
+/* Wide, short wordmarks need a taller cap so they don't look tiny */
+.ticker__item img[data-slug="sony"] { max-height: 56px; max-width: 200px; }
 .ticker__item-text {
   font-family: var(--font-display);
   font-size: 18px;
@@ -850,6 +852,8 @@ h1, h2, h3, h4, h5 {
   opacity: 1;
   transform: scale(1.06);
 }
+/* Wide, short wordmarks need a taller cap so they don't look tiny */
+.client-item__logo[data-slug="sony"] { max-height: 72px; }
 /* Text fallback — used when no logo image is present */
 .client-item__name {
   font-family: var(--font-display);
