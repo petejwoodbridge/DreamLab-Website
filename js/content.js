@@ -696,16 +696,16 @@ window.DREAMLAB_CONTENT = {
   // ──────────────────────────────────────────────────────────
   // Top brands with logo files — used for homepage ticker only
   ticker: [
-    'Apple', 'Google', 'Sony', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
-    'Intel', 'NHS', 'Red Bull', 'United Nations',
+    'Apple', 'Google', 'Sony', 'HP', 'BBC', 'ITV', 'NBC',
+    'Intel', 'NHS', 'IBM', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
     'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag',
   ],
 
   // Companies with logo files — shown as logo wall on Work page
   clients: [
-    'Apple', 'Google', 'Sony', 'IBM', 'HP', 'BBC', 'ITV', 'NBC',
-    'Intel', 'NHS', 'Red Bull', 'United Nations',
+    'Apple', 'Google', 'Sony', 'HP', 'BBC', 'ITV', 'NBC',
+    'Intel', 'NHS', 'IBM', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
     'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10',
   ],
