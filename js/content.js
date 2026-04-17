@@ -37,7 +37,7 @@ window.DREAMLAB_CONTENT = {
   // HEADLINE STATS (homepage + work page)
   // ──────────────────────────────────────────────────────────
   stats: [
-    { value: '45',  suffix: '+',  label: 'Deep tech specialists' },
+    { value: '46',  suffix: '+',  label: 'Deep tech specialists' },
     { value: '100', suffix: '+',  label: 'Businesses supported' },
     { value: '35',  suffix: '+',  label: 'Collaborative projects' },
     { value: '2',   suffix: '.7M', prefix: '£', label: 'Innovation investment' },
@@ -243,6 +243,22 @@ window.DREAMLAB_CONTENT = {
       ],
       award: 'Meta Reality Labs',
       linkedin: 'https://www.linkedin.com/in/jo-portus/',
+    },
+    {
+      image: '/img/team/46.jpg',
+      initials: 'RP',
+      avatarGradient: 'linear-gradient(135deg,#7c3aed,#06b6d4)',
+      name: 'Ryan Parker',
+      role: 'Unreal Engine Technical Artist · CTO, Krygon Studios',
+      bio: `Ryan is a senior Unreal Engine Technical Artist and the CTO of Krygon Studios, with deep expertise in real-time pipelines, virtual production, motion capture and immersive visualisation. He specialises in harnessing cutting-edge technology to create cinematic, high-fidelity experiences — from previz and on-set virtual production workflows to complex character pipelines and interactive environments. Across his career Ryan has bridged the gap between technical rigour and creative ambition, delivering production-ready real-time solutions for film, animation and immersive projects. At DreamLab he brings his Unreal Engine mastery to client projects, innovation programmes and the development of next-generation realtime tools.`,
+      tags: [
+        { label: 'Unreal Engine' },
+        { label: 'Virtual Production', color: 'cyan' },
+        { label: 'Motion Capture', color: 'pink' },
+        { label: 'Real-time', color: 'green' },
+      ],
+      award: 'CTO · Krygon Studios',
+      linkedin: 'https://www.linkedin.com/in/ryanvirtual/',
     },
     {
       image: '/img/team/08.webp',
@@ -955,7 +971,7 @@ window.DREAMLAB_CONTENT = {
       {
         year: 'June 2024',
         title: 'DreamLab launches at MediaCityUK',
-        body: 'Founded as a creative technology community and applied innovation lab — a home for 45+ specialists working across AI, immersive tech and realtime computing.',
+        body: 'Founded as a creative technology community and applied innovation lab — a home for 46+ specialists working across AI, immersive tech and realtime computing.',
       },
       {
         year: '2024',
@@ -975,7 +991,7 @@ window.DREAMLAB_CONTENT = {
       {
         year: '2026',
         title: 'The collective grows',
-        body: 'The team is now 45+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
+        body: 'The team is now 46+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
       },
       {
         year: 'Now',
