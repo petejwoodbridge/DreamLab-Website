@@ -872,9 +872,9 @@ h1, h2, h3, h4, h5 {
 }
 .client-item__logo[data-slug="liverpool-city-council"]   { max-height: 110px; }
 .client-item__logo[data-slug="arts-council"]              { max-height: 90px; }
-.client-item__logo[data-slug="gm-colleges"]               { max-height: 110px; }
+.client-item__logo[data-slug="gm-colleges"]               { max-height: 60px; }
 .client-item__logo[data-slug="immerse-uk"]                { max-height: 90px; }
-.client-item__logo[data-slug="university-of-liverpool"]   { max-height: 110px; }
+.client-item__logo[data-slug="university-of-liverpool"]   { max-height: 70px; }
 .client-item__logo[data-slug="manchester-city"]           { max-height: 100px; }
 .client-item__logo[data-slug="manchester-united"]         { max-height: 100px; }
 .client-item__logo[data-slug="bentley"]                   { max-height: 110px; }
