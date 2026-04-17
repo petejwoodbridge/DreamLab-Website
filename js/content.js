@@ -730,7 +730,7 @@ window.DREAMLAB_CONTENT = {
   ticker: [
     'Microsoft', 'Google', 'IBM', 'Intel', 'Unilever', 'Nestle', 'Sony',
     'United Nations', 'NHS', 'BBC', 'ITV', 'NBC', 'BT',
-    'Aardman Animations', 'Universal Music Group', 'Epic Games',
+    'Aardman Animations', 'Universal Music Group', 'Epic Games', 'Meta',
     'Apple',
     'McLaren', 'Audi', 'Bentley', 'Manchester United', 'Manchester City',
     'HP', 'Red Bull', 'MSG Sphere', 'McCann', 'Saatchi & Saatchi', 'ARRI',
@@ -741,7 +741,7 @@ window.DREAMLAB_CONTENT = {
   clients: [
     'Microsoft', 'Google', 'IBM', 'Intel', 'Unilever', 'Nestle', 'Sony',
     'United Nations', 'NHS', 'BBC', 'ITV', 'NBC', 'BT',
-    'Aardman Animations', 'Universal Music Group', 'Epic Games',
+    'Aardman Animations', 'Universal Music Group', 'Epic Games', 'Meta',
     'Apple',
     'McLaren', 'Audi', 'Bentley', 'Manchester United', 'Manchester City',
     'HP', 'Red Bull', 'MSG Sphere', 'McCann', 'Saatchi & Saatchi', 'ARRI',
