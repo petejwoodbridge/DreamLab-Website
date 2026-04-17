@@ -770,7 +770,7 @@ window.DREAMLAB_CONTENT = {
     { name: 'Capital and Centric',         desc: 'Technical consultancy for a new state of the art film, games and music production studio facility.' },
     { name: 'Hurricane Films',             desc: 'Realtime production pipeline development for virtual production.' },
     { name: 'Base Films',                  desc: 'Pitch visualisation and realtime / AI workflow development for a virtual production pilot programme with Red Bull.' },
-    { name: 'Golden Platter',              desc: 'Prototype development for a new AI intelligence app and realtime avatar integration.' },
+    { name: 'BoardRoomIQ',                 desc: 'Prototype development for a new AI intelligence app and realtime avatar integration.' },
     { name: 'ITHRA',                       desc: 'Realtime training and mentoring on an innovation programme with ALKhalej Training.' },
   ],
 
