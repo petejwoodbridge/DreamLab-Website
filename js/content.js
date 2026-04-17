@@ -37,7 +37,7 @@ window.DREAMLAB_CONTENT = {
   // HEADLINE STATS (homepage + work page)
   // ──────────────────────────────────────────────────────────
   stats: [
-    { value: '44',  suffix: '+',  label: 'Deep tech specialists' },
+    { value: '45',  suffix: '+',  label: 'Deep tech specialists' },
     { value: '100', suffix: '+',  label: 'Businesses supported' },
     { value: '35',  suffix: '+',  label: 'Collaborative projects' },
     { value: '2',   suffix: '.7M', prefix: '£', label: 'Innovation investment' },
@@ -943,7 +943,7 @@ window.DREAMLAB_CONTENT = {
       {
         year: 'June 2024',
         title: 'DreamLab launches at MediaCityUK',
-        body: 'Founded as a creative technology community and applied innovation lab — a home for 44+ specialists working across AI, immersive tech and realtime computing.',
+        body: 'Founded as a creative technology community and applied innovation lab — a home for 45+ specialists working across AI, immersive tech and realtime computing.',
       },
       {
         year: '2024',
@@ -963,7 +963,7 @@ window.DREAMLAB_CONTENT = {
       {
         year: '2026',
         title: 'The collective grows',
-        body: 'The team is now 44+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
+        body: 'The team is now 45+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
       },
       {
         year: 'Now',
