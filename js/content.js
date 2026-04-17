@@ -728,18 +728,24 @@ window.DREAMLAB_CONTENT = {
   // ──────────────────────────────────────────────────────────
   // Top brands with logo files — used for homepage ticker only
   ticker: [
-    'Apple', 'Google', 'Sony', 'HP', 'BBC', 'ITV', 'NBC',
-    'Intel', 'NHS', 'IBM', 'Red Bull', 'United Nations',
-    'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'McLaren', 'ARRI',
+    'Microsoft', 'Google', 'IBM', 'Intel', 'Unilever', 'Nestle', 'Sony',
+    'United Nations', 'NHS', 'BBC', 'ITV', 'NBC', 'BT',
+    'Aardman Animations', 'Universal Music Group', 'Epic Games',
+    'Apple',
+    'McLaren', 'Audi', 'Bentley', 'Manchester United', 'Manchester City',
+    'HP', 'Red Bull', 'MSG Sphere', 'McCann', 'Saatchi & Saatchi', 'ARRI',
+    'The Hut Group', 'Monster', 'Topshop', 'Tag',
   ],
 
   // Companies with logo files — shown as logo wall on Work page
   clients: [
-    'Apple', 'Google', 'Sony', 'HP', 'BBC', 'ITV', 'NBC',
-    'Intel', 'NHS', 'IBM', 'Red Bull', 'United Nations',
-    'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10', 'McLaren', 'ARRI',
+    'Microsoft', 'Google', 'IBM', 'Intel', 'Unilever', 'Nestle', 'Sony',
+    'United Nations', 'NHS', 'BBC', 'ITV', 'NBC', 'BT',
+    'Aardman Animations', 'Universal Music Group', 'Epic Games',
+    'Apple',
+    'McLaren', 'Audi', 'Bentley', 'Manchester United', 'Manchester City',
+    'HP', 'Red Bull', 'MSG Sphere', 'McCann', 'Saatchi & Saatchi', 'ARRI',
+    'The Hut Group', 'Monster', 'Topshop', 'Tag', 'MediaCity', 'Dock10',
   ],
 
   // SME / studio partners — shown as cards on Work page
