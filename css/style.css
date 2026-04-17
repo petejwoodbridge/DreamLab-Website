@@ -860,9 +860,14 @@ h1, h2, h3, h4, h5 {
 .client-item__logo[data-slug="arri"]    { max-height: 80px; }
 /* UoM logo has a white background — skip brightness(0) so it inverts cleanly */
 .client-item__logo[data-slug="university-of-manchester"] {
-  max-height: 100px;
+  max-height: 130px;
   filter: grayscale(1) invert(1);
 }
+.client-item__logo[data-slug="liverpool-city-council"]   { max-height: 110px; }
+.client-item__logo[data-slug="arts-council"]              { max-height: 90px; }
+.client-item__logo[data-slug="gm-colleges"]               { max-height: 110px; }
+.client-item__logo[data-slug="immerse-uk"]                { max-height: 90px; }
+.client-item__logo[data-slug="university-of-liverpool"]   { max-height: 110px; }
 /* Text fallback — used when no logo image is present */
 .client-item__name {
   font-family: var(--font-display);

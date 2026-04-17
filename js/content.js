@@ -799,7 +799,6 @@ window.DREAMLAB_CONTENT = {
     'University of Salford',
     'Liverpool John Moores University',
     'National Lottery Heritage Fund',
-    // Text fallback (no logo file yet)
     'University of Liverpool',
     'Immerse UK',
     'GM Colleges',
