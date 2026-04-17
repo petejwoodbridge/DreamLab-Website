@@ -855,7 +855,9 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.06);
 }
 /* Wide, short wordmarks need a taller cap so they don't look tiny */
-.client-item__logo[data-slug="sony"] { max-height: 72px; }
+.client-item__logo[data-slug="sony"]    { max-height: 72px; }
+.client-item__logo[data-slug="mclaren"] { max-height: 80px; }
+.client-item__logo[data-slug="arri"]    { max-height: 80px; }
 /* Text fallback — used when no logo image is present */
 .client-item__name {
   font-family: var(--font-display);
