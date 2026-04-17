@@ -186,6 +186,22 @@ window.DREAMLAB_CONTENT = {
       ],
     },
     {
+      image: '/img/team/45.webp',
+      initials: 'JP',
+      avatarGradient: 'linear-gradient(135deg,#06b6d4,#ec4899)',
+      name: 'Jo Portus',
+      role: 'Technical Artist',
+      bio: `Jo is a technical artist and creative technologist who thrives at the seam between art, design and engineering. At Meta Reality Labs he collaborates with artists, designers, engineers and researchers to enable large-scale mixed-reality productions — building the tooling, pipelines and real-time systems that let ambitious creative visions actually ship. Before Meta he honed his craft across ad agencies and independent projects, developing interactive installations, AR filters and dynamic visuals with an unwavering focus on performance, craft and creative intent.`,
+      tags: [
+        { label: 'Technical Art' },
+        { label: 'Real-time', color: 'cyan' },
+        { label: 'MR / XR', color: 'pink' },
+        { label: 'Creative Tech', color: 'green' },
+      ],
+      award: 'Meta Reality Labs',
+      linkedin: 'https://www.linkedin.com/in/jo-portus/',
+    },
+    {
       image: '/img/team/08.webp',
       initials: 'KD',
       avatarGradient: 'linear-gradient(135deg,#ec4899,#06b6d4)',
@@ -663,22 +679,6 @@ window.DREAMLAB_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/s-graham/',
     },
     {
-      image: '/img/team/45.webp',
-      initials: 'JP',
-      avatarGradient: 'linear-gradient(135deg,#06b6d4,#ec4899)',
-      name: 'Jo Portus',
-      role: 'Technical Artist',
-      bio: `Jo is a technical artist and creative technologist who thrives at the seam between art, design and engineering. At Meta Reality Labs he collaborates with artists, designers, engineers and researchers to enable large-scale mixed-reality productions — building the tooling, pipelines and real-time systems that let ambitious creative visions actually ship. Before Meta he honed his craft across ad agencies and independent projects, developing interactive installations, AR filters and dynamic visuals with an unwavering focus on performance, craft and creative intent.`,
-      tags: [
-        { label: 'Technical Art' },
-        { label: 'Real-time', color: 'cyan' },
-        { label: 'MR / XR', color: 'pink' },
-        { label: 'Creative Tech', color: 'green' },
-      ],
-      award: 'Meta Reality Labs',
-      linkedin: 'https://www.linkedin.com/in/jo-portus/',
-    },
-    {
       image: '/img/team/44.webp',
       initials: 'PL',
       avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
@@ -770,24 +770,26 @@ window.DREAMLAB_CONTENT = {
   // img/clients/ named after the slugified org name.
   // ──────────────────────────────────────────────────────────
   publicSector: [
-    'University of Manchester',
-    'University of Salford',
+    // With logo files
     'Nottingham Trent University',
-    'University of Liverpool',
-    'Liverpool John Moores University',
     'Staffordshire University',
-    'LIPA',
-    'UKIE',
     'Greater Manchester Combined Authority',
     'Liverpool City Region Combined Authority',
-    'Innovate UK',
     'UKRI',
     'AHRC',
+    'Innovate UK',
     'Arts Council',
     'Digital Catapult',
+    'LIPA',
+    'UKIE',
+    'National Museums Liverpool',
+    // Text fallback (no logo file yet)
+    'University of Manchester',
+    'University of Salford',
+    'University of Liverpool',
+    'Liverpool John Moores University',
     'Immerse UK',
     'National Lottery Heritage Fund',
-    'National Museums Liverpool',
   ],
 
   // ──────────────────────────────────────────────────────────
