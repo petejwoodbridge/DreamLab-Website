@@ -715,7 +715,7 @@ window.DREAMLAB_CONTENT = {
     'Apple', 'Google', 'Sony', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'IBM', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag',
+    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'McLaren', 'ARRI',
   ],
 
   // Companies with logo files — shown as logo wall on Work page
@@ -723,7 +723,7 @@ window.DREAMLAB_CONTENT = {
     'Apple', 'Google', 'Sony', 'HP', 'BBC', 'ITV', 'NBC',
     'Intel', 'NHS', 'IBM', 'Red Bull', 'United Nations',
     'BT', 'Epic Games', 'Aardman Animations', 'Universal Music Group', 'MSG Sphere',
-    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10',
+    'The Hut Group', 'Monster', 'Topshop', 'McCann', 'Saatchi & Saatchi', 'Tag', 'MediaCity', 'Dock10', 'McLaren', 'ARRI',
   ],
 
   // SME / studio partners — shown as cards on Work page
