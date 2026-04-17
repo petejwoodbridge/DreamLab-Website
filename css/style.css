@@ -865,6 +865,7 @@ h1, h2, h3, h4, h5 {
 .client-item__logo[data-slug="universal-music-group"]     { max-height: 80px; }
 .client-item__logo[data-slug="mccann"]                    { max-height: 80px; }
 .client-item__logo[data-slug="meta"]                      { max-height: 70px; }
+.client-item__logo[data-slug="monster"]                   { max-height: 100px; }
 /* UoM logo has a white background — skip brightness(0) so it inverts cleanly */
 .client-item__logo[data-slug="university-of-manchester"] {
   max-height: 130px;
