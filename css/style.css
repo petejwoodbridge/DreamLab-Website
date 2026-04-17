@@ -820,8 +820,22 @@ h1, h2, h3, h4, h5 {
   transform: translateY(-3px);
 }
 .sector-card__icon {
-  font-size: 32px;
-  margin-bottom: 16px;
+  width: 52px;
+  height: 52px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.sector-card__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
 }
 .sector-card h3 { font-size: 18px; margin-bottom: 8px; }
 .sector-card p { font-size: 13px; color: var(--text-dim); }
