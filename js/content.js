@@ -766,6 +766,7 @@ window.DREAMLAB_CONTENT = {
     { name: 'Wonder Studios',             desc: 'Ideation and visualisation for an interactive technology experience for a live event, demonstrating AI in realtime experiences.' },
     { name: 'Future Everything',          desc: 'Technical support and skills development for 10 artists on their cultural accelerator programme.' },
     { name: 'MITIH',                      desc: 'Mediacity Immersive Technology Innovation Hub — technical support and training sessions across a number of events, including Animating Tomorrow, Virtual Production 2.0 and many more.' },
+    { name: 'In4 Group',                   desc: 'Technical training and mentoring support on their bootcamp programmes, including Unreal Engine and AI workflows.' },
   ],
 
   // ──────────────────────────────────────────────────────────
@@ -796,6 +797,7 @@ window.DREAMLAB_CONTENT = {
     'Liverpool John Moores University',
     'Immerse UK',
     'National Lottery Heritage Fund',
+    'GM Colleges',
   ],
 
   // ──────────────────────────────────────────────────────────
