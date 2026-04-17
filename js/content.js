@@ -795,13 +795,13 @@ window.DREAMLAB_CONTENT = {
     'UKIE',
     'National Museums Liverpool',
     'Liverpool City Council',
-    // Text fallback (no logo file yet)
     'University of Manchester',
     'University of Salford',
-    'University of Liverpool',
     'Liverpool John Moores University',
-    'Immerse UK',
     'National Lottery Heritage Fund',
+    // Text fallback (no logo file yet)
+    'University of Liverpool',
+    'Immerse UK',
     'GM Colleges',
   ],
 
