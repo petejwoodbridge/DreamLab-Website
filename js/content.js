@@ -897,10 +897,6 @@ window.DREAMLAB_CONTENT = {
       dotColor: 'cyan',
       title: 'From bold idea to<br>brilliant product',
       description: `We partner with founders, studios and enterprises to build tech products that set new standards. From early-stage prototyping and technical validation to full production engineering, we bring deep expertise in AI, spatial computing, realtime systems and software architecture to every build.`,
-      highlight: {
-        title: 'Co-Creation Residencies',
-        body: 'Embedded R&D sprints at our Lake District innovation facility — intensive hands-on product development with DreamLab specialists working shoulder-to-shoulder with your team.',
-      },
       capabilities: [
         { title: 'AI Product Development', desc: 'Custom AI applications from concept to production' },
         { title: 'Spatial Computing',      desc: 'AR glasses, mixed reality and spatial interfaces' },
