@@ -9,6 +9,14 @@
   const C = window.DREAMLAB_CONTENT;
   if (!C) { console.warn('DreamLab content missing'); return; }
 
+  // Populate any [data-team-count] spans from the stats array
+  const teamCountStat = (C.stats || []).find(s => s.label === 'Deep tech specialists');
+  if (teamCountStat) {
+    document.querySelectorAll('[data-team-count]').forEach(el => {
+      el.textContent = teamCountStat.value;
+    });
+  }
+
   // Small helpers
   const el = id => document.getElementById(id);
   const esc = s => (s || '').replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
