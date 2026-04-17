@@ -871,9 +871,13 @@ h1, h2, h3, h4, h5 {
 .client-item__logo[data-slug="university-of-liverpool"]   { max-height: 110px; }
 .client-item__logo[data-slug="manchester-city"]           { max-height: 100px; }
 .client-item__logo[data-slug="manchester-united"]         { max-height: 100px; }
-.client-item__logo[data-slug="bentley"]                   { max-height: 80px; }
+.client-item__logo[data-slug="bentley"]                   { max-height: 110px; }
 .client-item__logo[data-slug="microsoft"]                 { max-height: 70px; }
 .client-item__logo[data-slug="nestle"]                    { max-height: 70px; }
+.client-item__logo[data-slug="unilever"]                  { max-height: 110px; }
+.client-item__logo[data-slug="nbc"]                       { max-height: 100px; }
+.client-item__logo[data-slug="audi"]                      { max-height: 110px; }
+.client-item__logo[data-slug="hp"]                        { max-height: 100px; }
 /* Text fallback — used when no logo image is present */
 .client-item__name {
   font-family: var(--font-display);
