@@ -761,6 +761,11 @@ window.DREAMLAB_CONTENT = {
     { name: 'Neuron',                   desc: 'Virtual production, networking and AI services.' },
     { name: 'Quasi Science',            desc: 'Testing of new virtual production lighting solutions.' },
     { name: 'Realtime',                 desc: 'R&D work on remotely accessible virtual production and previsualisation tools.' },
+    { name: '2LE Media',                  desc: 'Concept and technical development for realtime production workflows for a new children\'s TV series, The Elementals.' },
+    { name: '3 Minutes West',             desc: 'Technical development for realtime production AI workflows for an animated feature film.' },
+    { name: 'Wonder Studios',             desc: 'Ideation and visualisation for an interactive technology experience for a live event, demonstrating AI in realtime experiences.' },
+    { name: 'Future Everything',          desc: 'Technical support and skills development for 10 artists on their cultural accelerator programme.' },
+    { name: 'MITIH',                      desc: 'Mediacity Immersive Technology Innovation Hub — technical support and training sessions across a number of events, including Animating Tomorrow, Virtual Production 2.0 and many more.' },
   ],
 
   // ──────────────────────────────────────────────────────────
@@ -783,6 +788,7 @@ window.DREAMLAB_CONTENT = {
     'LIPA',
     'UKIE',
     'National Museums Liverpool',
+    'Liverpool City Council',
     // Text fallback (no logo file yet)
     'University of Manchester',
     'University of Salford',
