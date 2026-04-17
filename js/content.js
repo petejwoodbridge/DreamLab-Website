@@ -767,6 +767,11 @@ window.DREAMLAB_CONTENT = {
     { name: 'Future Everything',          desc: 'Technical support and skills development for 10 artists on their cultural accelerator programme.' },
     { name: 'MITIH',                      desc: 'Mediacity Immersive Technology Innovation Hub — technical support and training sessions across a number of events, including Animating Tomorrow, Virtual Production 2.0 and many more.' },
     { name: 'In4 Group',                   desc: 'Technical training and mentoring support on their bootcamp programmes, including Unreal Engine and AI workflows.' },
+    { name: 'Capital and Centric',         desc: 'Technical consultancy for a new state of the art film, games and music production studio facility.' },
+    { name: 'Hurricane Films',             desc: 'Realtime production pipeline development for virtual production.' },
+    { name: 'Base Films',                  desc: 'Pitch visualisation and realtime / AI workflow development for a virtual production pilot programme with Red Bull.' },
+    { name: 'Golden Platter',              desc: 'Prototype development for a new AI intelligence app and realtime avatar integration.' },
+    { name: 'ITHRA',                       desc: 'Realtime training and mentoring on an innovation programme with ALKhalej Training.' },
   ],
 
   // ──────────────────────────────────────────────────────────
