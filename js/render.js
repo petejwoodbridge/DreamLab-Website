@@ -9,13 +9,14 @@
   const C = window.DREAMLAB_CONTENT;
   if (!C) { console.warn('DreamLab content missing'); return; }
 
-  // Populate any [data-team-count] spans from the stats array
+  // Auto-calculate specialist count from team array and propagate everywhere
+  const teamCount = (C.team || []).length;
   const teamCountStat = (C.stats || []).find(s => s.label === 'Deep tech specialists');
-  if (teamCountStat) {
-    document.querySelectorAll('[data-team-count]').forEach(el => {
-      el.textContent = teamCountStat.value;
-    });
-  }
+  if (teamCountStat) teamCountStat.value = String(teamCount);
+  document.querySelectorAll('[data-team-count]').forEach(el => {
+    el.textContent = teamCount;
+    if (el.dataset.count !== undefined) el.dataset.count = teamCount;
+  });
 
   // Small helpers
   const el = id => document.getElementById(id);
