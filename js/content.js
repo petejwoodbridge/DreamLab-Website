@@ -234,14 +234,13 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#ec4899)',
       name: 'Jo Portus',
       role: 'Technical Artist',
-      bio: `Jo is a technical artist and creative technologist who thrives at the seam between art, design and engineering. At Meta Reality Labs he collaborates with artists, designers, engineers and researchers to enable large-scale mixed-reality productions — building the tooling, pipelines and real-time systems that let ambitious creative visions actually ship. Before Meta he honed his craft across ad agencies and independent projects, developing interactive installations, AR filters and dynamic visuals with an unwavering focus on performance, craft and creative intent.`,
+      bio: `Jo is a technical artist and creative technologist who thrives at the seam between art, design and engineering. His work has involved collaborates with artists, designers, engineers and researchers to enable large-scale mixed-reality productions — building the tooling, pipelines and real-time systems that let ambitious creative visions actually ship. He has worked across ad agencies and independent projects, developing interactive installations, AR filters and dynamic visuals with an unwavering focus on performance, craft and creative intent.`,
       tags: [
         { label: 'Technical Art' },
         { label: 'Real-time', color: 'cyan' },
         { label: 'MR / XR', color: 'pink' },
         { label: 'Creative Tech', color: 'green' },
       ],
-      award: 'Meta Reality Labs',
       linkedin: 'https://www.linkedin.com/in/jo-portus/',
     },
     {
@@ -730,7 +729,7 @@ window.DREAMLAB_CONTENT = {
   ticker: [
     'Microsoft', 'Google', 'IBM', 'Intel', 'Unilever', 'Nestle', 'Sony',
     'United Nations', 'NHS', 'BBC', 'ITV', 'NBC', 'BT',
-    'Aardman Animations', 'Universal Music Group', 'Epic Games', 'Meta',
+    'Aardman Animations', 'Universal Music Group', 'Epic Games',
     'Apple',
     'McLaren', 'Audi', 'Bentley', 'Manchester United', 'Manchester City',
     'HP', 'Red Bull', 'MSG Sphere', 'McCann', 'Saatchi & Saatchi', 'ARRI',
@@ -741,7 +740,7 @@ window.DREAMLAB_CONTENT = {
   clients: [
     'Microsoft', 'Google', 'IBM', 'Intel', 'Unilever', 'Nestle', 'Sony',
     'United Nations', 'NHS', 'BBC', 'ITV', 'NBC', 'BT',
-    'Aardman Animations', 'Universal Music Group', 'Epic Games', 'Meta',
+    'Aardman Animations', 'Universal Music Group', 'Epic Games',
     'Apple',
     'McLaren', 'Audi', 'Bentley', 'Manchester United', 'Manchester City',
     'HP', 'Red Bull', 'MSG Sphere', 'McCann', 'Saatchi & Saatchi', 'ARRI',
