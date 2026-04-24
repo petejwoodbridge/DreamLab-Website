@@ -164,8 +164,8 @@ h1, h2, h3, h4, h5 {
 }
 /* dreamlab wordmark */
 .nav__logo-text {
-  font-family: var(--font-display);
-  font-weight: 400;
+  font-family: 'Syne', system-ui, sans-serif;
+  font-weight: 800;
   font-style: normal;
   font-size: clamp(28px, 2.8vw, 38px);
   letter-spacing: 0.06em;
