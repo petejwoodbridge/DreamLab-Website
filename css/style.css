@@ -1,5 +1,5 @@
 /* ============================================================
-   DREAMLAB — Global Stylesheet
+   dreamlab — Global Stylesheet
    ============================================================ */
 
 /* --- Google Fonts --- */
@@ -7,7 +7,7 @@
 /* Extra display faces for the "you?" filler tiles — each reads like a tiny logo */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,700&family=Pacifico&family=Space+Mono:wght@700&family=Lobster&family=Righteous&display=swap');
 
-/* --- Design Tokens — DreamLab chromatic palette (hot pink / cyan) --- */
+/* --- Design Tokens — dreamlab chromatic palette (hot pink / cyan) --- */
 :root {
   --bg:          #05050e;
   --bg-2:        #0a0a1f;
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1;
   text-decoration: none;
 }
-/* DreamLab wordmark */
+/* dreamlab wordmark */
 .nav__logo-text {
   font-family: var(--font-display);
   font-weight: 400;

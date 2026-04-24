@@ -1,5 +1,5 @@
 /* ============================================================
-   DREAMLAB WEBSITE — EDITABLE CONTENT
+   dreamlab WEBSITE — EDITABLE CONTENT
    ============================================================
 
    👇 THIS IS THE ONE FILE YOU EDIT TO UPDATE THE SITE 👇
@@ -19,13 +19,13 @@
 
    ============================================================ */
 
-window.DREAMLAB_CONTENT = {
+window.dreamlab_CONTENT = {
 
   // ──────────────────────────────────────────────────────────
   // COMPANY INFO
   // ──────────────────────────────────────────────────────────
   company: {
-    name: 'DreamLab',
+    name: 'dreamlab',
     tagline: 'Applied Innovation Lab at MediaCity Manchester. Co-creating the future of AI, immersive tech and creative technology.',
     email: 'info@dreamlab-ai.com',
     linkedin: 'https://www.linkedin.com/company/thedreamlabuk/',
@@ -53,7 +53,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#7c3aed)',
       name: "Dr John O'Hare",
       role: 'Founder & Chief Hallucination Officer',
-      bio: `Dr John O'Hare is the Founder of DreamLab AI and an HP AI Lighthouse Partner. Over 25 years at the intersection of tech and creativity, he leads pioneering work in AI-driven workflows, multi-agent orchestration and creative technology. As CTO of the company behind Unreal Engine's flagship third-party plugins, he shipped tools used by AAA game studios and Hollywood productions. From AI systems for autonomous marine vessels to immersive media at scale, he helps organisations understand what's actually possible with AI agents — and keep humans in the loop where it matters.`,
+      bio: `Dr John O'Hare is the Founder of dreamlab AI and an HP AI Lighthouse Partner. Over 25 years at the intersection of tech and creativity, he leads pioneering work in AI-driven workflows, multi-agent orchestration and creative technology. As CTO of the company behind Unreal Engine's flagship third-party plugins, he shipped tools used by AAA game studios and Hollywood productions. From AI systems for autonomous marine vessels to immersive media at scale, he helps organisations understand what's actually possible with AI agents — and keep humans in the loop where it matters.`,
       tags: [
         { label: 'AI & LLMs' },
         { label: 'Agentic Systems', color: 'green' },
@@ -85,7 +85,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#ec4899,#06b6d4)',
       name: 'Pete Woodbridge',
       role: 'Founder & Chief Technical Officer',
-      bio: `Pete is a founder of DreamLab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He also serves as R&D Innovation Lead at MediaFutures and publishes the Dream Machine newsletter — essential reading on creative AI.`,
+      bio: `Pete is a founder of dreamlab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He also serves as R&D Innovation Lead at MediaFutures and publishes the Dream Machine newsletter — essential reading on creative AI.`,
       tags: [
         { label: 'Creative AI' },
         { label: 'Virtual Production', color: 'cyan' },
@@ -101,7 +101,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#ec4899,#f59e0b)',
       name: 'Jing Li',
       role: 'Creative AI · Eurasia Pacific',
-      bio: `Jing is a Creative AI developer and technologist with a background spanning business, technology and community innovation. After a decade in sustainable fashion, she retrained into data science and applied AI — now building and deploying generative tools for SMEs and creative practitioners at DreamLab, and connecting the collective to partners across the Eurasia Pacific region. Dedicated to responsible innovation, AI equity and making emerging technologies accessible to communities that are usually last in line.`,
+      bio: `Jing is a Creative AI developer and technologist with a background spanning business, technology and community innovation. After a decade in sustainable fashion, she retrained into data science and applied AI — now building and deploying generative tools for SMEs and creative practitioners at dreamlab, and connecting the collective to partners across the Eurasia Pacific region. Dedicated to responsible innovation, AI equity and making emerging technologies accessible to communities that are usually last in line.`,
       tags: [
         { label: 'Creative AI' },
         { label: 'Data Science', color: 'cyan' },
@@ -146,7 +146,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
       name: 'Bernard Steer',
       role: 'Spatial Audio Consultant',
-      bio: `Bernard is a spatial audio consultant and Avid ACI-certified Pro Tools trainer with 20+ years in creative technology. He founded compact Dolby Atmos / DTS-X monitoring solutions used across UK post-production, and leads spatial-audio consultancy for immersive-tech residencies at MediaCity's DreamLab. Bernard has worked with broadcasters, post houses and music studios bridging Avid, Dolby and Pro Tools ecosystems.`,
+      bio: `Bernard is a spatial audio consultant and Avid ACI-certified Pro Tools trainer with 20+ years in creative technology. He founded compact Dolby Atmos / DTS-X monitoring solutions used across UK post-production, and leads spatial-audio consultancy for immersive-tech residencies at MediaCity's dreamlab. Bernard has worked with broadcasters, post houses and music studios bridging Avid, Dolby and Pro Tools ecosystems.`,
       tags: [
         { label: 'Spatial Audio' },
         { label: 'Dolby Atmos', color: 'cyan' },
@@ -176,7 +176,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#06b6d4)',
       name: 'JunkieJarvis',
       role: 'Agentic Chief Operating Officer',
-      bio: `Jarvis is DreamLab's experimental AI Chief Operating Officer, developed in partnership with the Agentic Alliance. This non-voting C-Suite member supports company operations through advanced AI-driven decision-making, mirroring pioneering initiatives at Salesforce and beyond.`,
+      bio: `Jarvis is dreamlab's experimental AI Chief Operating Officer, developed in partnership with the Agentic Alliance. This non-voting C-Suite member supports company operations through advanced AI-driven decision-making, mirroring pioneering initiatives at Salesforce and beyond.`,
       tags: [
         { label: 'Agentic AI' },
         { label: 'Operations', color: 'cyan' },
@@ -249,7 +249,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#06b6d4)',
       name: 'Ryan Parker',
       role: 'Unreal Engine Technical Artist · CTO, Krygon Studios',
-      bio: `Ryan is a senior Unreal Engine Technical Artist and the CTO of Krygon Studios, with deep expertise in real-time pipelines, virtual production, motion capture and immersive visualisation. He specialises in harnessing cutting-edge technology to create cinematic, high-fidelity experiences — from previz and on-set virtual production workflows to complex character pipelines and interactive environments. Across his career Ryan has bridged the gap between technical rigour and creative ambition, delivering production-ready real-time solutions for film, animation and immersive projects. At DreamLab he brings his Unreal Engine mastery to client projects, innovation programmes and the development of next-generation realtime tools.`,
+      bio: `Ryan is a senior Unreal Engine Technical Artist and the CTO of Krygon Studios, with deep expertise in real-time pipelines, virtual production, motion capture and immersive visualisation. He specialises in harnessing cutting-edge technology to create cinematic, high-fidelity experiences — from previz and on-set virtual production workflows to complex character pipelines and interactive environments. Across his career Ryan has bridged the gap between technical rigour and creative ambition, delivering production-ready real-time solutions for film, animation and immersive projects. At dreamlab he brings his Unreal Engine mastery to client projects, innovation programmes and the development of next-generation realtime tools.`,
       tags: [
         { label: 'Unreal Engine' },
         { label: 'Virtual Production', color: 'cyan' },
@@ -366,7 +366,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#f59e0b,#06b6d4)',
       name: 'David Afolabi',
       role: 'Cyber Compliance Analyst',
-      bio: `David is a cyber compliance analyst specialising in ISO 27001, security governance and digital forensics. He delivers professional development and security awareness training, and leads community engagement initiatives at DreamLab.`,
+      bio: `David is a cyber compliance analyst specialising in ISO 27001, security governance and digital forensics. He delivers professional development and security awareness training, and leads community engagement initiatives at dreamlab.`,
       tags: [
         { label: 'Cybersecurity' },
         { label: 'ISO 27001', color: 'cyan' },
@@ -699,7 +699,7 @@ window.DREAMLAB_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
       name: 'Our Physical Labs',
       role: 'Global AI Development Network',
-      bio: `DreamLab operates a distributed network of physical laboratory spaces across multiple locations, enabling hands-on research, development and training in AI and machine learning. Our labs are equipped with high-performance computing, specialised ML hardware and collaborative spaces designed for intensive deep learning projects and residential training programmes.`,
+      bio: `dreamlab operates a distributed network of physical laboratory spaces across multiple locations, enabling hands-on research, development and training in AI and machine learning. Our labs are equipped with high-performance computing, specialised ML hardware and collaborative spaces designed for intensive deep learning projects and residential training programmes.`,
       tags: [
         { label: 'AI Labs' },
         { label: 'HPC', color: 'cyan' },
@@ -971,7 +971,7 @@ window.DREAMLAB_CONTENT = {
     timeline: [
       {
         year: 'June 2024',
-        title: 'DreamLab launches at MediaCityUK',
+        title: 'dreamlab launches at MediaCityUK',
         body: 'Founded as a creative technology community and applied innovation lab — a home for 46+ specialists working across AI, immersive tech and realtime computing.',
       },
       {
@@ -1015,7 +1015,7 @@ window.DREAMLAB_CONTENT = {
       {
         year: 'Future',
         title: 'A national creative-tech network',
-        body: "Connecting DreamLab's Northern home to a wider UK collective of specialists, studios and research partners — because the future of work is networks, not silos.",
+        body: "Connecting dreamlab's Northern home to a wider UK collective of specialists, studios and research partners — because the future of work is networks, not silos.",
         future: true,
       },
     ],

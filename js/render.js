@@ -1,13 +1,13 @@
 /* ============================================================
-   DREAMLAB — Content Rendering
-   Reads window.DREAMLAB_CONTENT and populates page elements
+   dreamlab — Content Rendering
+   Reads window.dreamlab_CONTENT and populates page elements
    by id. Runs before main.js so reveal observers pick up
    the freshly-rendered nodes.
    ============================================================ */
 
 (function () {
-  const C = window.DREAMLAB_CONTENT;
-  if (!C) { console.warn('DreamLab content missing'); return; }
+  const C = window.dreamlab_CONTENT;
+  if (!C) { console.warn('dreamlab content missing'); return; }
 
   // Auto-calculate specialist count from team array and propagate everywhere
   const teamCount = (C.team || []).length;

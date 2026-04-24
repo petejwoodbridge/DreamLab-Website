@@ -1,4 +1,4 @@
-# DreamLab
+# dreamlab
 
 > **WE BUILD THE FUTURE.**
 
@@ -108,4 +108,4 @@ We're always interested in talking with people building unusual things.
 
 ---
 
-<sub>© DreamLab. Made in the North of England, with one foot in the future.</sub>
+<sub>© dreamlab. Made in the North of England, with one foot in the future.</sub>

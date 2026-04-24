@@ -47,14 +47,14 @@
   <rect x="40" y="40" width="1120" height="550" rx="16" ry="16"
         fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
 
-  <!-- DREAMLAB wordmark -->
+  <!-- dreamlab wordmark -->
   <text x="100" y="330"
         font-family="'Arial Black', 'Impact', 'Haettenschweiler', sans-serif"
         font-weight="900"
         font-size="188"
         letter-spacing="14"
         fill="url(#textgrad)"
-        opacity="0.97">DREAMLAB</text>
+        opacity="0.97">dreamlab</text>
 
   <!-- Divider line -->
   <rect x="100" y="370" width="220" height="3" rx="2" fill="url(#textgrad)" opacity="0.6"/>

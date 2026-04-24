@@ -1,5 +1,5 @@
 /* ============================================================
-   DREAMLAB — Main JavaScript
+   dreamlab — Main JavaScript
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
