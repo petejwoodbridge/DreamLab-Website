@@ -29,7 +29,7 @@
   /* Gradients — pink → cyan, matching the chromatic logo */
   --grad-1: linear-gradient(135deg, #ec1eec 0%, #00e5ff 100%);
   --grad-2: linear-gradient(135deg, #ec1eec 0%, #c026d3 50%, #00e5ff 100%);
-  --grad-text: linear-gradient(135deg, #ec1eec 0%, #ff5ff5 35%, #00e5ff 100%);
+  --grad-text: #ec1eec;
 
   /* Brand glow */
   --glow-pink: 0 0 40px rgba(236, 30, 236, 0.45);
@@ -111,14 +111,11 @@ h1, h2, h3, h4, h5 {
 .body-md { font-size: 16px; line-height: 1.65; }
 .body-sm { font-size: 14px; line-height: 1.6; }
 
-/* Gradient text */
+/* Gradient text — solid pink */
 .grad-text {
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--grad-text);
+  -webkit-text-fill-color: var(--grad-text);
   display: inline-block;
-  padding-bottom: 0.25em;
 }
 
 /* --- Layout --- */
@@ -445,10 +442,7 @@ h1, h2, h3, h4, h5 {
   font-size: clamp(32px, 4vw, 52px);
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--grad-text);
 }
 .hero__stat-label {
   font-size: 13px;
@@ -792,10 +786,7 @@ h1, h2, h3, h4, h5 {
   font-size: 48px;
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--grad-text);
   display: block;
   margin-bottom: 8px;
 }
@@ -1449,12 +1440,8 @@ h1, h2, h3, h4, h5 {
 }
 .final-cta__headline em {
   font-style: normal;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--grad-text);
   display: inline-block;
-  padding-bottom: 0.2em;
 }
 .final-cta__body {
   font-size: 18px;
@@ -1508,12 +1495,8 @@ h1, h2, h3, h4, h5 {
 }
 .manifesto__statement em {
   font-style: normal;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--grad-text);
   display: inline-block;
-  padding-bottom: 0.15em;
 }
 .manifesto__support p {
   color: var(--text-dim);
@@ -1708,10 +1691,7 @@ h1, h2, h3, h4, h5 {
 }
 .timeline-item--future .timeline-item__year { color: var(--text-muted); }
 .timeline-item--now   .timeline-item__year {
-  color: transparent;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: var(--grad-text);
 }
 .timeline-item__title {
   font-family: var(--font-display);
@@ -1765,10 +1745,7 @@ h1, h2, h3, h4, h5 {
 }
 .future-block__headline em {
   font-style: normal;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--grad-text);
 }
 .future-block__body {
   font-size: 17px;
