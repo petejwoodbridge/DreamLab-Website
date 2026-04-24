@@ -44,6 +44,27 @@ window.dreamlab_CONTENT = {
   ],
 
   // ──────────────────────────────────────────────────────────
+  // TEAM FILTER TABS — controls the category tabs above the team grid.
+  // Each team member lists the matching `categories` keys on their record.
+  // The first entry must stay `all` (it shows everyone).
+  // ──────────────────────────────────────────────────────────
+  teamFilters: [
+    { key: 'all',                label: 'All' },
+    { key: 'creative',           label: 'Creative Services' },
+    { key: 'workflows',          label: 'Workflows & Automation' },
+    { key: 'product',            label: 'Product Development' },
+    { key: 'data',               label: 'Data and Intelligence' },
+    { key: 'ai',                 label: 'AI' },
+    { key: 'realtime',           label: 'Realtime & Games' },
+    { key: 'virtual-production', label: 'Virtual Production' },
+    { key: 'film',               label: 'Film & VFX' },
+    { key: 'application',        label: 'Application Development' },
+    { key: 'training',           label: 'Training' },
+    { key: 'animation',          label: 'Animation' },
+    { key: 'design',             label: 'Design' },
+  ],
+
+  // ──────────────────────────────────────────────────────────
   // TEAM — Add / edit / reorder people here
   // ──────────────────────────────────────────────────────────
   team: [
@@ -60,6 +81,7 @@ window.dreamlab_CONTENT = {
         { label: 'Unreal Engine', color: 'cyan' },
         { label: 'Immersive', color: 'pink' },
       ],
+      categories: ['ai', 'workflows', 'product', 'realtime', 'virtual-production', 'application', 'training', 'creative', 'data'],
       award: 'HP AI Lighthouse Partner',
       linkedin: 'https://www.linkedin.com/in/jjohare/',
     },
@@ -76,6 +98,7 @@ window.dreamlab_CONTENT = {
         { label: 'Brand Storytelling', color: 'pink' },
         { label: 'AR / VR', color: 'green' },
       ],
+      categories: ['creative', 'film', 'design', 'training', 'animation', 'virtual-production'],
       award: 'Ex-McCann Worldgroup',
       linkedin: 'https://uk.linkedin.com/in/steve-moyler-53254517',
     },
@@ -87,11 +110,13 @@ window.dreamlab_CONTENT = {
       role: 'Founder & Chief Technical Officer',
       bio: `Pete is a founder of dreamlab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He also serves as R&D Innovation Lead at MediaFutures and publishes the Dream Machine newsletter — essential reading on creative AI.`,
       tags: [
-        { label: 'Creative AI' },
-        { label: 'Virtual Production', color: 'cyan' },
-        { label: 'Immersive XR', color: 'pink' },
-        { label: 'Innovation', color: 'green' },
+        { label: 'Creative AI Workflows' },
+        { label: 'Software & Tool Development', color: 'cyan' },
+        { label: 'Immersive Experiences', color: 'pink' },
+        { label: 'Prototyping', color: 'green' },
+        { label: 'Product Development' },
       ],
+      categories: ['creative', 'workflows', 'product', 'ai', 'realtime', 'virtual-production', 'film', 'application', 'training', 'design', 'data'],
       award: 'BIMA 100 · 2020',
       linkedin: 'https://www.linkedin.com/in/petewoodbridge/',
     },
@@ -108,6 +133,7 @@ window.dreamlab_CONTENT = {
         { label: 'Responsible AI', color: 'green' },
         { label: 'Community', color: 'pink' },
       ],
+      categories: ['ai', 'workflows', 'data', 'creative', 'training'],
       linkedin: 'https://www.linkedin.com/in/jingliaideveloper/',
     },
     {
@@ -123,6 +149,7 @@ window.dreamlab_CONTENT = {
         { label: 'Speculative Tech', color: 'pink' },
         { label: 'R&D', color: 'green' },
       ],
+      categories: ['product', 'design', 'data', 'application', 'film', 'creative'],
       award: 'UKRI Innovate UK Funded',
       linkedin: 'https://www.linkedin.com/in/derekhales/',
     },
@@ -138,6 +165,7 @@ window.dreamlab_CONTENT = {
         { label: 'Haptics', color: 'cyan' },
         { label: 'Public Engagement', color: 'pink' },
       ],
+      categories: ['realtime', 'virtual-production', 'creative', 'training', 'ai'],
       linkedin: 'https://www.linkedin.com/in/arpana-n/',
     },
     {
@@ -153,6 +181,7 @@ window.dreamlab_CONTENT = {
         { label: 'Post-Production', color: 'pink' },
         { label: 'Avid Certified', color: 'green' },
       ],
+      categories: ['creative', 'film', 'training'],
       award: 'Avid ACI Certified Trainer',
       linkedin: 'https://www.linkedin.com/in/bernard-steer-36857b30/',
     },
@@ -168,6 +197,7 @@ window.dreamlab_CONTENT = {
         { label: 'Music Production', color: 'cyan' },
         { label: 'AV Installation', color: 'pink' },
       ],
+      categories: ['creative', 'design'],
       linkedin: 'https://www.linkedin.com/in/noelle-nurdin/',
     },
     {
@@ -182,6 +212,7 @@ window.dreamlab_CONTENT = {
         { label: 'Operations', color: 'cyan' },
         { label: 'Multi-Agent', color: 'pink' },
       ],
+      categories: ['ai', 'workflows'],
       award: 'Agentic Alliance',
     },
     {
@@ -196,6 +227,7 @@ window.dreamlab_CONTENT = {
         { label: 'Immersive Learning', color: 'cyan' },
         { label: 'Animation', color: 'pink' },
       ],
+      categories: ['realtime', 'animation', 'training', 'creative', 'film'],
       award: 'SFHEA Accredited',
       linkedin: 'https://www.linkedin.com/in/annabethrobinson/',
     },
@@ -212,6 +244,7 @@ window.dreamlab_CONTENT = {
         { label: 'Motorsport', color: 'pink' },
         { label: 'Engineering', color: 'green' },
       ],
+      categories: ['data', 'product', 'application'],
       award: 'Founder · QuasiScience',
       linkedin: 'https://www.linkedin.com/in/marco-ghilard',
     },
@@ -227,6 +260,7 @@ window.dreamlab_CONTENT = {
         { label: 'Cloud Native', color: 'cyan' },
         { label: 'DevOps', color: 'green' },
       ],
+      categories: ['application', 'product'],
     },
     {
       image: '/img/team/45.webp',
@@ -241,6 +275,7 @@ window.dreamlab_CONTENT = {
         { label: 'MR / XR', color: 'pink' },
         { label: 'Creative Tech', color: 'green' },
       ],
+      categories: ['creative', 'realtime', 'virtual-production', 'design', 'product'],
       linkedin: 'https://www.linkedin.com/in/jo-portus/',
     },
     {
@@ -256,6 +291,7 @@ window.dreamlab_CONTENT = {
         { label: 'Motion Capture', color: 'pink' },
         { label: 'Real-time', color: 'green' },
       ],
+      categories: ['virtual-production', 'realtime', 'film', 'creative', 'product', 'animation'],
       award: 'CTO · Krygon Studios',
       linkedin: 'https://www.linkedin.com/in/ryanvirtual/',
     },
@@ -272,6 +308,7 @@ window.dreamlab_CONTENT = {
         { label: 'New Media Art', color: 'pink' },
         { label: 'Byrons Labs', color: 'green' },
       ],
+      categories: ['ai', 'creative', 'data', 'design', 'application'],
       linkedin: 'https://www.linkedin.com/in/byronslabs/',
     },
     {
@@ -286,6 +323,7 @@ window.dreamlab_CONTENT = {
         { label: 'Team Building', color: 'cyan' },
         { label: 'Leadership', color: 'green' },
       ],
+      categories: ['realtime', 'training'],
     },
     {
       image: '/img/team/10.webp',
@@ -299,6 +337,7 @@ window.dreamlab_CONTENT = {
         { label: 'Immersive Tech', color: 'cyan' },
         { label: 'R&D', color: 'green' },
       ],
+      categories: ['virtual-production', 'creative', 'film', 'training', 'realtime'],
       linkedin: 'https://www.linkedin.com/in/roger-mckinley-3373b01a/',
     },
     {
@@ -314,6 +353,7 @@ window.dreamlab_CONTENT = {
         { label: 'AAA Games', color: 'pink' },
         { label: 'Unreal Engine', color: 'green' },
       ],
+      categories: ['realtime', 'virtual-production', 'film', 'animation', 'design', 'creative'],
       award: 'Emmy-Nominated',
       linkedin: 'https://www.linkedin.com/in/bradley-harris-71520517/',
     },
@@ -329,6 +369,7 @@ window.dreamlab_CONTENT = {
         { label: 'Real-time', color: 'cyan' },
         { label: 'AR / VR', color: 'green' },
       ],
+      categories: ['creative', 'realtime', 'virtual-production', 'design', 'training'],
       linkedin: 'https://www.linkedin.com/in/danielmktb/',
     },
     {
@@ -343,6 +384,7 @@ window.dreamlab_CONTENT = {
         { label: 'Stop-Frame', color: 'cyan' },
         { label: 'Directing', color: 'pink' },
       ],
+      categories: ['animation', 'film', 'creative'],
       award: 'BAFTA-Nominated',
       linkedin: 'https://www.linkedin.com/in/haydn-secker-6a0622160/',
     },
@@ -358,6 +400,7 @@ window.dreamlab_CONTENT = {
         { label: 'Immersive Installations', color: 'cyan' },
         { label: 'Creative Direction', color: 'pink' },
       ],
+      categories: ['virtual-production', 'creative', 'film', 'training', 'animation', 'realtime'],
       linkedin: 'https://www.linkedin.com/in/garth-williams-49146373/',
     },
     {
@@ -372,6 +415,7 @@ window.dreamlab_CONTENT = {
         { label: 'ISO 27001', color: 'cyan' },
         { label: 'Governance', color: 'green' },
       ],
+      categories: ['application', 'training', 'product'],
       linkedin: 'https://www.linkedin.com/in/david-afolabi/',
     },
     {
@@ -386,6 +430,7 @@ window.dreamlab_CONTENT = {
         { label: 'Unity', color: 'cyan' },
         { label: 'Procedural', color: 'green' },
       ],
+      categories: ['realtime', 'virtual-production', 'creative', 'product', 'application', 'animation', 'training'],
       linkedin: 'https://www.linkedin.com/in/cghfrost/',
     },
     {
@@ -400,6 +445,7 @@ window.dreamlab_CONTENT = {
         { label: 'Blockchain', color: 'cyan' },
         { label: 'Motion Graphics', color: 'pink' },
       ],
+      categories: ['realtime', 'creative', 'application', 'film', 'animation', 'design'],
       linkedin: 'https://www.linkedin.com/in/lewishackett/',
     },
     {
@@ -414,6 +460,7 @@ window.dreamlab_CONTENT = {
         { label: 'Virtual Environments', color: 'cyan' },
         { label: 'Generative Media', color: 'green' },
       ],
+      categories: ['realtime', 'creative', 'ai', 'training', 'design', 'animation'],
       award: 'PhD · Games & VE',
       linkedin: 'https://www.linkedin.com/in/dr-umran-ali/',
     },
@@ -429,6 +476,7 @@ window.dreamlab_CONTENT = {
         { label: 'BD', color: 'cyan' },
         { label: 'Ecosystems', color: 'green' },
       ],
+      categories: ['training'],
       linkedin: 'https://www.linkedin.com/in/james-spiers-953a9a6b/',
     },
     {
@@ -443,6 +491,7 @@ window.dreamlab_CONTENT = {
         { label: 'XR Environments', color: 'cyan' },
         { label: 'Well-being', color: 'pink' },
       ],
+      categories: ['creative', 'realtime', 'virtual-production', 'training'],
       linkedin: 'https://www.linkedin.com/in/drnatashastott/',
     },
     {
@@ -457,6 +506,7 @@ window.dreamlab_CONTENT = {
         { label: 'Directing', color: 'cyan' },
         { label: 'Brand Content', color: 'pink' },
       ],
+      categories: ['film', 'creative'],
       linkedin: 'https://www.linkedin.com/in/chris-croft-988a1738/',
     },
     {
@@ -471,6 +521,7 @@ window.dreamlab_CONTENT = {
         { label: 'TouchDesigner', color: 'cyan' },
         { label: 'Broadcast', color: 'pink' },
       ],
+      categories: ['realtime', 'virtual-production', 'film', 'creative', 'design'],
       linkedin: 'https://www.linkedin.com/in/thadeous-matthews-35b69653/',
     },
     {
@@ -485,6 +536,7 @@ window.dreamlab_CONTENT = {
         { label: 'XR', color: 'cyan' },
         { label: 'AI Avatars', color: 'green' },
       ],
+      categories: ['ai', 'realtime', 'virtual-production', 'creative', 'product', 'application', 'training'],
       award: 'PhD · Computer Science',
       linkedin: 'https://www.linkedin.com/in/davidtullyscenegraph/',
     },
@@ -500,6 +552,7 @@ window.dreamlab_CONTENT = {
         { label: 'Animation', color: 'cyan' },
         { label: 'Community', color: 'pink' },
       ],
+      categories: ['animation', 'creative', 'film', 'training'],
       award: 'Ray Harryhausen Award',
       linkedin: 'https://www.linkedin.com/in/katukastudios/',
     },
@@ -515,6 +568,7 @@ window.dreamlab_CONTENT = {
         { label: 'Audio Electronics', color: 'cyan' },
         { label: 'VR / AR', color: 'green' },
       ],
+      categories: ['product', 'realtime', 'application', 'creative', 'training'],
       award: 'PhD · Virtual Reality',
       linkedin: 'https://www.linkedin.com/in/seanmandrake/',
     },
@@ -530,6 +584,7 @@ window.dreamlab_CONTENT = {
         { label: 'Partnerships', color: 'cyan' },
         { label: 'Advisory', color: 'green' },
       ],
+      categories: ['training'],
     },
     {
       image: '/img/team/32.webp',
@@ -543,6 +598,7 @@ window.dreamlab_CONTENT = {
         { label: 'Digital Marketing', color: 'cyan' },
         { label: 'E-commerce', color: 'pink' },
       ],
+      categories: ['application', 'training', 'creative'],
     },
     {
       image: '/img/team/33.webp',
@@ -556,6 +612,7 @@ window.dreamlab_CONTENT = {
         { label: 'QA', color: 'cyan' },
         { label: 'SAFe', color: 'green' },
       ],
+      categories: ['application', 'product', 'training'],
     },
     {
       image: '/img/team/34.webp',
@@ -569,6 +626,7 @@ window.dreamlab_CONTENT = {
         { label: '3D Scanning', color: 'cyan' },
         { label: 'Edge Vision', color: 'green' },
       ],
+      categories: ['film', 'data', 'creative', 'virtual-production'],
       award: 'Certified UK Drone Pilot',
     },
     {
@@ -583,6 +641,7 @@ window.dreamlab_CONTENT = {
         { label: 'Immersive Platforms', color: 'cyan' },
         { label: 'Engineering', color: 'green' },
       ],
+      categories: ['product', 'creative'],
     },
     {
       image: '/img/team/36.webp',
@@ -596,6 +655,7 @@ window.dreamlab_CONTENT = {
         { label: 'Low-level', color: 'cyan' },
         { label: 'Interactive Media', color: 'pink' },
       ],
+      categories: ['product', 'application', 'creative'],
     },
     {
       image: '/img/team/37.webp',
@@ -609,6 +669,7 @@ window.dreamlab_CONTENT = {
         { label: 'Cloud Infra', color: 'cyan' },
         { label: 'Cybersecurity', color: 'green' },
       ],
+      categories: ['application', 'product'],
       award: 'Cisco Certified',
     },
     {
@@ -623,6 +684,7 @@ window.dreamlab_CONTENT = {
         { label: 'Visualisation', color: 'cyan' },
         { label: 'Experiential', color: 'pink' },
       ],
+      categories: ['creative', 'virtual-production', 'product'],
     },
     {
       image: '/img/team/39.webp',
@@ -636,6 +698,7 @@ window.dreamlab_CONTENT = {
         { label: 'Ecology', color: 'cyan' },
         { label: 'Outdoor Tech', color: 'green' },
       ],
+      categories: ['design', 'creative', 'product'],
     },
     {
       image: '/img/team/40.webp',
@@ -649,6 +712,7 @@ window.dreamlab_CONTENT = {
         { label: 'Metaverse', color: 'cyan' },
         { label: 'Social Impact', color: 'green' },
       ],
+      categories: ['data', 'ai', 'training', 'creative'],
       linkedin: 'https://www.linkedin.com/in/jessica-symons-63622229/',
     },
     {
@@ -663,6 +727,7 @@ window.dreamlab_CONTENT = {
         { label: 'Production', color: 'cyan' },
         { label: 'Live Events', color: 'pink' },
       ],
+      categories: ['creative', 'film'],
     },
     {
       image: '/img/team/42.webp',
@@ -676,6 +741,7 @@ window.dreamlab_CONTENT = {
         { label: 'SFX Stills', color: 'cyan' },
         { label: 'Creative Production', color: 'pink' },
       ],
+      categories: ['creative', 'design', 'film'],
       linkedin: 'https://www.linkedin.com/in/piprustage/',
     },
     {
@@ -691,6 +757,7 @@ window.dreamlab_CONTENT = {
         { label: 'XR', color: 'pink' },
         { label: 'AI Workflows', color: 'green' },
       ],
+      categories: ['creative', 'realtime', 'virtual-production', 'ai', 'workflows', 'product', 'film'],
       linkedin: 'https://www.linkedin.com/in/s-graham/',
     },
     {
@@ -705,6 +772,7 @@ window.dreamlab_CONTENT = {
         { label: 'HPC', color: 'cyan' },
         { label: 'Residential R&D', color: 'green' },
       ],
+      categories: ['ai', 'workflows', 'training', 'data'],
     },
 
     // 👆 Copy any block above and edit to add a new team member.

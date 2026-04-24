@@ -28,9 +28,10 @@
   const linkedinSvg = `<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>`;
 
   // ──────────────────────────────────────────────────────────
-  // TEAM GRID
+  // TEAM GRID + FILTER TABS
   // ──────────────────────────────────────────────────────────
   const teamGrid = el('team-grid');
+  const teamFilters = el('team-filters');
   if (teamGrid) {
     // Stable sort: keep original order but push entries without a LinkedIn to the bottom.
     // Leadership appears first in the source array and all have LinkedIns, so they stay on top.
@@ -43,8 +44,9 @@
         return a.i - b.i;
       })
       .map(x => x.m);
-    teamGrid.innerHTML = teamSorted.map((m, i) => `
-      <div class="team-card reveal ${revealDelay(i % 3)}">
+
+    const renderCard = (m, i) => `
+      <div class="team-card reveal ${revealDelay(i % 3)}" data-categories="${esc((m.categories || []).join(' '))}">
         <div class="team-card__header">
           <div class="team-card__avatar${m.image ? ' team-card__avatar--img' : ''}"${!m.image && m.avatarGradient ? ` style="background: ${m.avatarGradient};"` : ''}>${m.image ? `<img src="${esc(m.image)}" alt="${esc(m.name)}" loading="lazy" onerror="this.parentElement.classList.remove('team-card__avatar--img'); this.parentElement.style.background='${esc(m.avatarGradient || 'var(--grad-1)')}'; this.outerHTML='${esc(m.initials || '')}';">` : esc(m.initials)}</div>
           <div>
@@ -61,7 +63,41 @@
           ${m.linkedin ? `<a href="${esc(m.linkedin)}" target="_blank" rel="noopener" class="team-card__linkedin">${linkedinSvg} LinkedIn</a>` : ''}
         </div>
       </div>
-    `).join('');
+    `;
+    teamGrid.innerHTML = teamSorted.map(renderCard).join('');
+
+    if (teamFilters && Array.isArray(C.teamFilters) && C.teamFilters.length) {
+      const countFor = key => key === 'all'
+        ? teamSorted.length
+        : teamSorted.filter(m => (m.categories || []).includes(key)).length;
+      teamFilters.innerHTML = C.teamFilters.map((f, i) => `
+        <button
+          type="button"
+          class="team-filter${i === 0 ? ' is-active' : ''}"
+          role="tab"
+          aria-selected="${i === 0 ? 'true' : 'false'}"
+          data-filter="${esc(f.key)}"
+        >${esc(f.label)}<span class="team-filter__count">${countFor(f.key)}</span></button>
+      `).join('');
+
+      const applyFilter = (key) => {
+        teamGrid.querySelectorAll('.team-card').forEach(card => {
+          const cats = (card.dataset.categories || '').split(/\s+/).filter(Boolean);
+          const show = key === 'all' || cats.includes(key);
+          card.classList.toggle('is-hidden', !show);
+        });
+      };
+      teamFilters.addEventListener('click', e => {
+        const btn = e.target.closest('.team-filter');
+        if (!btn) return;
+        teamFilters.querySelectorAll('.team-filter').forEach(b => {
+          const active = b === btn;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        applyFilter(btn.dataset.filter);
+      });
+    }
   }
 
   // ──────────────────────────────────────────────────────────
