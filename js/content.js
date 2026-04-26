@@ -26,7 +26,7 @@ window.dreamlab_CONTENT = {
   // ──────────────────────────────────────────────────────────
   company: {
     name: 'dreamlab',
-    tagline: 'Applied Innovation Lab at MediaCity Manchester. Co-creating the future of AI, immersive tech and creative technology.',
+    tagline: 'Creative Technology Innovation Studio based across Mediacity, Manchester, Liverpool & Cumbria',
     email: 'info@dreamlab-ai.com',
     linkedin: 'https://www.linkedin.com/company/thedreamlabuk/',
     location: 'Manchester, Liverpool, Cumbria & London',
