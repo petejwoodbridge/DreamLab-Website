@@ -385,12 +385,12 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-    rgba(0,0,0,0.16) 0%,
-    rgba(0,0,0,0.14) 18%,
-    rgba(0,0,0,0.24) 38%,
-    rgba(0,0,0,0.44) 62%,
-    rgba(0,0,0,0.66) 84%,
-    rgba(0,0,0,0.80) 100%);
+    rgba(0,0,0,0.62) 0%,
+    rgba(0,0,0,0.52) 14%,
+    rgba(0,0,0,0.34) 30%,
+    rgba(0,0,0,0.16) 45%,
+    rgba(0,0,0,0.04) 56%,
+    rgba(0,0,0,0.00) 64%);
   z-index: 2;
   pointer-events: none;
 }
