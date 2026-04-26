@@ -449,6 +449,10 @@ h1, h2, h3, h4, h5 {
   padding: 32px 0 40px;
 }
 
+.hero-home .hero__content {
+  padding-top: 8px;
+}
+
 /* Homepage hero specific */
 .hero-home .hero__eyebrow {
   display: flex;
