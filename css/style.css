@@ -363,10 +363,11 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
   z-index: 0;
   isolation: isolate;
+  background: #000;
 }
 .hero__video iframe {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   width: 100vw;
   height: 56.25vw;            /* 16:9 — fills full width */
@@ -377,32 +378,26 @@ h1, h2, h3, h4, h5 {
   pointer-events: none;
   z-index: 1;
 }
-/* Layer 1: vertical fade —
-   - heavy ~88% black behind the nav so the title bar reads cleanly while
-     the video is still faintly visible (matches the left-side dark band)
-   - drops to light just below the nav so the eyebrow shows clear video
-   - ramps back up behind the body copy and bottom of the hero */
+/* Layer 1: vertical fade — light at the top so the video reads continuously
+   behind the nav and logo, ramping to dark behind the body copy. */
 .hero__video::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-    rgba(0,0,0,0.70) 0%,
-    rgba(0,0,0,0.62) 12%,
-    rgba(0,0,0,0.55) 25%,
-    rgba(0,0,0,0.55) 45%,
-    rgba(0,0,0,0.72) 75%,
+    rgba(0,0,0,0.28) 0%,
+    rgba(0,0,0,0.36) 18%,
+    rgba(0,0,0,0.55) 42%,
+    rgba(0,0,0,0.78) 75%,
     rgba(0,0,0,0.92) 100%);
   z-index: 2;
   pointer-events: none;
 }
-/* Layer 2: horizontal black-to-transparent — only below the eyebrow,
-   so the title/subtitle on the left stay readable */
+/* Layer 2: horizontal black-to-transparent on the left so the body copy reads. */
 .hero__video::after {
   content: "";
   position: absolute;
-  top: 22%;
-  left: 0; right: 0; bottom: 0;
+  inset: 0;
   background: linear-gradient(90deg,
     rgba(0,0,0,0.90) 0%,
     rgba(0,0,0,0.85) 30%,
