@@ -377,18 +377,22 @@ h1, h2, h3, h4, h5 {
   pointer-events: none;
   z-index: 1;
 }
-/* Layer 1: light vertical fade — keeps video visible behind nav + eyebrow,
-   gently darkens toward the bottom */
+/* Layer 1: vertical fade —
+   - heavy ~88% black behind the nav so the title bar reads cleanly while
+     the video is still faintly visible (matches the left-side dark band)
+   - drops to light just below the nav so the eyebrow shows clear video
+   - ramps back up behind the body copy and bottom of the hero */
 .hero__video::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-    rgba(0,0,0,0.10) 0%,
-    rgba(0,0,0,0.20) 18%,
+    rgba(0,0,0,0.90) 0px,
+    rgba(0,0,0,0.85) var(--nav-h),
+    rgba(0,0,0,0.15) calc(var(--nav-h) + 30px),
     rgba(0,0,0,0.45) 42%,
     rgba(0,0,0,0.70) 70%,
-    rgba(0,0,0,0.85) 100%);
+    rgba(0,0,0,0.88) 100%);
   z-index: 2;
   pointer-events: none;
 }
