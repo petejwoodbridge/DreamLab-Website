@@ -356,6 +356,33 @@ h1, h2, h3, h4, h5 {
   z-index: 0;
   pointer-events: none;
 }
+/* Vimeo background video — only used on homepage hero */
+.hero__video {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+.hero__video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;            /* 16:9 — fills full width */
+  min-width: 177.78vh;         /* 16:9 — fills full height when tall */
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+}
+.hero__video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.85) 100%);
+  pointer-events: none;
+}
 /* Animated orb */
 .hero__orb {
   position: absolute;
