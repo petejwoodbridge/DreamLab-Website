@@ -452,7 +452,7 @@ h1, h2, h3, h4, h5 {
 .hero__content {
   position: relative;
   z-index: 1;
-  padding: 80px 0 60px;
+  padding: 32px 0 40px;
 }
 
 /* Homepage hero specific */
@@ -513,7 +513,7 @@ h1, h2, h3, h4, h5 {
   justify-content: flex-end;
   padding-bottom: 0;
 }
-.hero-page .hero__content { padding: 100px 0 80px; }
+.hero-page .hero__content { padding: 40px 0 60px; }
 .hero-page .hero__tag { margin-bottom: 24px; }
 .hero-page .hero__title { margin-bottom: 20px; }
 .hero-page .hero__sub { color: var(--text-dim); max-width: 600px; }
