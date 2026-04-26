@@ -362,6 +362,7 @@ h1, h2, h3, h4, h5 {
   inset: 0;
   overflow: hidden;
   z-index: 0;
+  isolation: isolate;
 }
 .hero__video iframe {
   position: absolute;
@@ -374,18 +375,37 @@ h1, h2, h3, h4, h5 {
   transform: translate(-50%, -50%);
   border: 0;
   pointer-events: none;
+  z-index: 1;
 }
-.hero__video::after {
+/* Layer 1: light vertical fade — keeps video visible behind nav + eyebrow,
+   gently darkens toward the bottom */
+.hero__video::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg,
-      rgba(0,0,0,0.30) 0%,
-      rgba(0,0,0,0.40) 18%,
-      rgba(0,0,0,0.75) 42%,
-      rgba(0,0,0,0.88) 70%,
-      rgba(0,0,0,0.94) 100%);
+  background: linear-gradient(180deg,
+    rgba(0,0,0,0.10) 0%,
+    rgba(0,0,0,0.20) 18%,
+    rgba(0,0,0,0.45) 42%,
+    rgba(0,0,0,0.70) 70%,
+    rgba(0,0,0,0.85) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+/* Layer 2: horizontal black-to-transparent — only below the eyebrow,
+   so the title/subtitle on the left stay readable */
+.hero__video::after {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg,
+    rgba(0,0,0,0.90) 0%,
+    rgba(0,0,0,0.85) 30%,
+    rgba(0,0,0,0.55) 48%,
+    rgba(0,0,0,0.20) 62%,
+    rgba(0,0,0,0)    78%);
+  z-index: 3;
   pointer-events: none;
 }
 /* Animated orb */
