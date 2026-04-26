@@ -1,6 +1,6 @@
 # dreamlab
 
-> dreamlab is a creative technology studio exploring what's possible at the edge of AI, real-time computing, and immersive experience. We co-create next-generation content, products, and worlds across film, games, advertising, music, and art — working with brands, studios, and IP to turn emerging technology into impact driven creative output.
+> dreamlab is a creative technology studio exploring what's possible at the edge of AI, real-time computing, and immersive experience. We co-create next-generation content, workflows, products, and worlds across film, content, games, advertising, music, and art — working with brands, studios, and IP to turn emerging technology into impact driven creative output.
 
 Based across Manchester, Liverpool, Cumbria and London. 46+ deep tech specialists working from labs at MediaCity Manchester, Liverpool, the Lake District (Cumbria) and London.
 
