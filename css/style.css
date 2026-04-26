@@ -367,7 +367,7 @@ h1, h2, h3, h4, h5 {
 }
 .hero__video iframe {
   position: absolute;
-  top: 46%;
+  top: 42%;
   left: 50%;
   width: 100vw;
   height: 56.25vw;            /* 16:9 — fills full width */
