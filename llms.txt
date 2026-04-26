@@ -1,0 +1,44 @@
+# dreamlab
+
+> dreamlab is a creative technology agency co-creating content, products, services and experiences at the intersection of AI, Experiential Tech and Realtime Computing. Developing new possibilities across Film, Games, Advertising, Music, Art, Immersive & Interactive Experiences.
+
+Based across Manchester, Liverpool, Cumbria and London. 46+ deep tech specialists working from labs at MediaCity Manchester, Liverpool, the Lake District (Cumbria) and London.
+
+## Locations
+
+- MediaCity, Manchester — primary lab
+- Liverpool
+- Cumbria (Lake District)
+- London
+
+## What we do
+
+- AI & Automation: agents, RAG, LLM integration, intelligent workflows
+- Creative AI Workflows: generative video, image and audio pipelines
+- Model Finetuning & Training
+- Immersive Experiences: AR, VR, XR, mixed reality
+- Interactive Experiences
+- Virtual Production: realtime, in-camera VFX, LED volumes
+- Content Creation: film, advertising, music, art
+- Data & Intelligence
+- Product Development & R&D
+- Consultancy & Training
+
+## Sectors we work across
+
+Film, Games, Advertising, Music, Art, Immersive Experiences, Interactive Experiences.
+
+## Key pages
+
+- [Home](https://dreamlab.org.uk/): Overview and positioning
+- [About](https://dreamlab.org.uk/about/): Mission, values, capabilities
+- [Services](https://dreamlab.org.uk/services/): What we deliver
+- [Work](https://dreamlab.org.uk/work/): Case studies and clients
+- [Team](https://dreamlab.org.uk/team/): The 46+ specialists in the collective
+- [Contact](https://dreamlab.org.uk/contact/): Start a project, book training, explore a residency
+
+## Contact
+
+- Email: info@dreamlab-ai.com
+- LinkedIn: https://www.linkedin.com/company/thedreamlabuk/
+- Website: https://dreamlab.org.uk/
