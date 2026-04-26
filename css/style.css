@@ -534,7 +534,7 @@ h1, h2, h3, h4, h5 {
 .ticker__item img[data-slug="manchester-united"]{ max-height: 80px; max-width: 320px; }
 .ticker__item img[data-slug="manchester-city"]  { max-height: 60px; max-width: 320px; }
 .ticker__item img[data-slug="arri"]             { max-height: 70px; max-width: 320px; }
-.ticker__item img[data-slug="united-nations"]   { max-height: 80px; max-width: 320px; }
+.ticker__item img[data-slug="united-nations"]   { max-height: 60px; max-width: 320px; }
 .ticker__item img[data-slug="unilever"]         { max-height: 55px; max-width: 320px; }
 .ticker__item img[data-slug="nbc"]              { max-height: 55px; max-width: 320px; }
 .ticker__item img[data-slug="aardman-animations"] { max-height: 70px; max-width: 320px; }
