@@ -123,9 +123,9 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 clamp(24px, 3.6vw, 48px);
 }
-.container-sm { max-width: 900px; margin: 0 auto; padding: 0 40px; }
+.container-sm { max-width: 900px; margin: 0 auto; padding: 0 clamp(24px, 3.6vw, 48px); }
 
 /* --- Navigation --- */
 .nav {
@@ -356,6 +356,65 @@ h1, h2, h3, h4, h5 {
   z-index: 0;
   pointer-events: none;
 }
+/* Vimeo background video — only used on homepage hero */
+.hero__video {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  isolation: isolate;
+  background: #000;
+}
+.hero__video iframe {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 120vw;
+  height: 67.5vw;             /* Overscan 16:9 to avoid letterbox seams */
+  min-width: 213.33vh;
+  min-height: 120%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+/* Layer 1: keep top area open so video reads behind header, then ramp up
+   darkness lower down for subtitle/body readability. */
+.hero__video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(0,0,0,0.82) 0%,
+    rgba(0,0,0,0.72) 12%,
+    rgba(0,0,0,0.52) 24%,
+    rgba(0,0,0,0.28) 38%,
+    rgba(0,0,0,0.10) 50%,
+    rgba(0,0,0,0.00) 60%);
+  z-index: 2;
+  pointer-events: none;
+}
+/* Layer 2: horizontal black-to-transparent on the left so the body copy reads. */
+.hero__video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(0,0,0,0.00) 0%,
+      rgba(0,0,0,0.00) 22%,
+      rgba(0,0,0,0.30) 46%,
+      rgba(0,0,0,0.58) 100%),
+    linear-gradient(90deg,
+      rgba(0,0,0,0.86) 0%,
+      rgba(0,0,0,0.80) 30%,
+      rgba(0,0,0,0.48) 48%,
+      rgba(0,0,0,0.14) 62%,
+      rgba(0,0,0,0.00) 78%);
+  background-blend-mode: multiply;
+  z-index: 3;
+  pointer-events: none;
+}
 /* Animated orb */
 .hero__orb {
   position: absolute;
@@ -395,7 +454,11 @@ h1, h2, h3, h4, h5 {
 .hero__content {
   position: relative;
   z-index: 1;
-  padding: 80px 0 60px;
+  padding: 32px 0 40px;
+}
+
+.hero-home .hero__content {
+  padding-top: 8px;
 }
 
 /* Homepage hero specific */
@@ -410,7 +473,11 @@ h1, h2, h3, h4, h5 {
   height: 2px;
   background: var(--grad-1);
 }
-.hero-home .hero__title { margin-bottom: 32px; }
+.hero-home .hero__title {
+  margin-top: 18px;
+  margin-bottom: 22px;
+  padding-bottom: 0.08em;
+}
 .hero-home .hero__subtitle {
   max-width: 540px;
   color: var(--text-dim);
@@ -456,7 +523,7 @@ h1, h2, h3, h4, h5 {
   justify-content: flex-end;
   padding-bottom: 0;
 }
-.hero-page .hero__content { padding: 100px 0 80px; }
+.hero-page .hero__content { padding: 40px 0 60px; }
 .hero-page .hero__tag { margin-bottom: 24px; }
 .hero-page .hero__title { margin-bottom: 20px; }
 .hero-page .hero__sub { color: var(--text-dim); max-width: 600px; }
@@ -532,11 +599,11 @@ h1, h2, h3, h4, h5 {
 .ticker__item img[data-slug="audi"]             { max-height: 80px; max-width: 320px; }
 .ticker__item img[data-slug="bentley"]          { max-height: 70px; max-width: 320px; }
 .ticker__item img[data-slug="manchester-united"]{ max-height: 80px; max-width: 320px; }
-.ticker__item img[data-slug="manchester-city"]  { max-height: 80px; max-width: 320px; }
+.ticker__item img[data-slug="manchester-city"]  { max-height: 60px; max-width: 320px; }
 .ticker__item img[data-slug="arri"]             { max-height: 70px; max-width: 320px; }
-.ticker__item img[data-slug="united-nations"]   { max-height: 80px; max-width: 320px; }
-.ticker__item img[data-slug="unilever"]         { max-height: 75px; max-width: 320px; }
-.ticker__item img[data-slug="nbc"]              { max-height: 70px; max-width: 320px; }
+.ticker__item img[data-slug="united-nations"]   { max-height: 60px; max-width: 320px; }
+.ticker__item img[data-slug="unilever"]         { max-height: 55px; max-width: 320px; }
+.ticker__item img[data-slug="nbc"]              { max-height: 55px; max-width: 320px; }
 .ticker__item img[data-slug="aardman-animations"] { max-height: 70px; max-width: 320px; }
 .ticker__item img[data-slug="bt"]               { max-height: 65px; max-width: 320px; }
 .ticker__item img[data-slug="universal-music-group"] { max-height: 65px; max-width: 320px; }
@@ -1922,7 +1989,7 @@ h1, h2, h3, h4, h5 {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .container, .container-sm { padding: 0 24px; }
+  .container, .container-sm { padding: 0 clamp(24px, 4.2vw, 36px); }
   .about-blurb,
   .team-intro,
   .contact-layout { grid-template-columns: 1fr; gap: 48px; }
@@ -1932,6 +1999,20 @@ h1, h2, h3, h4, h5 {
   .footer__top { grid-template-columns: 1fr 1fr; gap: 40px; }
   .work-stats { grid-template-columns: repeat(2, 1fr); }
   .hero__stat { min-width: 120px; }
+}
+
+/* Taller desktop/tablet windows (4:3 and squarer): add extra safe gutter. */
+@media (min-width: 769px) and (max-aspect-ratio: 4/3) {
+  .container,
+  .container-sm,
+  .nav__inner {
+    padding-left: clamp(40px, 7vw, 88px);
+    padding-right: clamp(40px, 7vw, 88px);
+  }
+
+  .hero-home .hero__title {
+    font-size: clamp(62px, 8.2vw, 118px);
+  }
 }
 
 @media (max-width: 768px) {

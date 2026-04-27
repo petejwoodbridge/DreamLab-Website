@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dreamlab - Creative Innovation Studio</title>
-  <meta name="description" content="dreamlab is a creative innovation studio based across Manchester, Liverpool, Cumbria &amp; London. 46+ specialists in AI, immersive tech, content, strategy and creative technology.">
-  <meta name="robots" content="index, follow">
+  <title>dreamlab - Creative Technology & Innovation Studio. Manchester, Liverpool, Cumbria, London</title>
+  <meta name="description" content="dreamlab is a creative technology studio exploring what's possible at the edge of AI, real-time computing, and immersive experience. Co-creating next-generation content, workflows, products and worlds across film, content, games, advertising, music and art with brands, studios and IP. Manchester, Liverpool, Cumbria &amp; London.">
+  <meta name="keywords" content="creative technology agency, AI agency, experiential technology, realtime computing, immersive experiences, interactive experiences, virtual production, generative AI, creative AI, film, games, advertising, music, art, Manchester, Liverpool, Cumbria, London, MediaCity">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="https://dreamlab.org.uk/">
+  <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
+  <link rel="preconnect" href="https://i.vimeocdn.com" crossorigin>
+  <link rel="preconnect" href="https://f.vimeocdn.com" crossorigin>
+  <link rel="dns-prefetch" href="https://player.vimeo.com">
+  <link rel="dns-prefetch" href="https://i.vimeocdn.com">
+  <link rel="dns-prefetch" href="https://f.vimeocdn.com">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="dreamlab">
-  <meta property="og:title" content="dreamlab - Creative Innovation Studio">
-  <meta property="og:description" content="dreamlab is a creative innovation studio based across Manchester, Liverpool, Cumbria &amp; London. 46+ specialists in AI, immersive tech, content, strategy and creative technology.">
+  <meta property="og:title" content="dreamlab - Creative Technology &amp; Innovation Studio. Manchester, Liverpool, Cumbria, London">
+  <meta property="og:description" content="dreamlab is a creative technology studio exploring what's possible at the edge of AI, real-time computing, and immersive experience. Co-creating next-generation content, workflows, products and worlds across film, content, games, advertising, music and art with brands, studios and IP.">
   <meta property="og:url" content="https://dreamlab.org.uk/">
   <meta property="og:image" content="https://dreamlab.org.uk/img/og-image.svg">
   <meta property="og:image:width" content="1200">
@@ -21,8 +28,8 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@thedreamlab">
-  <meta name="twitter:title" content="dreamlab - Creative Innovation Studio">
-  <meta name="twitter:description" content="dreamlab is a creative innovation studio based across Manchester, Liverpool, Cumbria &amp; London. 46+ specialists in AI, immersive tech, content, strategy and creative technology.">
+  <meta name="twitter:title" content="dreamlab - Creative Technology &amp; Innovation Studio">
+  <meta name="twitter:description" content="Creative technology studio at the edge of AI, real-time computing and immersive experience. Co-creating content, workflows, products and worlds across film, content, games, advertising, music and art with brands, studios and IP.">
   <meta name="twitter:image" content="https://dreamlab.org.uk/img/og-image.svg">
 
   <!-- JSON-LD: Organisation -->
@@ -31,22 +38,55 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "dreamlab",
-    "alternateName": "dreamlab Creative Innovation Studio",
+    "alternateName": ["dreamlab Creative Technology Agency", "dreamlab Creative Innovation Studio"],
     "url": "https://dreamlab.org.uk/",
     "logo": "https://dreamlab.org.uk/img/dreamlab-logo.png",
-    "description": "dreamlab is a creative innovation studio based across Manchester, Liverpool, Cumbria and London. 46+ specialists in AI, immersive tech, content, strategy and creative technology.",
+    "description": "dreamlab is a creative technology studio exploring what's possible at the edge of AI, real-time computing, and immersive experience. We co-create next-generation content, workflows, products and worlds across film, content, games, advertising, music and art, working with brands, studios and IP to turn emerging technology into impact driven creative output. Based across Manchester, Liverpool, Cumbria and London.",
+    "slogan": "We build the future.",
     "foundingDate": "2024",
     "email": "info@dreamlab-ai.com",
     "areaServed": "GB",
     "address": [
       {"@type": "PostalAddress", "addressLocality": "MediaCity", "addressRegion": "Manchester", "addressCountry": "GB"},
       {"@type": "PostalAddress", "addressLocality": "Liverpool", "addressCountry": "GB"},
-      {"@type": "PostalAddress", "addressLocality": "Cumbria", "addressCountry": "GB"}
+      {"@type": "PostalAddress", "addressLocality": "Cumbria", "addressCountry": "GB"},
+      {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}
     ],
     "sameAs": [
       "https://www.linkedin.com/company/thedreamlabuk/"
     ],
-    "knowsAbout": ["Artificial Intelligence", "Immersive Technology", "Creative Technology", "Content Creation", "Virtual Production", "Data Analytics", "Machine Learning", "Extended Reality"]
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Experiential Technology",
+      "Realtime Computing",
+      "Immersive Experiences",
+      "Live Experiences",
+      "Interactive Experiences",
+      "Creative Technology",
+      "Virtual Production",
+      "Content Creation",
+      "Film Production",
+      "Games",
+      "Advertising",
+      "Music",
+      "Art",
+      "Machine Learning",
+      "Extended Reality",
+      "Data Analytics"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite (sitelinks search box hint) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "dreamlab",
+    "url": "https://dreamlab.org.uk/",
+    "description": "Creative technology studio at the edge of AI, real-time computing and immersive experience. Co-creating content, workflows, products and worlds across film, content, games, advertising, music and art with brands, studios and IP.",
+    "publisher": { "@type": "Organization", "name": "dreamlab" }
   }
   </script>
 
@@ -120,21 +160,39 @@
   <!-- ── HERO ─────────────────────────────────────────────── -->
   <section class="hero hero-home">
     <div class="hero__bg">
+      <div class="hero__video" aria-hidden="true">
+        <iframe
+          id="hero-vimeo"
+          src="https://player.vimeo.com/video/752327357?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;autopause=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;api=1&amp;player_id=hero-vimeo"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          title="dreamlab showreel"
+          fetchpriority="high"
+          loading="eager"
+          tabindex="-1"></iframe>
+      </div>
       <div class="hero__grid"></div>
       <div class="hero__orb hero__orb-1"></div>
       <div class="hero__orb hero__orb-2"></div>
       <div class="hero__orb hero__orb-3"></div>
     </div>
     <div class="hero__content container">
-      <div class="hero__eyebrow reveal">
+      <h1 class="display hero__title reveal">
+        WE BUILD<br>THE <em>FUTURE</em>
+      </h1>
+      <div class="hero__eyebrow reveal reveal-delay-1">
         <div class="hero__eyebrow-line"></div>
         <span class="label">Labs across Manchester · Liverpool · Cumbria · London</span>
       </div>
-      <h1 class="display hero__title reveal reveal-delay-1">
-        WE BUILD<br>THE <em>FUTURE</em>
-      </h1>
       <p class="body-lg hero__subtitle reveal reveal-delay-2">
-        dreamlab is a creative technology agency co-creating content, products, services and experiences at the intersection of AI, Experiential Tech and Realtime Computing.
+        dreamlab is a creative technology studio exploring what's possible at the edge of AI, real-time computing, and immersive experience.
+      </p>
+      <p class="body-lg hero__subtitle reveal reveal-delay-2" style="margin-top: 16px;">
+        We co-create next-generation content, workflows, products, and worlds across film, media, games, advertising, music, and immersive experiences &mdash; partnering with brands, studios, and IP owners to push what's possible.
+      </p>
+      <p class="body-lg hero__subtitle reveal reveal-delay-2" style="margin-top: 16px;">
+        Transforming ideas into scalable opportunities through emerging technologies.
       </p>
       <div class="hero__actions reveal reveal-delay-3">
         <a href="/work/" class="btn btn-primary">
@@ -311,7 +369,7 @@
           <a href="/" class="nav__logo" style="margin-bottom: 16px;">
             <span class="nav__logo-dot"></span><span class="nav__logo-text">dreamlab</span>
           </a>
-          <p>Applied Innovation Lab at MediaCity Manchester. Co-creating the future of AI, immersive tech and creative technology.</p>
+          <p>Creative Technology Innovation Studio based across Mediacity, Manchester, Liverpool & Cumbria</p>
         </div>
         <div class="footer__col">
           <h4>Navigate</h4>
@@ -336,6 +394,7 @@
         <div class="footer__col">
           <h4>Connect</h4>
           <ul>
+            <li><a href="/contact/">Contact</a></li>
             <li><a href="https://www.linkedin.com/company/thedreamlabuk/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
           </ul>
         </div>

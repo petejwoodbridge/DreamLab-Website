@@ -130,6 +130,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Contact form submission handled by Formsubmit.co (see contact.html)
 
+  // ── Homepage Vimeo autoplay nudge (cross-browser reliability) ──
+  const heroVimeo = document.getElementById('hero-vimeo');
+  if (heroVimeo && heroVimeo.tagName === 'IFRAME') {
+    const vimeoOrigin = 'https://player.vimeo.com';
+    const sendPlay = () => {
+      if (!heroVimeo.contentWindow) return;
+      heroVimeo.contentWindow.postMessage(JSON.stringify({ method: 'play' }), vimeoOrigin);
+      heroVimeo.contentWindow.postMessage(JSON.stringify({ method: 'setVolume', value: 0 }), vimeoOrigin);
+    };
+
+    heroVimeo.addEventListener('load', () => {
+      // A few quick retries handle cases where autoplay is delayed by player init.
+      [0, 200, 600, 1200].forEach(delay => {
+        window.setTimeout(sendPlay, delay);
+      });
+    }, { once: true });
+
+    // If browser throttles first load, try once more after first paint.
+    window.setTimeout(sendPlay, 1600);
+  }
+
   // ── Smooth hover cursor glow (optional subtle effect) ──────
   const cards = document.querySelectorAll('.card, .service-card, .team-card, .sector-card, .client-item');
   cards.forEach(card => {
