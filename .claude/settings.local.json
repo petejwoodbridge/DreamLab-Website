@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"require\\('d:/VSCODE PROJECTS/DreamLab Website/js/content.js'\\); const c = global.window && window.dreamlab_CONTENT; console.log\\('OK'\\);\")",
+      "Bash(node --check \"d:/VSCODE PROJECTS/DreamLab Website/js/content.js\")",
+      "Bash(node --check \"d:/VSCODE PROJECTS/DreamLab Website/js/render.js\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node -e ' *)",
+      "Bash(git commit -m 'feat: add ComfyUI and AI Workflows to Lewis Hackett *)"
+    ]
+  }
+}
