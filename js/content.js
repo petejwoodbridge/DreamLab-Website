@@ -37,7 +37,7 @@ window.dreamlab_CONTENT = {
   // HEADLINE STATS (homepage + work page)
   // ──────────────────────────────────────────────────────────
   stats: [
-    { value: '46',  suffix: '+',  label: 'Deep tech specialists' },
+    { value: '47',  suffix: '+',  label: 'Deep tech specialists' },
     { value: '100', suffix: '+',  label: 'Businesses supported' },
     { value: '35',  suffix: '+',  label: 'Collaborative projects' },
     { value: '2',   suffix: '.7M', prefix: '£', label: 'Innovation investment' },
@@ -903,6 +903,25 @@ window.dreamlab_CONTENT = {
         { label: 'Co-creation Spaces', color: 'cyan' },
       ],
       categories: ['ai', 'workflows', 'training', 'data'],
+    },
+
+    {
+      image: '/img/team/47.jpg',
+      initials: 'TM',
+      avatarGradient: 'linear-gradient(135deg,#f59e0b,#ec4899)',
+      name: 'Tom Marshall',
+      role: 'Creative Director & Digital Content Specialist',
+      bio: `Tom is a Manchester-based creative director, video producer and digital skills trainer with over 10 years of experience helping organisations tell compelling stories through film and content. Founder of the "Where's My Lightbulb?" creative brand, he works with businesses, students and community groups to unlock creative confidence — combining hands-on video production with accessible training that makes digital skills stick.`,
+      tags: [
+        { label: 'Video Production' },
+        { label: 'Creative Direction', color: 'cyan' },
+        { label: 'Digital Skills Training', color: 'pink' },
+        { label: 'Content Strategy', color: 'green' },
+        { label: 'Storytelling' },
+        { label: 'Community Engagement', color: 'cyan' },
+      ],
+      categories: ['creative', 'film', 'training', 'design'],
+      linkedin: 'https://www.linkedin.com/in/tommarshallcreative/',
     },
 
     // 👆 Copy any block above and edit to add a new team member.
