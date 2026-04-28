@@ -8,7 +8,9 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(node -e ' *)",
-      "Bash(git commit -m 'feat: add ComfyUI and AI Workflows to Lewis Hackett *)"
+      "Bash(git commit -m 'feat: add ComfyUI and AI Workflows to Lewis Hackett *)",
+      "WebFetch(domain:www.tomscreativecanvas.co.uk)",
+      "Bash(grep -n \"46.jpg\\\\|team member\\\\|},\\\\s*$\" \"d:/VSCODE PROJECTS/DreamLab Website/js/content.js\")"
     ]
   }
 }
