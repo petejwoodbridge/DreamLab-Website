@@ -40,6 +40,19 @@
 </head>
 <body>
 
+  <!-- ── GLOBAL BACKGROUND VIDEO (persists across SPA navigation) ── -->
+  <div id="global-video-bg" aria-hidden="true">
+    <iframe
+      id="hero-vimeo"
+      src="https://player.vimeo.com/video/1186974219?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;autopause=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;api=1&amp;player_id=hero-vimeo"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      fetchpriority="high"
+      loading="eager"
+      tabindex="-1"></iframe>
+  </div>
+
   <!-- ── NAV ──────────────────────────────────────────────── -->
   <nav class="nav">
     <div class="nav__inner">
@@ -72,6 +85,8 @@
       <a href="/contact/"  class="nav__link">Contact</a>
     </div>
   </nav>
+
+  <div id="page-content">
 
   <!-- ── HERO ─────────────────────────────────────────────── -->
   <section class="hero hero-page">
@@ -493,6 +508,8 @@
       </div>
     </div>
   </footer>
+
+  </div><!-- #page-content -->
 
   <script src="../js/content.js"></script>
   <script src="../js/render.js"></script>

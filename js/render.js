@@ -6,6 +6,7 @@
    ============================================================ */
 
 (function () {
+  const run = function () {
   const C = window.dreamlab_CONTENT;
   if (!C) { console.warn('dreamlab content missing'); return; }
 
@@ -377,4 +378,7 @@
     if (labelEl) labelEl.textContent = stat.label;
   });
 
+  }; // end run()
+  window.__dlRender = run;
+  run();
 })();

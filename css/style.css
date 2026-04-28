@@ -49,9 +49,9 @@
 
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--bg); }
 body {
-  background: var(--bg);
+  background: transparent;
   color: var(--text);
   font-family: var(--font-body);
   font-size: 16px;
@@ -321,8 +321,8 @@ h1, h2, h3, h4, h5 {
 }
 
 /* --- Section spacing --- */
-.section { padding: 64px 0; }
-.section-sm { padding: 40px 0; }
+.section { padding: 64px 0; background: var(--bg); }
+.section-sm { padding: 40px 0; background: var(--bg); }
 
 /* Section label row */
 .section-label-row {
@@ -336,6 +336,75 @@ h1, h2, h3, h4, h5 {
   flex: 1;
   height: 1px;
   background: var(--border);
+}
+
+/* ============================================================
+   GLOBAL PERSISTENT VIDEO BACKGROUND
+   Fixed behind all pages — stays alive across SPA navigation.
+   Contact page never renders this element.
+   ============================================================ */
+#global-video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: #000;
+  pointer-events: none;
+  overflow: hidden;
+}
+#global-video-bg iframe {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 120vw;
+  height: 67.5vw;
+  min-width: 213.33vh;
+  min-height: 120%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+/* Top gradient — dark at header, fades to transparent mid-screen */
+#global-video-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(0,0,0,0.82) 0%,
+    rgba(0,0,0,0.72) 12%,
+    rgba(0,0,0,0.52) 24%,
+    rgba(0,0,0,0.28) 38%,
+    rgba(0,0,0,0.10) 50%,
+    rgba(0,0,0,0.00) 60%);
+  z-index: 2;
+  pointer-events: none;
+}
+/* Side + bottom gradient — left edge dark for text legibility */
+#global-video-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(0,0,0,0.00) 0%,
+      rgba(0,0,0,0.00) 22%,
+      rgba(0,0,0,0.30) 46%,
+      rgba(0,0,0,0.58) 100%),
+    linear-gradient(90deg,
+      rgba(0,0,0,0.86) 0%,
+      rgba(0,0,0,0.80) 30%,
+      rgba(0,0,0,0.48) 48%,
+      rgba(0,0,0,0.14) 62%,
+      rgba(0,0,0,0.00) 78%);
+  background-blend-mode: multiply;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Page content wrapper — sits above the fixed video */
+#page-content {
+  position: relative;
+  z-index: 1;
 }
 
 /* ============================================================
