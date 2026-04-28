@@ -166,21 +166,25 @@ function afterNavigate() {
   if (typeof window.__dlRender === 'function') window.__dlRender();
 }
 
+// ── Re-execute scripts inside swapped content ────────────────
+// innerHTML assignment doesn't run <script> tags; this fixes that.
+function reExecuteScripts(container) {
+  container.querySelectorAll('script').forEach(old => {
+    const s = document.createElement('script');
+    Array.from(old.attributes).forEach(a => s.setAttribute(a.name, a.value));
+    s.textContent = old.textContent;
+    old.parentNode.replaceChild(s, old);
+  });
+}
+
 // ── SPA Navigation ───────────────────────────────────────────
 // Intercepts internal link clicks to swap #page-content without
 // reloading the page, keeping the background video playing.
-// Contact page always triggers a full reload (excluded from SPA).
 
 async function navigateTo(url, pushState = true) {
   const parsed = new URL(url, window.location.origin);
   const path = parsed.pathname;
   const hash = parsed.hash;
-
-  // Contact page: full reload
-  if (path.startsWith('/contact')) {
-    window.location.href = url;
-    return;
-  }
 
   // Same path + hash only: just scroll
   if (path === window.location.pathname && hash) {
@@ -201,6 +205,7 @@ async function navigateTo(url, pushState = true) {
     if (!newContent || !curContent) { window.location.href = url; return; }
 
     curContent.innerHTML = newContent.innerHTML;
+    reExecuteScripts(curContent);
     document.title = doc.title;
 
     if (pushState) history.pushState({ path }, '', url);
