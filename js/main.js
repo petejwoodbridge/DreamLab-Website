@@ -159,11 +159,11 @@ function initVimeoAutoplay() {
 // ── Re-init after SPA navigation ────────────────────────────
 function afterNavigate() {
   updateActiveNav();
-  initScrollReveal();
   initCounters();
   initServicesNav();
   initCardGlow();
   if (typeof window.__dlRender === 'function') window.__dlRender();
+  initScrollReveal(); // must run after __dlRender so dynamically-rendered cards exist
 }
 
 // ── Re-execute scripts inside swapped content ────────────────
