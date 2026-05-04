@@ -188,7 +188,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/29.webp',
       initials: 'BS',
-      avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
+      avatarGradient: 'linear-gradient(135deg,#7ed957,#06b6d4)',
       name: 'Bernard Steer',
       role: 'Spatial Audio Consultant',
       bio: `Bernard is a spatial audio consultant and Avid ACI-certified Pro Tools trainer with 20+ years in creative technology. He founded compact Dolby Atmos / DTS-X monitoring solutions used across UK post-production, and leads spatial-audio consultancy for immersive-tech residencies at MediaCity's dreamlab. Bernard has worked with broadcasters, post houses and music studios bridging Avid, Dolby and Pro Tools ecosystems.`,
@@ -243,7 +243,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/20.webp',
       initials: 'AR',
-      avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
+      avatarGradient: 'linear-gradient(135deg,#7ed957,#06b6d4)',
       name: 'Annabeth Robinson',
       role: 'Creative Technologist',
       bio: `Annabeth is a creative technologist and filmmaker with 20+ years teaching animation, immersive technologies and game platforms. An SFHEA-accredited educator and award-winning researcher, she leads innovation in serious games and digital learning across UK higher-education and industry partners.`,
@@ -262,7 +262,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/06.webp',
       initials: 'MG',
-      avatarGradient: 'linear-gradient(135deg,#06b6d4,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#06b6d4,#7ed957)',
       name: 'Marco E. Ghilardi',
       role: 'Simulation & Modelling Expert',
       bio: `Marco is a simulation and modelling expert with extensive experience in motorsport and automotive engineering. As founder of QuasiScience Ltd he tackles complex engineering challenges using advanced data analysis, CFD and numerical simulation — delivering high-impact solutions in performance-driven environments. He holds an MBA and bridges rigorous analytical method with real-world engineering delivery.`,
@@ -281,7 +281,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/07.webp',
       initials: 'JC',
-      avatarGradient: 'linear-gradient(135deg,#7c3aed,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#7c3aed,#7ed957)',
       name: 'Jon Cooke',
       role: 'Senior Developer · Full Stack',
       bio: `Jon is a senior full stack developer with 20+ years in front- and back-end development. Working across AWS, Azure and Google Cloud ecosystems, he delivers scalable, secure and user-focused applications for clients across finance, media and public-sector with expertise in cloud-native systems and DevOps.`,
@@ -407,7 +407,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/39.webp',
       initials: 'KC',
-      avatarGradient: 'linear-gradient(135deg,#10b981,#7c3aed)',
+      avatarGradient: 'linear-gradient(135deg,#7ed957,#7c3aed)',
       name: 'Kat Cook',
       role: 'Outdoor Design & Integration Specialist',
       bio: `Kat is an outdoor design and integration specialist, blending landscape architecture, horticultural science and ecological design with creative technologies. With training from leading institutions, she brings artistic vision and scientific expertise to innovative environmental projects.`,
@@ -441,7 +441,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/41.webp',
       initials: 'MW',
-      avatarGradient: 'linear-gradient(135deg,#ec4899,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#ec4899,#7ed957)',
       name: 'Mandy Wang',
       role: 'Creative Project Management',
       bio: `Mandy is a seasoned creative project manager and producer with extensive experience in video production, radio recording, digital marketing, live events and print. She has worked with Adidas, AstraZeneca, Myprotein and Puma — delivering high-profile campaigns, drone shows and multimedia productions with meticulous stakeholder and talent management.`,
@@ -458,7 +458,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/10.webp',
       initials: 'RM',
-      avatarGradient: 'linear-gradient(135deg,#10b981,#7c3aed)',
+      avatarGradient: 'linear-gradient(135deg,#7ed957,#7c3aed)',
       name: 'Roger McKinley',
       role: 'Creative Technology & Content Manager',
       bio: `Roger is a creative technology and content manager at the University of Salford, specialising in immersive technology, virtual production and live performance research. He has led major R&D projects backed by AHRC and Arts Council England, and authored key publications in artistic research and digital culture.`,
@@ -476,7 +476,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/28.webp',
       initials: 'CB',
-      avatarGradient: 'linear-gradient(135deg,#ec4899,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#ec4899,#7ed957)',
       name: 'Cheryl Blake',
       role: 'Stop-Motion Animator & Community Musician',
       bio: `Cheryl is a stop-motion animator and community musician, recognised with a Ray Harryhausen Award and an MA in Animation (Distinction). Through Katuka Studios she creates award-winning short films addressing social themes, and leads inclusive workshops in music, percussion and animation.`,
@@ -532,7 +532,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/14.webp',
       initials: 'HS',
-      avatarGradient: 'linear-gradient(135deg,#ec4899,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#ec4899,#7ed957)',
       name: 'Haydn Secker',
       role: 'Animation Producer',
       bio: `Haydn is an animation producer with 25+ years in stop-frame animation, writing and directing for film, television and games. He has led BAFTA-nominated and award-winning productions for broadcasters and studios across the UK, skilled across every stage from script development to on-set direction.`,
@@ -642,7 +642,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/23.webp',
       initials: 'JS',
-      avatarGradient: 'linear-gradient(135deg,#7c3aed,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#7c3aed,#7ed957)',
       name: 'James Spiers',
       role: 'Partnerships & Business Development',
       bio: `James is a business development and partnerships specialist with 12+ years driving digital and tech innovation. He excels in stakeholder engagement, grant sourcing and ecosystem-building across immersive technologies, gaming and the creative industries — with experience brokering partnerships between SMEs, universities and public-sector funders.`,
@@ -678,7 +678,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/26.webp',
       initials: 'TM',
-      avatarGradient: 'linear-gradient(135deg,#10b981,#7c3aed)',
+      avatarGradient: 'linear-gradient(135deg,#7ed957,#7c3aed)',
       name: 'Thadeous Matthews',
       role: 'Technical Artist & Broadcast Operator',
       bio: `Thadeous is a senior technical artist and broadcast operator, blending Unreal Engine, TouchDesigner and multi-camera directing. He delivers 3D design, motion graphics and hands-on support for broadcast gallery launches, VR staging and immersive performance-capture projects with UK studios and broadcasters.`,
@@ -734,7 +734,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/31.webp',
       initials: 'AB',
-      avatarGradient: 'linear-gradient(135deg,#f59e0b,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#f59e0b,#7ed957)',
       name: 'Dr Andy Bennett',
       role: 'Partnerships, Funding & Development',
       bio: `Andy is a partnerships and funding specialist with a PhD in geology and 20+ years delivering projects in technology-rich organisations. He excels in developing innovative technical solutions, fostering cross-sector collaborations and advising businesses on technology integration.`,
@@ -768,7 +768,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/33.webp',
       initials: 'WL',
-      avatarGradient: 'linear-gradient(135deg,#06b6d4,#10b981)',
+      avatarGradient: 'linear-gradient(135deg,#06b6d4,#7ed957)',
       name: 'Will Lewis-Clarke',
       role: 'Delivery Manager & QA',
       bio: `Will is a delivery manager and QA practitioner with 26+ years across banking, retail, utilities and public-sector programmes — including major UK financial, energy and government clients. He specialises in Agile delivery, SAFe QA coaching and test management, delivering bespoke training and quality strategies for complex, multi-vendor initiatives.`,
@@ -820,7 +820,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/36.webp',
       initials: 'TD',
-      avatarGradient: 'linear-gradient(135deg,#10b981,#ec4899)',
+      avatarGradient: 'linear-gradient(135deg,#7ed957,#ec4899)',
       name: 'Dr Toby Duckworth',
       role: 'Embedded Systems Specialist',
       bio: `Toby is an embedded systems specialist with decades of experience in high-performance software engineering. He develops novel low-level algorithms for live and interactive media installations and provides international, multi-lingual support engineering.`,
@@ -890,7 +890,7 @@ window.dreamlab_CONTENT = {
     {
       image: '/img/team/44.webp',
       initials: 'PL',
-      avatarGradient: 'linear-gradient(135deg,#10b981,#06b6d4)',
+      avatarGradient: 'linear-gradient(135deg,#7ed957,#06b6d4)',
       name: 'Our Physical Labs',
       role: 'Global AI Development Network',
       bio: `dreamlab operates a distributed network of physical laboratory spaces across multiple locations, enabling hands-on research, development and training in AI and machine learning. Our labs are equipped with high-performance computing, specialised ML hardware and collaborative spaces designed for intensive deep learning projects and residential training programmes.`,

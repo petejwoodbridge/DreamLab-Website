@@ -26,6 +26,18 @@
   const dotClass = c => `dot-${c || 'purple'}`;
   const revealDelay = i => i > 0 ? `reveal-delay-${Math.min(i, 3)}` : '';
 
+  // Resolve absolute "/img/..." asset paths against the current page so they
+  // work both on a real web server (where "/" is the doc root) and via file://
+  // (where "/" hits the filesystem root). When the page lives in a known
+  // subdirectory we prepend "../"; at the root we prepend "./".
+  const SUBDIR_RE = /\/(work|team|about|services|contact)\/[^/]*$/i;
+  const ASSET_PREFIX = SUBDIR_RE.test(window.location.pathname) ? '..' : '.';
+  const resolveAsset = (p) => {
+    if (!p || /^https?:\/\//i.test(p) || p.startsWith('//')) return p;
+    if (p.startsWith('/')) return ASSET_PREFIX + p;
+    return p;
+  };
+
   const linkedinSvg = `<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>`;
 
   // ──────────────────────────────────────────────────────────
@@ -49,7 +61,7 @@
     const renderCard = (m, i) => `
       <div class="team-card reveal ${revealDelay(i % 3)}" data-categories="${esc((m.categories || []).join(' '))}">
         <div class="team-card__header">
-          <div class="team-card__avatar${m.image ? ' team-card__avatar--img' : ''}"${!m.image && m.avatarGradient ? ` style="background: ${m.avatarGradient};"` : ''}>${m.image ? `<img src="${esc(m.image)}" alt="${esc(m.name)}" loading="lazy" onerror="this.parentElement.classList.remove('team-card__avatar--img'); this.parentElement.style.background='${esc(m.avatarGradient || 'var(--grad-1)')}'; this.outerHTML='${esc(m.initials || '')}';">` : esc(m.initials)}</div>
+          <div class="team-card__avatar${m.image ? ' team-card__avatar--img' : ''}"${!m.image && m.avatarGradient ? ` style="background: ${m.avatarGradient};"` : ''}>${m.image ? `<img src="${esc(resolveAsset(m.image))}" alt="${esc(m.name)}" loading="lazy" onerror="this.parentElement.classList.remove('team-card__avatar--img'); this.parentElement.style.background='${esc(m.avatarGradient || 'var(--grad-1)')}'; this.outerHTML='${esc(m.initials || '')}';">` : esc(m.initials)}</div>
           <div>
             <div class="team-card__name">${esc(m.name)}</div>
             <div class="team-card__role">${esc(m.role)}</div>
@@ -57,7 +69,7 @@
         </div>
         <p class="team-card__bio">${esc(m.bio)}</p>
         <div class="team-card__tags">
-          ${(m.tags || []).map(t => `<span class="${tagClass(t.color)}">${esc(t.label)}</span>`).join('')}
+          ${(m.tags || []).map((t, idx) => `<span class="tag ${idx % 2 === 0 ? 'tag-pink' : 'tag-cyan'}">${esc(t.label)}</span>`).join('')}
         </div>
         <div class="team-card__footer">
           ${m.award ? `<div class="team-card__award"><span class="team-card__award-icon">★</span>${esc(m.award)}</div>` : '<div></div>'}
@@ -115,7 +127,7 @@
     const exts = img.dataset.exts ? img.dataset.exts.split(',') : [];
     if (exts.length) {
       img.dataset.exts = exts.slice(1).join(',');
-      img.src = `/img/clients/${img.dataset.slug}.${exts[0]}`;
+      img.src = resolveAsset(`/img/clients/${img.dataset.slug}.${exts[0]}`);
     } else {
       const span = document.createElement('span');
       span.className = img.classList.contains('client-item__logo') ? 'client-item__name' : 'ticker__item-text';
@@ -129,7 +141,7 @@
     const name = typeof c === 'string' ? c : c.name;
     const s = slug(name);
     const custom = typeof c === 'object' && c.logo;
-    const initialSrc = custom ? c.logo : `/img/clients/${s}.${clientLogoExts[0]}`;
+    const initialSrc = resolveAsset(custom ? c.logo : `/img/clients/${s}.${clientLogoExts[0]}`);
     const exts = custom ? '' : clientLogoExts.slice(1).join(',');
     return `
       <div class="client-item reveal reveal-delay-${i % 4}" title="${esc(name)}">
@@ -241,7 +253,7 @@
       const name = typeof c === 'string' ? c : c.name;
       const s = slug(name);
       const custom = typeof c === 'object' && c.logo;
-      const initialSrc = custom ? c.logo : `/img/clients/${s}.${clientLogoExts[0]}`;
+      const initialSrc = resolveAsset(custom ? c.logo : `/img/clients/${s}.${clientLogoExts[0]}`);
       const exts = custom ? '' : clientLogoExts.slice(1).join(',');
       return `<div class="ticker__item" title="${esc(name)}">
         <img src="${initialSrc}" alt="${esc(name)}"
