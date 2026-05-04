@@ -3,7 +3,7 @@
    ============================================================ */
 
 /* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&display=swap');
 /* Extra display faces for the "you?" filler tiles — each reads like a tiny logo */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,700&family=Pacifico&family=Space+Mono:wght@700&family=Lobster&family=Righteous&display=swap');
 
@@ -37,7 +37,7 @@
 
   --font-display: 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
   --font-brand:   'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
-  --font-body:    'Inter', system-ui, sans-serif;
+  --font-body:    'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   --nav-h: 72px;
   --radius: 16px;
@@ -204,9 +204,9 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s;
 }
 .nav__social:hover {
-  color: var(--text);
-  border-color: var(--border-h);
-  background: var(--bg-card);
+  color: #05050e;
+  border-color: var(--cyan);
+  background: var(--cyan);
 }
 .nav__social svg { width: 16px; height: 16px; }
 
@@ -270,10 +270,11 @@ h1, h2, h3, h4, h5 {
   background: transparent;
 }
 .btn-outline:hover {
-  background: var(--cyan);
-  border-color: var(--cyan);
-  color: #05050e;
+  background: var(--pink);
+  border-color: var(--pink);
+  color: #fff;
   transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(238, 62, 201, 0.4);
 }
 .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
@@ -296,15 +297,15 @@ h1, h2, h3, h4, h5 {
   display: inline-flex;
   align-items: center;
   padding: 4px 12px;
-  background: rgba(238, 62, 201, 0.12);
-  border: 1px solid rgba(238, 62, 201, 0.3);
+  background: var(--bg);
+  border: 1px solid var(--pink);
   border-radius: 99px;
   font-size: 12px;
   font-weight: 500;
-  color: #f578d9;
+  color: #fff;
 }
-.tag-cyan  { background: rgba(0,255,255,0.1);  border-color: rgba(0,255,255,0.3);  color: #67ecff; }
-.tag-pink  { background: rgba(238,62,201,0.12); border-color: rgba(238,62,201,0.3); color: #f578d9; }
+.tag-cyan  { background: var(--bg); border-color: var(--cyan); color: #fff; }
+.tag-pink  { background: var(--bg); border-color: var(--pink); color: #fff; }
 .tag-green { background: rgba(126,217,87,0.1); border-color: rgba(126,217,87,0.25); color: #6ee7b7; }
 
 /* --- Divider --- */
@@ -894,6 +895,12 @@ h1, h2, h3, h4, h5 {
 }
 .team-card__bio { font-size: 14px; color: var(--text-dim); line-height: 1.65; }
 .team-card__tags { display: flex; flex-wrap: wrap; gap: 8px; }
+/* Team-page tag style reverts to the deployed dreamlab.org.uk/team look:
+   transparent tinted background, soft accent text, faint border. The global
+   .tag-pink / .tag-cyan classes keep their stronger black-bg styling for
+   homepage / about / team-header use. */
+.team-card .tag-pink { background: rgba(238, 62, 201, 0.12); border-color: rgba(238, 62, 201, 0.3); color: #f578d9; }
+.team-card .tag-cyan { background: rgba(0, 255, 255, 0.1); border-color: rgba(0, 255, 255, 0.3); color: #67ecff; }
 .team-card__footer {
   margin-top: auto;
   padding-top: 20px;
@@ -1241,9 +1248,9 @@ h1, h2, h3, h4, h5 {
 }
 .services-nav__btn:hover,
 .services-nav__btn.active {
-  color: var(--text);
-  background: var(--bg-card-h);
-  border-color: var(--border-h);
+  color: #fff;
+  background: var(--pink);
+  border-color: var(--pink);
 }
 
 .service-section {
@@ -1360,9 +1367,9 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s;
 }
 .contact-social-link:hover {
-  color: var(--text);
-  background: var(--bg-card-h);
-  border-color: var(--border-h);
+  color: #fff;
+  background: var(--pink);
+  border-color: var(--pink);
 }
 
 /* Contact form */
@@ -1991,7 +1998,7 @@ h1, h2, h3, h4, h5 {
   color: var(--text-dim);
   transition: color 0.2s;
 }
-.footer__col a:hover { color: var(--text); }
+.footer__col a:hover { color: var(--pink); }
 .footer__bottom {
   display: flex;
   align-items: center;
@@ -2002,7 +2009,7 @@ h1, h2, h3, h4, h5 {
 .footer__copy { font-size: 13px; color: var(--text-muted); }
 .footer__links { display: flex; gap: 24px; }
 .footer__links a { font-size: 13px; color: var(--text-muted); transition: color 0.2s; }
-.footer__links a:hover { color: var(--text-dim); }
+.footer__links a:hover { color: var(--pink); }
 
 /* ============================================================
    ANIMATIONS & KEYFRAMES
