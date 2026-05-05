@@ -10,7 +10,8 @@
       "Bash(node -e ' *)",
       "Bash(git commit -m 'feat: add ComfyUI and AI Workflows to Lewis Hackett *)",
       "WebFetch(domain:www.tomscreativecanvas.co.uk)",
-      "Bash(grep -n \"46.jpg\\\\|team member\\\\|},\\\\s*$\" \"d:/VSCODE PROJECTS/DreamLab Website/js/content.js\")"
+      "Bash(grep -n \"46.jpg\\\\|team member\\\\|},\\\\s*$\" \"d:/VSCODE PROJECTS/DreamLab Website/js/content.js\")",
+      "Bash(git commit -m 'Fix team cards invisible on first SPA nav by running initScrollReveal after __dlRender *)"
     ]
   }
 }
