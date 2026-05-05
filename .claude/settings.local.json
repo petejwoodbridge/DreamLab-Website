@@ -11,7 +11,11 @@
       "Bash(git commit -m 'feat: add ComfyUI and AI Workflows to Lewis Hackett *)",
       "WebFetch(domain:www.tomscreativecanvas.co.uk)",
       "Bash(grep -n \"46.jpg\\\\|team member\\\\|},\\\\s*$\" \"d:/VSCODE PROJECTS/DreamLab Website/js/content.js\")",
-      "Bash(git commit -m 'Fix team cards invisible on first SPA nav by running initScrollReveal after __dlRender *)"
+      "Bash(git commit -m 'Fix team cards invisible on first SPA nav by running initScrollReveal after __dlRender *)",
+      "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/Dreamlab logo square.png\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/Dreamlab logo square.png\")",
+      "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/Logo JOH.jpeg\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/Logo JOH.jpeg\")",
+      "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/dreamlab.org.uk banner 2.png\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/dreamlab.org.uk banner 2.png\")",
+      "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/dreamlab.org.uk banner.png\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/dreamlab.org.uk banner.png\")"
     ]
   }
 }
