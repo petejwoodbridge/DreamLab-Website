@@ -15,7 +15,13 @@
       "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/Dreamlab logo square.png\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/Dreamlab logo square.png\")",
       "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/Logo JOH.jpeg\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/Logo JOH.jpeg\")",
       "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/dreamlab.org.uk banner 2.png\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/dreamlab.org.uk banner 2.png\")",
-      "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/dreamlab.org.uk banner.png\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/dreamlab.org.uk banner.png\")"
+      "Bash(cp \"C:/Users/peter/Downloads/dreamlab_logos-20260505T162635Z-3-001/dreamlab_logos/dreamlab.org.uk banner.png\" \"d:/VSCODE PROJECTS/DreamLab Website/img/brand/dreamlab.org.uk banner.png\")",
+      "Bash(where magick *)",
+      "Bash(where ffmpeg *)",
+      "Bash(where cwebp *)",
+      "Bash(ffmpeg -y -i \"C:/Users/peter/Downloads/noel jones.avif\" -c:v libwebp -quality 85 \"d:/VSCODE PROJECTS/DreamLab Website/img/team/48.webp\")",
+      "Bash(ffmpeg -i \"C:/Users/peter/Downloads/noel jones.avif\" -hide_banner)",
+      "Bash(ffmpeg -i \"d:/VSCODE PROJECTS/DreamLab Website/img/team/48.webp\" -hide_banner)"
     ]
   }
 }

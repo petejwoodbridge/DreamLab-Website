@@ -493,6 +493,25 @@ window.dreamlab_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/katukastudios/',
     },
     {
+      image: '/img/team/48.webp',
+      initials: 'NJ',
+      avatarGradient: 'linear-gradient(135deg,#06b6d4,#7ed957)',
+      name: 'Noel Jones',
+      role: 'Immersive & New Media Artist',
+      bio: `Noel is a New Media Artist with 30+ years in creative technology and sound design, working across higher education, professional commissions and community projects. From a Fine Art foundation, his practice has evolved through video and installation into 15+ years collaborating with choreographers and dance artists on immersive productions. A founding member of the 24 Hope Street artist collective, he's currently exploring the creative applications of AI in video and image alongside games technologies as artistic tools.`,
+      tags: [
+        { label: 'Immersive' },
+        { label: 'Installations', color: 'cyan' },
+        { label: 'Isadora', color: 'pink' },
+        { label: 'Projection Mapping', color: 'green' },
+        { label: 'Sound Design' },
+        { label: 'New Media Art', color: 'cyan' },
+        { label: 'Generative AI', color: 'pink' },
+      ],
+      categories: ['immersive', 'creative', 'music', 'ai', 'realtime', 'training'],
+      linkedin: 'https://www.linkedin.com/in/noel-jones-2688381ab/',
+    },
+    {
       image: '/img/team/12.webp',
       initials: 'BH',
       avatarGradient: 'linear-gradient(135deg,#06b6d4,#ec4899)',
@@ -1189,7 +1208,7 @@ window.dreamlab_CONTENT = {
       {
         year: 'June 2024',
         title: 'dreamlab launches at MediaCityUK',
-        body: 'Founded as a creative technology community and applied innovation lab — a home for 46+ specialists working across AI, immersive tech and realtime computing.',
+        body: 'Founded as a creative technology community and applied innovation lab — a home for 48+ specialists working across AI, immersive tech and realtime computing.',
       },
       {
         year: '2024',
@@ -1209,7 +1228,7 @@ window.dreamlab_CONTENT = {
       {
         year: '2026',
         title: 'The collective grows',
-        body: 'The team is now 46+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
+        body: 'The team is now 48+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
       },
       {
         year: 'Now',
