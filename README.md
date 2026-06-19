@@ -58,7 +58,7 @@ This repo holds the static site that powers **dreamlab.org.uk**. It's intentiona
 .
 ├── index.html              Homepage
 ├── about/                  About us, principles, timeline
-├── services/               Workflows, Creative, Product, Training
+├── expertise/              Workflows, Creative, Product, Training (Expertise)
 ├── team/                   The 48+ specialists
 ├── work/                   Clients, sectors, SME partners
 ├── contact/                Get in touch

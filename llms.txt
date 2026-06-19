@@ -11,7 +11,7 @@ Based across Manchester, Liverpool, Cumbria and London. 48+ deep tech specialist
 - Cumbria (Lake District) — residential co-creation facility
 - London
 
-## Services & capabilities
+## Our expertise & capabilities
 
 ### Workflows & Automation
 From proprietary studio tooling and infrastructure to multi-agent AI systems and generative content pipelines for video, image and audio — we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.
@@ -201,7 +201,7 @@ Absolutely. Some of our best projects started with "we know we need to do someth
 
 - [Home](https://dreamlab.org.uk/): Overview and positioning
 - [About](https://dreamlab.org.uk/about/): Mission, manifesto, principles, history
-- [Services](https://dreamlab.org.uk/services/): What we deliver
+- [Expertise](https://dreamlab.org.uk/expertise/): What we deliver
 - [Work](https://dreamlab.org.uk/work/): Clients, partners and sectors
 - [Team](https://dreamlab.org.uk/team/): The 48 specialists in the collective
 - [Contact](https://dreamlab.org.uk/contact/): Start a project, book training, explore a residency

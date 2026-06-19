@@ -131,7 +131,7 @@ function servicesJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'OfferCatalog',
     name: 'dreamlab services',
-    url: ORIGIN + '/services/',
+    url: ORIGIN + '/expertise/',
     provider: ORG,
     itemListElement: C.services.map((s) => ({
       '@type': 'Offer',
@@ -192,7 +192,7 @@ function servicesNoscript() {
       )}</p><ul>\n${caps}\n</ul></div>`;
     })
     .join('\n');
-  return `<noscript${NS_STYLE}>\n<h2>dreamlab services &amp; capabilities</h2>\n${blocks}\n</noscript>`;
+  return `<noscript${NS_STYLE}>\n<h2>dreamlab expertise &amp; capabilities</h2>\n${blocks}\n</noscript>`;
 }
 
 function workNoscript() {
@@ -262,7 +262,7 @@ writePage('contact/index.html', (html) => {
   return html;
 });
 
-writePage('services/index.html', (html) => {
+writePage('expertise/index.html', (html) => {
   html = upsertRegion(html, 'HEAD', servicesJsonLd(), HEAD_ANCHOR);
   html = upsertRegion(html, 'BODY', servicesNoscript(), FOOTER_ANCHOR);
   return html;
@@ -298,7 +298,7 @@ function buildLlmsTxt() {
   L.push('- Cumbria (Lake District) — residential co-creation facility');
   L.push('- London');
   L.push('');
-  L.push('## Services & capabilities');
+  L.push('## Our expertise & capabilities');
   L.push('');
   C.services.forEach((s) => {
     const label = String(s.label).replace(/<[^>]+>/g, '');
@@ -346,7 +346,7 @@ function buildLlmsTxt() {
   L.push('');
   L.push(`- [Home](${ORIGIN}/): Overview and positioning`);
   L.push(`- [About](${ORIGIN}/about/): Mission, manifesto, principles, history`);
-  L.push(`- [Services](${ORIGIN}/services/): What we deliver`);
+  L.push(`- [Expertise](${ORIGIN}/expertise/): What we deliver`);
   L.push(`- [Work](${ORIGIN}/work/): Clients, partners and sectors`);
   L.push(`- [Team](${ORIGIN}/team/): The ${C.team.length} specialists in the collective`);
   L.push(`- [Contact](${ORIGIN}/contact/): Start a project, book training, explore a residency`);

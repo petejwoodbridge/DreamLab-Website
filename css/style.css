@@ -2139,8 +2139,11 @@ h1, h2, h3, h4, h5 {
 .nav__item--dropdown { position: relative; }
 .nav__link--parent { display: inline-flex; align-items: center; gap: 5px; }
 .nav__caret { font-size: 10px; line-height: 1; opacity: 0.7; transition: transform 0.2s ease; }
-.nav__item--dropdown:hover .nav__caret,
+.nav__item--dropdown.is-open .nav__caret,
 .nav__item--dropdown:focus-within .nav__caret { transform: rotate(180deg); }
+@media (hover: hover) {
+  .nav__item--dropdown:hover .nav__caret { transform: rotate(180deg); }
+}
 
 .nav__submenu {
   position: absolute;
@@ -2172,11 +2175,20 @@ h1, h2, h3, h4, h5 {
   top: -6px; left: 0; right: 0;
   height: 6px;
 }
-.nav__item--dropdown:hover .nav__submenu,
+.nav__item--dropdown.is-open .nav__submenu,
 .nav__item--dropdown:focus-within .nav__submenu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+/* Mouse/trackpad devices also open on hover (skipped on touch to avoid
+   sticky-hover, where the menu stays stuck open after a tap). */
+@media (hover: hover) {
+  .nav__item--dropdown:hover .nav__submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 .nav__sublink {
   display: block;

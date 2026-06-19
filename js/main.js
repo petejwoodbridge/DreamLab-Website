@@ -39,6 +39,59 @@ function initMobileNav() {
   });
 }
 
+// ── Nav dropdown (About submenu) — cross-browser/touch/keyboard ─
+// CSS handles hover-open on pointer devices; this adds click/tap
+// toggling (touch + every browser) and keyboard support. The parent
+// link still navigates to /about/ once the menu is open.
+function initNavDropdown() {
+  const items = document.querySelectorAll('.nav__item--dropdown');
+  if (!items.length) return;
+
+  const closeAll = (except) => {
+    items.forEach(item => {
+      if (item === except) return;
+      item.classList.remove('is-open');
+      const l = item.querySelector('.nav__link--parent');
+      if (l) l.setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  items.forEach(item => {
+    const link = item.querySelector('.nav__link--parent');
+    const submenu = item.querySelector('.nav__submenu');
+    if (!link || !submenu) return;
+
+    link.setAttribute('aria-haspopup', 'true');
+    link.setAttribute('aria-expanded', 'false');
+
+    const open = () => { item.classList.add('is-open'); link.setAttribute('aria-expanded', 'true'); };
+    const close = () => { item.classList.remove('is-open'); link.setAttribute('aria-expanded', 'false'); };
+
+    // First click/tap opens the menu; a second click follows the link.
+    link.addEventListener('click', (e) => {
+      if (!item.classList.contains('is-open')) {
+        e.preventDefault();
+        closeAll(item);
+        open();
+      }
+    });
+    // Keep ARIA in sync when CSS hover drives the menu on desktop.
+    item.addEventListener('mouseenter', open);
+    item.addEventListener('mouseleave', close);
+    // Choosing a submenu item closes the menu.
+    submenu.addEventListener('click', () => close());
+    // Escape closes and returns focus to the trigger.
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { close(); link.focus(); }
+    });
+  });
+
+  // Click/tap anywhere outside an open dropdown closes it.
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav__item--dropdown')) closeAll(null);
+  });
+}
+
 // ── Active nav link ──────────────────────────────────────────
 function updateActiveNav() {
   const seg = window.location.pathname.split('/').filter(Boolean)[0] || '';
@@ -259,6 +312,7 @@ function initSPANavigation() {
 document.addEventListener('DOMContentLoaded', () => {
   initNavScroll();
   initMobileNav();
+  initNavDropdown();
   updateActiveNav();
   initScrollReveal();
   initCounters();
