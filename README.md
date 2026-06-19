@@ -66,6 +66,8 @@ This repo holds the static site that powers **dreamlab.org.uk**. It's intentiona
 ├── js/
 │   ├── content.js          Single source of truth — team, clients, services
 │   └── render.js           Reads content.js, paints the DOM
+├── build-seo.js            Bakes content.js into static JSON-LD + noscript + llms.txt
+├── llms.txt                Machine-readable brief for AI assistants (generated)
 └── img/
     ├── clients/            Client logos (drop in, render auto-picks them up)
     └── team/               Team headshots
@@ -79,6 +81,16 @@ This repo holds the static site that powers **dreamlab.org.uk**. It's intentiona
 - **A service capability** — add to the relevant service block in `services`
 
 Logo files render in monochrome by default and reveal in full colour on hover. Missing logo? The client name shows as text — graceful, no broken images.
+
+### Keeping AI & search in sync
+
+The team, services, clients and FAQs are rendered client-side from `content.js`. Most AI crawlers (GPTBot, ClaudeBot, PerplexityBot, CCBot…) don't run JavaScript, so that content is baked into static, crawlable form by a one-step build:
+
+```bash
+node build-seo.js
+```
+
+This regenerates the `AUTO-SEO` regions in each page (JSON-LD structured data + `<noscript>` text fallbacks) and rewrites `llms.txt` from `content.js`. **Run it after editing `content.js`, before committing** — the generated regions are owned entirely by the script, so never hand-edit them.
 
 ### Running locally
 

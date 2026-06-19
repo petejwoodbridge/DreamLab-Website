@@ -2115,3 +2115,20 @@ h1, h2, h3, h4, h5 {
   .hero__stat { border-right: none; padding: 16px 0; border-bottom: 1px solid var(--border); }
   .hero__stat:last-child { border-bottom: none; }
 }
+
+/* ── SEO / no-JS fallbacks ───────────────────────────────────
+   .seo-fallback wraps <noscript> content that mirrors the
+   JS-rendered sections (team, FAQs, services, work, about) so
+   non-JS crawlers and no-JS users still get the full text.
+   Hidden for JS users automatically because it lives in <noscript>. */
+.seo-fallback {
+  max-width: var(--container, 1200px);
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+.seo-fallback h2 { color: var(--text); margin: 32px 0 12px; }
+.seo-fallback h3 { color: var(--text); margin: 20px 0 6px; }
+.seo-fallback ul { padding-left: 20px; }
+.seo-fallback li { margin-bottom: 10px; }
