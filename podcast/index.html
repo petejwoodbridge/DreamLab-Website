@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Machine — Creative AI Podcast | dreamlab</title>
+  <meta name="description" content="The Dream Machine podcast — dreamlab's conversations on creative AI, real-time computing and immersive technology across film, content, games, advertising, music and art.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://dreamlab.org.uk/podcast/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="dreamlab">
+  <meta property="og:title" content="Dream Machine — Creative AI Podcast | dreamlab">
+  <meta property="og:description" content="dreamlab's conversations on creative AI — the Dream Machine podcast.">
+  <meta property="og:url" content="https://dreamlab.org.uk/podcast/">
+  <meta property="og:image" content="https://dreamlab.org.uk/img/og-image.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dream Machine — Creative AI Podcast | dreamlab">
+  <meta name="twitter:description" content="dreamlab's conversations on creative AI.">
+  <meta name="twitter:image" content="https://dreamlab.org.uk/img/og-image.svg">
+
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #0a0a0f; }
+    #podcast-frame {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    #podcast-fallback {
+      position: fixed;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #e8e8ef;
+      text-align: center;
+      padding: 24px;
+    }
+    #podcast-fallback a { color: #ee3ec9; }
+  </style>
+</head>
+<body>
+  <iframe
+    id="podcast-frame"
+    src="https://open.spotify.com/embed/show/2ptbLwVWeyO7ooPGHoYTqk?utm_source=generator&theme=0"
+    title="Dream Machine — Creative AI Podcast"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="eager"></iframe>
+
+  <div id="podcast-fallback">
+    <p>Loading the Dream Machine podcast…</p>
+    <p>If it doesn't appear, <a href="https://open.spotify.com/show/2ptbLwVWeyO7ooPGHoYTqk">listen on Spotify</a>.</p>
+  </div>
+
+  <script>
+    (function () {
+      var frame = document.getElementById('podcast-frame');
+      var fallback = document.getElementById('podcast-fallback');
+      var loaded = false;
+      frame.addEventListener('load', function () { loaded = true; });
+      setTimeout(function () {
+        if (!loaded) fallback.style.display = 'flex';
+      }, 4000);
+    })();
+  </script>
+</body>
+</html>

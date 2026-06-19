@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Machine — Creative AI Newsletter | dreamlab</title>
+  <meta name="description" content="The Dream Machine newsletter — dreamlab's essential reading on creative AI, real-time computing and immersive technology across film, content, games, advertising, music and art.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://dreamlab.org.uk/newsletter/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="dreamlab">
+  <meta property="og:title" content="Dream Machine — Creative AI Newsletter | dreamlab">
+  <meta property="og:description" content="dreamlab's essential reading on creative AI — the Dream Machine newsletter.">
+  <meta property="og:url" content="https://dreamlab.org.uk/newsletter/">
+  <meta property="og:image" content="https://dreamlab.org.uk/img/og-image.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dream Machine — Creative AI Newsletter | dreamlab">
+  <meta name="twitter:description" content="dreamlab's essential reading on creative AI.">
+  <meta name="twitter:image" content="https://dreamlab.org.uk/img/og-image.svg">
+
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #0a0a0f; }
+    #news-frame {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    #news-fallback {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #e8e8ef;
+      text-align: center;
+      padding: 24px;
+    }
+    #news-fallback a { color: #ee3ec9; }
+  </style>
+</head>
+<body>
+  <!-- Loading splash (shown until the frame loads or we redirect) -->
+  <div id="news-fallback">
+    <p>Opening the Dream Machine newsletter…</p>
+    <p>If it doesn't appear, <a href="https://www.linkedin.com/newsletters/dream-machine-creative-ai-7379776527871381505/">read it on LinkedIn</a>.</p>
+  </div>
+
+  <iframe
+    id="news-frame"
+    src="https://www.linkedin.com/newsletters/dream-machine-creative-ai-7379776527871381505/"
+    title="Dream Machine — Creative AI Newsletter"
+    loading="eager"></iframe>
+
+  <script>
+    // LinkedIn disallows framing (X-Frame-Options: DENY), so the iframe will
+    // usually stay blank. If it hasn't loaded shortly, send the visitor on to
+    // the real newsletter rather than leaving them on a blank page.
+    (function () {
+      var frame = document.getElementById('news-frame');
+      var target = 'https://www.linkedin.com/newsletters/dream-machine-creative-ai-7379776527871381505/';
+      var loaded = false;
+      frame.addEventListener('load', function () {
+        loaded = true;
+        document.getElementById('news-fallback').style.display = 'none';
+      });
+      setTimeout(function () {
+        if (!loaded) window.location.replace(target);
+      }, 2500);
+    })();
+  </script>
+</body>
+</html>

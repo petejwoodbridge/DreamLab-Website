@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Machine — The Creative AI Book | dreamlab</title>
+  <meta name="description" content="The Dream Machine Book — dreamlab's practical guide to AI in the creative industries. Our thinking on the future of creative AI across film, content, games, advertising, music and art.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://dreamlab.org.uk/book/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="dreamlab">
+  <meta property="og:title" content="Dream Machine — The Creative AI Book | dreamlab">
+  <meta property="og:description" content="dreamlab's practical guide to AI in the creative industries — our thinking on the future of creative AI.">
+  <meta property="og:url" content="https://dreamlab.org.uk/book/">
+  <meta property="og:image" content="https://dreamlab.org.uk/img/og-image.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dream Machine — The Creative AI Book | dreamlab">
+  <meta name="twitter:description" content="dreamlab's practical guide to AI in the creative industries.">
+  <meta name="twitter:image" content="https://dreamlab.org.uk/img/og-image.svg">
+
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #0a0a0f; }
+    #book-frame {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    /* Shown only if the book fails to load in the frame */
+    #book-fallback {
+      position: fixed;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #e8e8ef;
+      text-align: center;
+      padding: 24px;
+    }
+    #book-fallback a { color: #ee3ec9; }
+  </style>
+</head>
+<body>
+  <iframe
+    id="book-frame"
+    src="https://petejwoodbridge.github.io/DreamMachine-Book/"
+    title="Dream Machine — The Creative AI Book"
+    allow="fullscreen"
+    allowfullscreen
+    loading="eager"></iframe>
+
+  <div id="book-fallback">
+    <p>Loading the Dream Machine Book…</p>
+    <p>If it doesn't appear, <a href="https://petejwoodbridge.github.io/DreamMachine-Book/">open it here</a>.</p>
+  </div>
+
+  <script>
+    // If the frame is blocked from loading (e.g. framing disallowed), reveal a fallback link.
+    (function () {
+      var frame = document.getElementById('book-frame');
+      var fallback = document.getElementById('book-fallback');
+      var loaded = false;
+      frame.addEventListener('load', function () { loaded = true; });
+      setTimeout(function () {
+        if (!loaded) fallback.style.display = 'flex';
+      }, 4000);
+    })();
+  </script>
+</body>
+</html>
