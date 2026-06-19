@@ -2,7 +2,7 @@
    dreamlab WEBSITE — EDITABLE CONTENT
    ============================================================
 
-   👇 THIS IS THE ONE FILE YOU EDIT TO UPDATE THE SITE 👇
+   THIS IS THE ONE FILE YOU EDIT TO UPDATE THE SITE 
 
    Edit the content below, save this file, then refresh the browser.
    All team members, clients, services, sectors, stats, and FAQs
@@ -943,7 +943,7 @@ window.dreamlab_CONTENT = {
       linkedin: 'https://www.linkedin.com/in/tommarshallcreative/',
     },
 
-    // 👆 Copy any block above and edit to add a new team member.
+    // Copy any block above and edit to add a new team member.
     // Required fields: initials, name, role, bio, tags
     // Optional: image, avatarGradient, award, linkedin
   ],
@@ -1084,7 +1084,7 @@ window.dreamlab_CONTENT = {
       id: 'workflows',
       number: '01',
       label: 'Workflows & Automation',
-      icon: '⚡',
+      icon: '',
       iconClass: 'si-1',
       dotColor: 'purple',
       title: 'Transform how<br>your studio works',
@@ -1105,7 +1105,7 @@ window.dreamlab_CONTENT = {
       id: 'creative',
       number: '02',
       label: 'Creative Services',
-      icon: '✦',
+      icon: '',
       iconClass: 'si-2',
       dotColor: 'pink',
       title: 'Technology in service<br>of extraordinary talent',
@@ -1127,7 +1127,7 @@ window.dreamlab_CONTENT = {
       id: 'product',
       number: '03',
       label: 'Product Development',
-      icon: '◈',
+      icon: '',
       iconClass: 'si-3',
       dotColor: 'cyan',
       title: 'From bold idea to<br>brilliant product',
@@ -1147,7 +1147,7 @@ window.dreamlab_CONTENT = {
       id: 'training',
       number: '04',
       label: 'Consultancy & Training',
-      icon: '◎',
+      icon: '',
       iconClass: 'si-4',
       dotColor: 'green',
       title: 'Build the capability<br>within your team',
