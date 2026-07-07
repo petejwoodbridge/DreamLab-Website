@@ -7,6 +7,7 @@
   <meta name="description" content="The Dream Machine podcast — dreamlab's conversations on creative AI, real-time computing and immersive technology across film, content, games, advertising, music and art.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="https://dreamlab.org.uk/podcast/">
+  <link rel="alternate" type="text/plain" href="https://dreamlab.org.uk/llms.txt" title="dreamlab — machine-readable overview for AI assistants">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -14,13 +15,15 @@
   <meta property="og:title" content="Dream Machine — Creative AI Podcast | dreamlab">
   <meta property="og:description" content="dreamlab's conversations on creative AI — the Dream Machine podcast.">
   <meta property="og:url" content="https://dreamlab.org.uk/podcast/">
-  <meta property="og:image" content="https://dreamlab.org.uk/img/og-image.svg">
+  <meta property="og:image" content="https://dreamlab.org.uk/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dream Machine — Creative AI Podcast | dreamlab">
   <meta name="twitter:description" content="dreamlab's conversations on creative AI.">
-  <meta name="twitter:image" content="https://dreamlab.org.uk/img/og-image.svg">
+  <meta name="twitter:image" content="https://dreamlab.org.uk/img/og-image.png">
 
   <style>
     html, body { margin: 0; padding: 0; height: 100%; background: #0a0a0f; }
@@ -47,6 +50,44 @@
     }
     #podcast-fallback a { color: #ee3ec9; }
   </style>
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dreamlab.org.uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dream Machine Podcast",
+        "item": "https://dreamlab.org.uk/podcast/"
+      }
+    ]
+  }
+  </script>
+  <!-- JSON-LD: PodcastSeries -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "Dream Machine — Creative AI Podcast",
+    "description": "dreamlab's conversations on creative AI, real-time computing and immersive technology across film, content, games, advertising, music and art.",
+    "url": "https://dreamlab.org.uk/podcast/",
+    "sameAs": "https://open.spotify.com/show/2ptbLwVWeyO7ooPGHoYTqk",
+    "publisher": {
+      "@type": "Organization",
+      "name": "dreamlab",
+      "url": "https://dreamlab.org.uk/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
 </head>
 <body>
   <iframe

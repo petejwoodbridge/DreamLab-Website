@@ -284,7 +284,7 @@ function buildLlmsTxt() {
   L.push('# dreamlab');
   L.push('');
   L.push(
-    "> dreamlab is a creative technology studio exploring what's possible at the edge of AI, real-time computing, and immersive experience. We co-create next-generation content, workflows, products, and worlds across film, content, games, advertising, music, and art — working with brands, studios, and IP to turn emerging technology into impact driven creative output."
+    '> dreamlab is a creative technology collective and agency amplifying human creativity with AI, real-time computing and software engineering. We co-create next-generation content, workflows, products, and worlds across film, content, games, advertising, music, and art — working with brands, studios, and IP to turn emerging technology into impact driven creative output.'
   );
   L.push('');
   L.push(
