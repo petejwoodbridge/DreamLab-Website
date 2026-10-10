@@ -204,9 +204,6 @@ function initVimeoAutoplay() {
     heroVimeo.contentWindow.postMessage(JSON.stringify({ method: 'setVolume', value: 0 }), origin);
   };
   heroVimeo.addEventListener('load', () => {
-    // Start past the opening text cards (the embed URL's #t=20s does the
-    // same; this covers players that ignore it in background mode)
-    heroVimeo.contentWindow?.postMessage(JSON.stringify({ method: 'setCurrentTime', value: 20 }), origin);
     [0, 200, 600, 1200].forEach(d => window.setTimeout(sendPlay, d));
   }, { once: true });
   window.setTimeout(sendPlay, 1600);
