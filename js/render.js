@@ -223,10 +223,12 @@
     smesGrid.innerHTML = (C.smes || []).map((s, i) => {
       const name = typeof s === 'string' ? s : s.name;
       const desc = typeof s === 'object' && s.desc ? s.desc : '';
-      return `<div class="sme-card reveal reveal-delay-${i % 4}">
-        <div class="sme-card__name">${esc(name)}</div>
+      const url = typeof s === 'object' && s.url ? s.url : '';
+      const tag = url ? `a href="${esc(url)}" target="_blank" rel="noopener"` : 'div';
+      return `<${tag} class="sme-card reveal reveal-delay-${i % 4}">
+        <div class="sme-card__name">${esc(name)}${url ? ' <span class="sme-card__arrow">&#8599;</span>' : ''}</div>
         ${desc ? `<div class="sme-card__desc">${esc(desc)}</div>` : ''}
-      </div>`;
+      </${url ? 'a' : 'div'}>`;
     }).join('');
   }
 

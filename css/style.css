@@ -1195,6 +1195,15 @@ h1, h2, h3, h4, h5 {
   color: var(--text);
   margin-bottom: 6px;
 }
+a.sme-card {
+  display: block;
+  text-decoration: none;
+}
+.sme-card__arrow {
+  color: var(--text-dim);
+  font-weight: 400;
+}
+a.sme-card:hover .sme-card__arrow { color: var(--text); }
 .sme-card__desc {
   font-size: 13px;
   line-height: 1.5;

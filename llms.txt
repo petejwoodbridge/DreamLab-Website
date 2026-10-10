@@ -135,6 +135,8 @@ Nottingham Trent University, Staffordshire University, Greater Manchester Combin
 
 ## SME & studio partners
 
+- Soundings: A live map of the UK's creative and digital industry clusters — explore regions, places and sub-sectors, and generate in-depth briefings for any area.
+- Bearings: Grants, investment, tenders, accelerators and expert support for Liverpool City Region businesses — checked daily, with email alerts.
 - Supermassive: Conversational agents and AI for location-based immersive experiences and the cultural market.
 - Rezzil: Spatial broadcasting for future sports experiences.
 - Corporation Pop: WebXR platform Social Pop — bringing music fans together in shared immersive spaces.

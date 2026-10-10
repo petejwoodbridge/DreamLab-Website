@@ -985,7 +985,9 @@ window.dreamlab_CONTENT = {
 
   // SME / studio partners — shown as cards on Work page
   smes: [
-    { name: 'Supermassive',             desc: 'Conversational agents and AI for location-based immersive experiences and the cultural market.' },
+    { name: 'Soundings',                desc: 'A live map of the UK\'s creative and digital industry clusters — explore regions, places and sub-sectors, and generate in-depth briefings for any area.', url: '/soundings/' },
+    { name: 'Bearings',                 desc: 'Grants, investment, tenders, accelerators and expert support for Liverpool City Region businesses — checked daily, with email alerts.', url: '/bearings/' },
+    { name: 'Supermassive',            desc: 'Conversational agents and AI for location-based immersive experiences and the cultural market.' },
     { name: 'Rezzil',                   desc: 'Spatial broadcasting for future sports experiences.' },
     { name: 'Corporation Pop',          desc: 'WebXR platform Social Pop — bringing music fans together in shared immersive spaces.' },
     { name: 'Salsa Sound',              desc: 'Live spatial sound plugins for game engines — Unity and Unreal.' },
