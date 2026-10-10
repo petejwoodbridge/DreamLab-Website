@@ -363,6 +363,69 @@ function buildLlmsTxt() {
 fs.writeFileSync(path.join(ROOT, 'llms.txt'), buildLlmsTxt());
 console.log('  ✓ llms.txt');
 
+// ── Client logo manifest (in js/render.js) ──────────────────
+// Which file exists per slug, preferring svg > png > webp > jpg, so the
+// page requests each logo once instead of probing extensions.
+{
+  const pref = ['svg', 'png', 'webp', 'jpg'];
+  const files = {};
+  fs.readdirSync(path.join(ROOT, 'img/clients')).forEach((f) => {
+    const m = f.match(/^([a-z0-9-]+)\.(svg|png|webp|jpg)$/);
+    if (m && (!files[m[1]] || pref.indexOf(m[2]) < pref.indexOf(files[m[1]]))) files[m[1]] = m[2];
+  });
+  const sorted = Object.fromEntries(Object.keys(files).sort().map((k) => [k, files[k]]));
+  const file = path.join(ROOT, 'js/render.js');
+  const src = fs.readFileSync(file, 'utf8');
+  const out = src.replace(
+    /(\/\/ AUTO-LOGOS START\r?\n)[\s\S]*?(\r?\n[ \t]*\/\/ AUTO-LOGOS END)/,
+    (m, a, b) => `${a}  const LOGO_FILES = ${JSON.stringify(sorted)};${b}`
+  );
+  if (out === src && !src.includes(`const LOGO_FILES = ${JSON.stringify(sorted)};`))
+    throw new Error('AUTO-LOGOS markers not found in js/render.js');
+  fs.writeFileSync(file, out);
+  console.log('  ✓ js/render.js logo manifest');
+}
+
+// ── Regenerate sitemap.xml ──────────────────────────────────
+// lastmod comes from git: the page's last commit, or the last commit to
+// js/content.js when that is newer (most pages render from it). Files
+// with uncommitted changes count as today. Redirect-only pages (the
+// newsletter, the /soundings and /bearings short links) are left out.
+{
+  const { execSync } = require('child_process');
+  const today = new Date().toISOString().slice(0, 10);
+  const lastmod = (rel) => {
+    try {
+      if (execSync(`git status --porcelain -- "${rel}"`, { cwd: ROOT }).toString().trim()) return today;
+      return execSync(`git log -1 --format=%cs -- "${rel}"`, { cwd: ROOT }).toString().trim() || today;
+    } catch (e) {
+      return today;
+    }
+  };
+  const content = lastmod('js/content.js');
+  const PAGES = [
+    ['', 'weekly', '1.0', true],
+    ['about/', 'monthly', '0.8', true],
+    ['expertise/', 'monthly', '0.9', true],
+    ['work/', 'monthly', '0.8', true],
+    ['team/', 'monthly', '0.7', true],
+    ['book/', 'monthly', '0.6', false],
+    ['podcast/', 'monthly', '0.6', false],
+    ['contact/', 'yearly', '0.6', true],
+    ['privacy/', 'yearly', '0.3', false],
+  ];
+  const urls = PAGES.map(([p, freq, prio, usesContent]) => {
+    let d = lastmod(`${p}index.html`);
+    if (usesContent && content > d) d = content;
+    return `  <url>\n    <loc>${ORIGIN}/${p}</loc>\n    <lastmod>${d}</lastmod>\n    <changefreq>${freq}</changefreq>\n    <priority>${prio}</priority>\n  </url>`;
+  });
+  fs.writeFileSync(
+    path.join(ROOT, 'sitemap.xml'),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`
+  );
+  console.log('  ✓ sitemap.xml');
+}
+
 // ── Cache-bust css/ and js/ references ──────────────────────
 // GitHub Pages serves assets with max-age=600 and no versioning, so a
 // content edit could stay invisible for 10 minutes (longer for an open
@@ -376,11 +439,11 @@ const hashOf = (rel) =>
     .update(fs.readFileSync(path.join(ROOT, rel)))
     .digest('hex')
     .slice(0, 8));
-['index.html', 'about', 'contact', 'expertise', 'privacy', 'team', 'work'].forEach((p) => {
+['index.html', '404.html', 'about', 'contact', 'expertise', 'privacy', 'team', 'work'].forEach((p) => {
   const rel = p.endsWith('.html') ? p : `${p}/index.html`;
   writePage(rel, (html) =>
     html.replace(
-      /((?:href|src)="(?:\.\.\/)*)((?:css|js)\/[\w.-]+\.(?:css|js))(?:\?v=[\w]*)?"/g,
+      /((?:href|src)="(?:\/|(?:\.\.\/)*))((?:css|js)\/[\w.-]+\.(?:css|js))(?:\?v=[\w]*)?"/g,
       (m, pre, asset) => `${pre}${asset}?v=${hashOf(asset)}"`
     )
   );

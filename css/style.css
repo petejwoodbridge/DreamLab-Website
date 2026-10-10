@@ -2,10 +2,7 @@
    dreamlab — Global Stylesheet
    ============================================================ */
 
-/* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&display=swap');
-/* Extra display faces for the "you?" filler tiles — each reads like a tiny logo */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,700&family=Pacifico&family=Space+Mono:wght@700&family=Lobster&family=Righteous&display=swap');
+/* --- Google Fonts: linked from each page <head> (an @import here blocks rendering) --- */
 
 /* --- Design Tokens — dreamlab chromatic palette (hot pink / cyan) --- */
 :root {

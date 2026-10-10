@@ -248,9 +248,7 @@ async function navigateTo(url, pushState = true) {
   }
 
   try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const html = await res.text();
+    const html = await fetchPage(url);
     const doc = new DOMParser().parseFromString(html, 'text/html');
 
     const newContent = doc.getElementById('page-content');
@@ -289,16 +287,58 @@ async function navigateTo(url, pushState = true) {
   }
 }
 
+// ── Page prefetch ────────────────────────────────────────────
+// Page HTML is fetched on hover/touch (and the main nav pages once the
+// browser is idle), so by the time a link is clicked the swap is instant.
+const pageCache = new Map();
+function fetchPage(url) {
+  const u = new URL(url, window.location.origin);
+  const key = u.pathname + u.search;
+  if (!pageCache.has(key)) {
+    pageCache.set(key, fetch(key)
+      .then(res => { if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.text(); })
+      .catch(err => { pageCache.delete(key); throw err; }));
+  }
+  return pageCache.get(key);
+}
+
+// Internal page link the SPA handles: skip external, mailto, tel,
+// target=_blank and hash-only links
+function spaHref(link) {
+  const href = link && link.getAttribute('href');
+  if (!href) return null;
+  if (/^(https?:|\/\/|mailto:|tel:)/.test(href)) return null;
+  if (link.target === '_blank') return null;
+  if (href.startsWith('#')) return null;
+  return href;
+}
+
+function initPrefetch() {
+  const warm = (e) => {
+    const href = spaHref(e.target.closest && e.target.closest('a[href]'));
+    if (href && new URL(href, window.location.origin).pathname !== window.location.pathname) {
+      fetchPage(href).catch(() => {});
+    }
+  };
+  document.addEventListener('pointerover', warm, { passive: true });
+  document.addEventListener('touchstart', warm, { passive: true });
+
+  const conn = navigator.connection;
+  if (conn && (conn.saveData || /2g/.test(conn.effectiveType || ''))) return;
+  const idle = window.requestIdleCallback || ((fn) => setTimeout(fn, 2000));
+  window.addEventListener('load', () => idle(() => {
+    document.querySelectorAll('.nav__links a[href]').forEach(a => {
+      const href = spaHref(a);
+      if (href) fetchPage(href).catch(() => {});
+    });
+  }), { once: true });
+}
+
 function initSPANavigation() {
   document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href]');
-    if (!link) return;
-    const href = link.getAttribute('href');
+    const href = spaHref(link);
     if (!href) return;
-    // Skip external, mailto, tel, target=_blank, hash-only
-    if (/^(https?:|\/\/|mailto:|tel:)/.test(href)) return;
-    if (link.target === '_blank') return;
-    if (href.startsWith('#')) return;
     e.preventDefault();
     navigateTo(href);
   });
@@ -320,4 +360,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCardGlow();
   initVimeoAutoplay();
   initSPANavigation();
+  initPrefetch();
 });

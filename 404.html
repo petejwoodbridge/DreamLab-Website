@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | dreamlab</title>
+  <meta name="description" content="This page doesn&#39;t exist. Explore dreamlab&#39;s work, expertise and team, or get in touch.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Fonts: linked here, not @import-ed from style.css, so they download in parallel with it -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&amp;family=Bebas+Neue&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap">
+  <!-- Extra display faces for the work page "you?" filler tiles: non-blocking -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Playfair+Display:ital,wght@1,700&amp;family=Pacifico&amp;family=Space+Mono:wght@700&amp;family=Lobster&amp;family=Righteous&amp;display=swap" media="print" onload="this.media=&#39;all&#39;">
+  <link rel="stylesheet" href="/css/style.css?v=1ae73053">
+</head>
+<body>
+
+  <!-- ── GLOBAL BACKGROUND VIDEO (persists across SPA navigation) ── -->
+  <div id="global-video-bg" aria-hidden="true">
+    <iframe
+      id="hero-vimeo"
+      src="https://player.vimeo.com/video/1186974219?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;autopause=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;api=1&amp;player_id=hero-vimeo"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      fetchpriority="high"
+      loading="eager"
+      tabindex="-1"></iframe>
+  </div>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="/img/brand/dreamlab-logo.png" alt="dreamlab" class="nav__logo-img" width="473" height="96">
+      </a>
+      <ul class="nav__links">
+        <li><a href="/expertise/" class="nav__link">Expertise</a></li>
+        <li><a href="/work/"     class="nav__link">Work</a></li>
+        <li><a href="/team/"     class="nav__link">Team</a></li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="/about/" class="nav__link nav__link--parent">About <span class="nav__caret" aria-hidden="true">&#9662;</span></a>
+          <ul class="nav__submenu">
+            <li><a href="/about/" class="nav__sublink">About</a></li>
+            <li><a href="https://www.linkedin.com/newsletters/dream-machine-creative-ai-7379776527871381505/" target="_blank" rel="noopener" class="nav__sublink">Newsletter</a></li>
+            <li><a href="/book/" class="nav__sublink">Book</a></li>
+            <li><a href="/podcast/" class="nav__sublink">Podcast</a></li>
+            <li><a href="/contact/" class="nav__sublink">Contact</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact/"  class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="/contact/" class="btn btn-primary">Let's talk</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile">
+      <a href="/expertise/" class="nav__link">Expertise</a>
+      <a href="/work/"     class="nav__link">Work</a>
+      <a href="/team/"     class="nav__link">Team</a>
+      <a href="/about/"    class="nav__link">About</a>
+      <a href="https://www.linkedin.com/newsletters/dream-machine-creative-ai-7379776527871381505/" target="_blank" rel="noopener" class="nav__link nav__mobile-sub">Newsletter</a>
+      <a href="/book/" class="nav__link nav__mobile-sub">Book</a>
+      <a href="/podcast/" class="nav__link nav__mobile-sub">Podcast</a>
+      <a href="/contact/"  class="nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <div id="page-content">
+
+  <!-- ── 404 ──────────────────────────────────────────────── -->
+  <!-- GitHub Pages serves this for any missing path, so every asset and
+       link here is root-absolute. -->
+  <section class="hero hero-page">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb-1" style="opacity:0.18;"></div>
+      <div class="hero__orb hero__orb-3" style="opacity:0.12;"></div>
+    </div>
+    <div class="hero__content container">
+      <div class="hero__tag reveal">
+        <span class="label">404</span>
+      </div>
+      <h1 class="headline hero__title reveal reveal-delay-1">
+        PAGE NOT<br><span class="grad-text">FOUND</span>
+      </h1>
+      <p class="body-lg hero__sub reveal reveal-delay-2">
+        That link may have moved or no longer exists. Try one of these instead.
+      </p>
+      <div class="reveal reveal-delay-3" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px;">
+        <a href="/" class="btn btn-primary">Home</a>
+        <a href="/work/" class="btn btn-outline">Our work</a>
+        <a href="/expertise/" class="btn btn-outline">Expertise</a>
+        <a href="/team/" class="btn btn-outline">Team</a>
+        <a href="/contact/" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="nav__logo" style="margin-bottom: 16px;">
+            <img src="/img/brand/dreamlab-logo.png" alt="dreamlab" class="nav__logo-img" width="473" height="96">
+          </a>
+          <p>Your creative technology &amp; AI partner — based across MediaCity Manchester, Liverpool, Cumbria &amp; London.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/work/">Work</a></li>
+            <li><a href="/team/">Team</a></li>
+            <li><a href="/expertise/">Expertise</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Expertise</h4>
+          <ul>
+            <li><a href="/expertise/#workflows">Workflows &amp; Automation</a></li>
+            <li><a href="/expertise/#creative">Creative Services</a></li>
+            <li><a href="/expertise/#product">Product Development</a></li>
+            <li><a href="/expertise/#training">Consultancy &amp; Training</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="https://www.linkedin.com/newsletters/dream-machine-creative-ai-7379776527871381505/" target="_blank" rel="noopener">Newsletter ↗</a></li>
+            <li><a href="https://open.spotify.com/show/2ptbLwVWeyO7ooPGHoYTqk?si=7f2f684ce0794a12" target="_blank" rel="noopener">Podcast ↗</a></li>
+            <li><a href="/book/" rel="noopener">Dream Machine Book</a></li>
+            <li><a href="https://www.linkedin.com/company/thedreamlabuk/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 dreamlab. All rights reserved.</p>
+        <div class="footer__links">
+          <a href="/privacy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div><!-- #page-content -->
+
+  <script src="/js/content.js?v=25dfe83f"></script>
+  <script src="/js/render.js?v=b3f28c12"></script>
+  <script src="/js/main.js?v=11ebeb93"></script>
+</body>
+</html>
