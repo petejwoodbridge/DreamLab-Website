@@ -362,4 +362,27 @@ function buildLlmsTxt() {
 
 fs.writeFileSync(path.join(ROOT, 'llms.txt'), buildLlmsTxt());
 console.log('  ✓ llms.txt');
+
+// ── Cache-bust css/ and js/ references ──────────────────────
+// GitHub Pages serves assets with max-age=600 and no versioning, so a
+// content edit could stay invisible for 10 minutes (longer for an open
+// tab). Stamp each reference with ?v=<content hash> so it changes only
+// when the file does.
+const assetHash = {};
+const hashOf = (rel) =>
+  assetHash[rel] ||
+  (assetHash[rel] = require('crypto')
+    .createHash('sha1')
+    .update(fs.readFileSync(path.join(ROOT, rel)))
+    .digest('hex')
+    .slice(0, 8));
+['index.html', 'about', 'contact', 'expertise', 'privacy', 'team', 'work'].forEach((p) => {
+  const rel = p.endsWith('.html') ? p : `${p}/index.html`;
+  writePage(rel, (html) =>
+    html.replace(
+      /((?:href|src)="(?:\.\.\/)*)((?:css|js)\/[\w.-]+\.(?:css|js))(?:\?v=[\w]*)?"/g,
+      (m, pre, asset) => `${pre}${asset}?v=${hashOf(asset)}"`
+    )
+  );
+});
 console.log('Done.');
