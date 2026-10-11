@@ -91,6 +91,7 @@ window.dreamlab_CONTENT = {
       categories: ['ai', 'workflows', 'product', 'realtime', 'virtual-production', 'application', 'training', 'creative', 'data', 'unreal', 'comfyui'],
       award: 'HP AI Lighthouse Partner',
       linkedin: 'https://www.linkedin.com/in/jjohare/',
+      website: 'https://dreamlab-ai.com/',
     },
     {
       image: '/img/team/03.webp',
@@ -110,6 +111,7 @@ window.dreamlab_CONTENT = {
       categories: ['creative', 'workflows', 'film', 'design', 'training', 'animation', 'virtual-production', 'immersive'],
       award: 'Ex-McCann Worldgroup',
       linkedin: 'https://uk.linkedin.com/in/steve-moyler-53254517',
+      website: 'https://immersiveye.co.uk/',
     },
     {
       image: '/img/team/02.webp',
@@ -129,6 +131,7 @@ window.dreamlab_CONTENT = {
       categories: ['creative', 'workflows', 'product', 'ai', 'realtime', 'virtual-production', 'film', 'application', 'training', 'design', 'data', 'technical-art', 'unreal', 'comfyui', 'immersive'],
       award: 'BIMA 100 · 2020',
       linkedin: 'https://www.linkedin.com/in/petewoodbridge/',
+      website: 'https://petewoodbridge.com/',
     },
     {
       image: '/img/team/05.webp',
@@ -203,6 +206,7 @@ window.dreamlab_CONTENT = {
       categories: ['creative', 'film', 'training', 'music'],
       award: 'Avid ACI Certified Trainer',
       linkedin: 'https://www.linkedin.com/in/bernard-steer-36857b30/',
+      website: 'https://microcosmaudio.com/',
     },
     {
       image: '/img/team/19.webp',
@@ -221,6 +225,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['creative', 'design', 'music', 'immersive'],
       linkedin: 'https://www.linkedin.com/in/noelle-nurdin/',
+      website: 'https://linktr.ee/noellenoelleno',
     },
     {
       image: '/img/team/01.webp',
@@ -277,6 +282,7 @@ window.dreamlab_CONTENT = {
       categories: ['data', 'product', 'application', 'workflows'],
       award: 'Founder · QuasiScience',
       linkedin: 'https://www.linkedin.com/in/marco-ghilard',
+      website: 'https://quasiscience.com/',
     },
     {
       image: '/img/team/07.webp',
@@ -312,6 +318,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['data', 'ai', 'training', 'creative'],
       linkedin: 'https://www.linkedin.com/in/jessica-symons-63622229/',
+      website: 'https://visioninglab.com/',
     },
     {
       image: '/img/team/45.webp',
@@ -330,6 +337,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['creative', 'realtime', 'virtual-production', 'design', 'product', 'technical-art', 'unreal', 'immersive'],
       linkedin: 'https://www.linkedin.com/in/jo-portus/',
+      website: 'https://joport.us/',
     },
     {
       image: '/img/team/24.webp',
@@ -348,6 +356,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['creative', 'realtime', 'virtual-production', 'training', 'immersive'],
       linkedin: 'https://www.linkedin.com/in/drnatashastott/',
+      website: 'https://natashastott.com/',
     },
     {
       image: '/img/team/46.jpg',
@@ -367,6 +376,7 @@ window.dreamlab_CONTENT = {
       categories: ['virtual-production', 'realtime', 'film', 'creative', 'product', 'animation', 'technical-art', 'unreal', 'immersive'],
       award: 'CTO · Krygon Studios',
       linkedin: 'https://www.linkedin.com/in/ryanvirtual/',
+      website: 'https://www.krygonstudios.com/',
     },
     {
       image: '/img/team/42.webp',
@@ -385,6 +395,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['creative', 'design', 'film'],
       linkedin: 'https://www.linkedin.com/in/piprustage/',
+      website: 'https://www.piprustage.co.uk/',
     },
     {
       image: '/img/team/08.webp',
@@ -491,6 +502,7 @@ window.dreamlab_CONTENT = {
       categories: ['animation', 'creative', 'film', 'training'],
       award: 'Ray Harryhausen Award',
       linkedin: 'https://www.linkedin.com/in/katukastudios/',
+      website: 'https://katukastudios.com/',
     },
     {
       image: '/img/team/48.webp',
@@ -510,6 +522,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['immersive', 'creative', 'music', 'ai', 'realtime', 'training'],
       linkedin: 'https://www.linkedin.com/in/noel-jones-2688381ab/',
+      website: 'https://www.i-d-e-a.co.uk/',
     },
     {
       image: '/img/team/12.webp',
@@ -529,6 +542,7 @@ window.dreamlab_CONTENT = {
       categories: ['realtime', 'virtual-production', 'film', 'animation', 'design', 'creative', 'technical-art', 'unreal'],
       award: 'Emmy-Nominated',
       linkedin: 'https://www.linkedin.com/in/bradley-harris-71520517/',
+      website: 'https://www.krygonstudios.com/',
     },
     {
       image: '/img/team/13.webp',
@@ -547,6 +561,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['creative', 'realtime', 'virtual-production', 'design', 'training', 'technical-art', 'unreal', 'immersive'],
       linkedin: 'https://www.linkedin.com/in/danielmktb/',
+      website: 'https://www.behance.net/danielmktb',
     },
     {
       image: '/img/team/14.webp',
@@ -566,6 +581,7 @@ window.dreamlab_CONTENT = {
       categories: ['animation', 'film', 'creative'],
       award: 'BAFTA-Nominated',
       linkedin: 'https://www.linkedin.com/in/haydn-secker-6a0622160/',
+      website: 'https://vimeo.com/gadzooksstudio',
     },
     {
       image: '/img/team/15.webp',
@@ -638,6 +654,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['realtime', 'creative', 'workflows', 'application', 'film', 'animation', 'design', 'immersive', 'comfyui', 'ai'],
       linkedin: 'https://www.linkedin.com/in/lewishackett/',
+      website: 'https://prefixstudios.com/',
     },
     {
       image: '/img/team/22.webp',
@@ -657,6 +674,7 @@ window.dreamlab_CONTENT = {
       categories: ['realtime', 'creative', 'ai', 'training', 'design', 'animation'],
       award: 'PhD · Games & VE',
       linkedin: 'https://www.linkedin.com/in/dr-umran-ali/',
+      website: 'https://umranali.com/',
     },
     {
       image: '/img/team/23.webp',
@@ -693,6 +711,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['film', 'creative'],
       linkedin: 'https://www.linkedin.com/in/chris-croft-988a1738/',
+      website: 'https://croftwerk.co.uk/',
     },
     {
       image: '/img/team/26.webp',
@@ -730,6 +749,7 @@ window.dreamlab_CONTENT = {
       categories: ['ai', 'realtime', 'virtual-production', 'creative', 'product', 'application', 'training', 'unreal', 'immersive'],
       award: 'PhD · Computer Science',
       linkedin: 'https://www.linkedin.com/in/davidtullyscenegraph/',
+      website: 'https://www.scenegraphstudios.com/',
     },
     {
       image: '/img/team/30.webp',
@@ -749,6 +769,7 @@ window.dreamlab_CONTENT = {
       categories: ['product', 'realtime', 'application', 'creative', 'training', 'music', 'immersive'],
       award: 'PhD · Virtual Reality',
       linkedin: 'https://www.linkedin.com/in/seanmandrake/',
+      website: 'https://audiostorm.uk/',
     },
     {
       image: '/img/team/31.webp',
@@ -783,6 +804,7 @@ window.dreamlab_CONTENT = {
         { label: 'Web Development', color: 'cyan' },
       ],
       categories: ['application', 'training', 'creative'],
+      website: 'https://clickthrough.digital/',
     },
     {
       image: '/img/team/33.webp',
@@ -941,6 +963,7 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['creative', 'film', 'training', 'design'],
       linkedin: 'https://www.linkedin.com/in/tommarshallcreative/',
+      website: 'https://www.tomscreativecanvas.co.uk/',
     },
 
     // Copy any block above and edit to add a new team member.

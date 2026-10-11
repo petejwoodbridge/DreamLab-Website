@@ -906,6 +906,8 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .team-card__award {
   font-size: 12px;
@@ -928,6 +930,7 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s;
 }
 .team-card__linkedin:hover { color: var(--text); border-color: var(--border-h); background: var(--bg-card-h); }
+.team-card__links { display: flex; gap: 8px; }
 
 .team-collective {
   background: var(--bg-card);

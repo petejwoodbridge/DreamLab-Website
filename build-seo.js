@@ -106,7 +106,8 @@ function teamJsonLd() {
       const knows = (m.tags || []).map((t) => t.label).filter(Boolean);
       if (knows.length) person.knowsAbout = knows;
       if (m.award) person.award = m.award;
-      if (m.linkedin) person.sameAs = [m.linkedin];
+      const sameAs = [m.website, m.linkedin].filter(Boolean);
+      if (sameAs.length) person.sameAs = sameAs;
       if (m.image) person.image = ORIGIN + m.image;
       return { '@type': 'ListItem', position: i + 1, item: person };
     }),
