@@ -119,7 +119,7 @@ window.dreamlab_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#ec4899,#06b6d4)',
       name: 'Pete Woodbridge',
       role: 'Founder & Chief Technical Officer',
-      bio: `Pete is a founder of dreamlab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He also serves as R&D Innovation Lead at MediaFutures, publishes the Dream Machine newsletter — essential reading on creative AI — and built Bearings, the free funding finder for North West businesses.`,
+      bio: `Pete is a founder of dreamlab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He was R&D and Innovation Lead on MusicFutures, a £7.2m programme he helped the region win. He publishes the Dream Machine newsletter — essential reading on creative AI — and built Bearings, the free funding finder for North West businesses.`,
       tags: [
         { label: 'Creative AI Workflows' },
         { label: 'Software & Tool Development', color: 'cyan' },
