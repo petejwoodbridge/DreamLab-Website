@@ -119,7 +119,7 @@ window.dreamlab_CONTENT = {
       avatarGradient: 'linear-gradient(135deg,#7c3aed,#ec4899,#06b6d4)',
       name: 'Pete Woodbridge',
       role: 'Founder & Chief Technical Officer',
-      bio: `Pete is a founder of dreamlab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He also serves as R&D Innovation Lead at MediaFutures and publishes the Dream Machine newsletter — essential reading on creative AI.`,
+      bio: `Pete is a founder of dreamlab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He also serves as R&D Innovation Lead at MediaFutures, publishes the Dream Machine newsletter — essential reading on creative AI — and built Bearings, the free funding finder for North West businesses.`,
       tags: [
         { label: 'Creative AI Workflows' },
         { label: 'Software & Tool Development', color: 'cyan' },
@@ -1009,7 +1009,7 @@ window.dreamlab_CONTENT = {
   // SME / studio partners — shown as cards on Work page
   smes: [
     { name: 'Soundings',                desc: 'A live map of the UK\'s creative and digital industry clusters — explore regions, places and sub-sectors, and generate in-depth briefings for any area.', url: '/soundings/' },
-    { name: 'Bearings',                 desc: 'Grants, investment, tenders, accelerators and expert support for Liverpool City Region businesses — checked daily, with email alerts.', url: '/bearings/' },
+    { name: 'Bearings',                 desc: 'Free funding finder for North West businesses — grants, investment, tenders, accelerators and expert support across Greater Manchester, Liverpool City Region, Cheshire, Lancashire and Cumbria, checked daily, with email alerts.', url: 'https://getbearings.co.uk/', madeBy: 'Pete Woodbridge' },
     { name: 'Supermassive',            desc: 'Conversational agents and AI for location-based immersive experiences and the cultural market.' },
     { name: 'Rezzil',                   desc: 'Spatial broadcasting for future sports experiences.' },
     { name: 'Corporation Pop',          desc: 'WebXR platform Social Pop — bringing music fans together in shared immersive spaces.' },

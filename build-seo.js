@@ -47,7 +47,18 @@ require('./js/content.js');
 const C = global.window.dreamlab_CONTENT;
 if (!C) { console.error('Could not load dreamlab_CONTENT'); process.exit(1); }
 
-const ORG = { '@type': 'Organization', name: 'dreamlab', url: ORIGIN + '/' };
+const ORG = { '@type': 'Organization', '@id': ORIGIN + '/#organization', name: 'dreamlab', url: ORIGIN + '/' };
+
+// A stable @id per person: their own site when they have one (so search
+// engines and AI assistants merge this entry with that site's own
+// Person markup), else an anchor on the team page.
+const personId = (m) =>
+  m.website ? m.website.replace(/\/?$/, '/') + '#person' : `${ORIGIN}/team/#${m.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+
+// Products dreamlab itself made (SME entries with madeBy), as
+// WebApplication entities crediting dreamlab and the maker.
+const products = () => (C.smes || []).filter((s) => typeof s === 'object' && s.madeBy && /^https?:/.test(s.url || ''));
+const memberByName = (n) => C.team.find((m) => m.name === n);
 
 // ── Helpers ──────────────────────────────────────────────────
 const escHtml = (s) =>
@@ -98,6 +109,7 @@ function teamJsonLd() {
     itemListElement: C.team.map((m, i) => {
       const person = {
         '@type': 'Person',
+        '@id': personId(m),
         name: m.name,
         jobTitle: m.role,
         description: m.bio,
@@ -108,6 +120,9 @@ function teamJsonLd() {
       if (m.award) person.award = m.award;
       const sameAs = [m.website, m.linkedin].filter(Boolean);
       if (sameAs.length) person.sameAs = sameAs;
+      if (m.website) person.url = m.website;
+      const made = products().filter((p) => p.madeBy === m.name);
+      if (made.length) person.owns = made.map((p) => ({ '@id': p.url + '#app' }));
       if (m.image) person.image = ORIGIN + m.image;
       return { '@type': 'ListItem', position: i + 1, item: person };
     }),
@@ -155,6 +170,30 @@ function servicesJsonLd() {
   });
 }
 
+function productsJsonLd() {
+  return jsonLd({
+    '@context': 'https://schema.org',
+    '@graph': products().map((p) => {
+      const maker = memberByName(p.madeBy);
+      const creator = [ORG];
+      if (maker) creator.push({ '@type': 'Person', '@id': personId(maker), name: maker.name, url: maker.website || undefined });
+      return {
+        '@type': 'WebApplication',
+        '@id': p.url + '#app',
+        name: p.name,
+        url: p.url,
+        description: p.desc,
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Web',
+        isAccessibleForFree: true,
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP' },
+        creator,
+        publisher: ORG,
+      };
+    }),
+  });
+}
+
 // ── noscript prose fallbacks (read by non-JS crawlers) ──────
 const NS_STYLE = ' class="seo-fallback"';
 
@@ -164,7 +203,9 @@ function teamNoscript() {
       (m) =>
         `<li><strong>${escHtml(m.name)}</strong> — ${escHtml(m.role)}${
           m.award ? ` (${escHtml(m.award)})` : ''
-        }. ${escHtml(m.bio)}</li>`
+        }. ${escHtml(m.bio)}${
+          m.website ? ` <a href="${escHtml(m.website)}">${escHtml(m.website.replace(/^https?:\/\/|\/$/g, ''))}</a>` : ''
+        }</li>`
     )
     .join('\n');
   return (
@@ -212,7 +253,10 @@ function workNoscript() {
     .map((s) => {
       const name = typeof s === 'string' ? s : s.name;
       const desc = typeof s === 'object' && s.desc ? ` — ${escHtml(s.desc)}` : '';
-      return `<li><strong>${escHtml(name)}</strong>${desc}</li>`;
+      const url = typeof s === 'object' && /^https?:/.test(s.url || '') ? s.url : '';
+      const label = url ? `<a href="${escHtml(url)}">${escHtml(name)}</a>` : escHtml(name);
+      const by = typeof s === 'object' && s.madeBy ? ` Made by dreamlab and ${escHtml(s.madeBy)}.` : '';
+      return `<li><strong>${label}</strong>${desc}${by}</li>`;
     })
     .join('\n');
   return (
@@ -270,6 +314,7 @@ writePage('expertise/index.html', (html) => {
 });
 
 writePage('work/index.html', (html) => {
+  html = upsertRegion(html, 'HEAD', productsJsonLd(), HEAD_ANCHOR);
   html = upsertRegion(html, 'BODY', workNoscript(), FOOTER_ANCHOR);
   return html;
 });
@@ -299,6 +344,19 @@ function buildLlmsTxt() {
   L.push('- Cumbria (Lake District) — residential co-creation facility');
   L.push('- London');
   L.push('');
+  L.push('## Founders');
+  L.push('');
+  C.team.filter((m) => /founder/i.test(m.role)).forEach((m) => {
+    const links = [m.website, m.linkedin].filter(Boolean).join(' · ');
+    L.push(`- **${m.name}** — ${m.role}${links ? ` (${links})` : ''}`);
+  });
+  L.push('');
+  if (products().length) {
+    L.push('## Products built by dreamlab');
+    L.push('');
+    products().forEach((p) => L.push(`- [${p.name}](${p.url}): ${p.desc} Made by dreamlab and ${p.madeBy}.`));
+    L.push('');
+  }
   L.push('## Our expertise & capabilities');
   L.push('');
   C.services.forEach((s) => {
@@ -317,7 +375,7 @@ function buildLlmsTxt() {
   L.push(`The dreamlab collective is ${C.team.length} specialists. Selected members:`);
   L.push('');
   C.team.forEach((m) => {
-    L.push(`- **${m.name}** — ${m.role}${m.award ? ` (${m.award})` : ''}: ${m.bio}`);
+    L.push(`- **${m.name}** — ${m.role}${m.award ? ` (${m.award})` : ''}: ${m.bio}${m.website ? ` Website: ${m.website}` : ''}`);
   });
   L.push('');
   L.push('## Brands & organisations we have worked with');
@@ -333,7 +391,8 @@ function buildLlmsTxt() {
   (C.smes || []).forEach((s) => {
     const name = typeof s === 'string' ? s : s.name;
     const desc = typeof s === 'object' && s.desc ? `: ${s.desc}` : '';
-    L.push(`- ${name}${desc}`);
+    const url = typeof s === 'object' && /^https?:/.test(s.url || '') ? s.url : '';
+    L.push(url ? `- [${name}](${url})${desc}` : `- ${name}${desc}`);
   });
   L.push('');
   L.push('## Frequently asked questions');
