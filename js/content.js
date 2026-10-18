@@ -1185,6 +1185,7 @@ window.dreamlab_CONTENT = {
         { title: 'AI Strategy Consultancy',  desc: 'Expert advisory on AI adoption, risk and opportunity' },
         { title: 'Immersive Tech Training',  desc: 'XR, virtual production, Unreal Engine and spatial computing' },
         { title: 'Innovation Programme Design', desc: 'Build internal innovation capability and culture' },
+        { title: 'Funding Bids & Investment Readiness', desc: 'Grant bids (Innovate UK, UKRI, Heritage Fund, Arts Council), investment business cases and pitch preparation' },
         { title: 'Media Production Training', desc: 'Avid certified post-production and broadcast workflow training' },
       ],
     },
