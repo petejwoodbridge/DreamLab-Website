@@ -37,7 +37,7 @@ window.dreamlab_CONTENT = {
   // HEADLINE STATS (homepage + work page)
   // ──────────────────────────────────────────────────────────
   stats: [
-    { value: '47',  suffix: '+',  label: 'Deep tech specialists' },
+    { value: '49',  suffix: '+',  label: 'Deep tech specialists' },
     { value: '100', suffix: '+',  label: 'Businesses supported' },
     { value: '35',  suffix: '+',  label: 'Collaborative projects' },
     { value: '2',   suffix: '.7M', prefix: '£', label: 'Innovation investment' },
@@ -150,6 +150,26 @@ window.dreamlab_CONTENT = {
       ],
       categories: ['ai', 'workflows', 'data', 'creative', 'training', 'comfyui'],
       linkedin: 'https://www.linkedin.com/in/jingliaideveloper/',
+    },
+    {
+      image: '/img/team/49.webp',
+      initials: 'MS',
+      avatarGradient: 'linear-gradient(135deg,#06b6d4,#7c3aed)',
+      name: 'Matthew Stanton-Cowell',
+      role: 'Creative Technologist',
+      bio: `Matthew is a world-record-holding, award-winning creative technologist who turns creative and production problems into practical tools and AI workflows. With nearly two decades of agency and client-side design experience — including running a creative department — he builds AI imagery pipelines that visualise products before they physically exist, Photoshop and InDesign automation that keeps masters editable, and AI image checks with human approval built in. His clients include Topshop, Nestlé, Mondelēz, Heineken, Britvic, Co-op, Warburtons and Transport for Greater Manchester, and he trains art directors and creative teams to put these tools to work.`,
+      tags: [
+        { label: 'Creative AI Workflows' },
+        { label: 'Adobe Automation', color: 'cyan' },
+        { label: 'Art Direction', color: 'pink' },
+        { label: 'AI Imagery', color: 'green' },
+        { label: 'Claude & Gemini APIs' },
+        { label: 'Creative Training', color: 'cyan' },
+      ],
+      categories: ['ai', 'workflows', 'creative', 'design', 'application', 'training'],
+      award: 'World Record Holder',
+      linkedin: 'https://www.linkedin.com/in/matthew-stanton-cowell-a20855102/',
+      website: 'https://www.stanton-cowell.com/',
     },
     {
       image: '/img/team/18.webp',
@@ -1234,7 +1254,7 @@ window.dreamlab_CONTENT = {
       {
         year: 'June 2024',
         title: 'dreamlab launches at MediaCityUK',
-        body: 'Founded as a creative technology community and applied innovation lab — a home for 48+ specialists working across AI, immersive tech and realtime computing.',
+        body: 'Founded as a creative technology community and applied innovation lab — a home for 49+ specialists working across AI, immersive tech and realtime computing.',
       },
       {
         year: '2024',
@@ -1254,7 +1274,7 @@ window.dreamlab_CONTENT = {
       {
         year: '2026',
         title: 'The collective grows',
-        body: 'The team is now 48+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
+        body: 'The team is now 49+ specialists strong, spanning MediaCity Manchester, Liverpool, and our Lake District co-creation facility — with a Creative Director joining the leadership.',
       },
       {
         year: 'Now',

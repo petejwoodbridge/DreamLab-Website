@@ -2,7 +2,7 @@
 
 > dreamlab is a creative technology collective and agency amplifying human creativity with AI, real-time computing and software engineering. We co-create next-generation content, workflows, products, and worlds across film, content, games, advertising, music, and art — working with brands, studios, and IP to turn emerging technology into impact driven creative output.
 
-Based across Manchester, Liverpool, Cumbria and London. 48+ deep tech specialists working from labs at MediaCity Manchester, Liverpool, the Lake District (Cumbria) and London.
+Based across Manchester, Liverpool, Cumbria and London. 49+ deep tech specialists working from labs at MediaCity Manchester, Liverpool, the Lake District (Cumbria) and London.
 
 ## Locations
 
@@ -84,12 +84,13 @@ Want to build these capabilities yourself? Our training and consultancy programm
 
 ## The team
 
-The dreamlab collective is 48 specialists. Selected members:
+The dreamlab collective is 49 specialists. Selected members:
 
 - **Dr John O'Hare** — Founder & Chief Hallucination Officer (HP AI Lighthouse Partner): Dr John O'Hare is the Founder of dreamlab AI and an HP AI Lighthouse Partner. Over 25 years at the intersection of tech and creativity, he leads pioneering work in AI-driven workflows, multi-agent orchestration and creative technology. As CTO of the company behind Unreal Engine's flagship third-party plugins, he shipped tools used by AAA game studios and Hollywood productions. From AI systems for autonomous marine vessels to immersive media at scale, he helps organisations understand what's actually possible with AI agents — and keep humans in the loop where it matters. Website: https://dreamlab-ai.com/
 - **Ste Moyler** — Chief Creative Officer (Ex-McCann Worldgroup): Ste is an award-winning creative director and producer with 25+ years in film, animation, AR/VR and immersive media. He has delivered projects for Microsoft, Sony Music and Adidas, and led MediaCityUK's first docuseries. Ste is known for mentoring creative talent and driving innovation in digital storytelling — ensuring the technology we build always serves a bigger idea. Website: https://immersiveye.co.uk/
 - **Pete Woodbridge** — Founder & Chief Technical Officer (BIMA 100 · 2020): Pete is a founder of dreamlab and its Chief Technical Officer — a creative technologist and virtual production specialist working at the intersection of AI, immersive storytelling, interactive experiences and virtual production. Named in the BIMA 100 'Creatives & Designers' in 2020, his career spans commissions and R&D collaboration with BBC, ITV, Aardman Animations, Google, Intel, Apple, BT, the United Nations, Red Bull and the NHS. He was R&D and Innovation Lead on MusicFutures, a £7.2m programme he helped the region win. He publishes the Dream Machine newsletter — essential reading on creative AI — and built Bearings, the free funding finder for North West businesses. Website: https://petewoodbridge.com/
 - **Jing Li** — Creative AI · Eurasia Pacific: Jing is a Creative AI developer and technologist with a background spanning business, technology and community innovation. After a decade in sustainable fashion, she retrained into data science and applied AI — now building and deploying generative tools for SMEs and creative practitioners at dreamlab, and connecting the collective to partners across the Eurasia Pacific region. Dedicated to responsible innovation, AI equity and making emerging technologies accessible to communities that are usually last in line.
+- **Matthew Stanton-Cowell** — Creative Technologist (World Record Holder): Matthew is a world-record-holding, award-winning creative technologist who turns creative and production problems into practical tools and AI workflows. With nearly two decades of agency and client-side design experience — including running a creative department — he builds AI imagery pipelines that visualise products before they physically exist, Photoshop and InDesign automation that keeps masters editable, and AI image checks with human approval built in. His clients include Topshop, Nestlé, Mondelēz, Heineken, Britvic, Co-op, Warburtons and Transport for Greater Manchester, and he trains art directors and creative teams to put these tools to work. Website: https://www.stanton-cowell.com/
 - **Dr Derek Hales** — Cyberphysical Pataphysicist (UKRI Innovate UK Funded): Derek is an architect and R&D director with 30+ years in speculative practices, XR and digital twinning. With a PhD in Design Fiction, he leads research and innovation across architecture, film and immersive media, shaping creative-technology policy and open innovation. A Research Fellow at The New Centre for Research & Practice and Lecturer at the University of Salford, his practice has been funded by Arts Council England, AHRC, EPSRC, UKRI Innovate UK and the EU Framework Programme.
 - **Arpana Nandakumar** — Alternate Realities Sorceress & Public Engagement: Arpana is an XR and AI specialist with expertise in real-time technical art, advanced haptics and immersive media. Working with partners including the University of Salford, she leads public engagement initiatives and is recognised for her work in gender equality and mixed-reality innovation.
 - **Bernard Steer** — Spatial Audio Consultant (Avid ACI Certified Trainer): Bernard is a spatial audio consultant and Avid ACI-certified Pro Tools trainer with 20+ years in creative technology. He founded compact Dolby Atmos / DTS-X monitoring solutions used across UK post-production, and leads spatial-audio consultancy for immersive-tech residencies at MediaCity's dreamlab. Bernard has worked with broadcasters, post houses and music studios bridging Avid, Dolby and Pro Tools ecosystems. Website: https://microcosmaudio.com/
@@ -215,7 +216,7 @@ Absolutely. Some of our best projects started with "we know we need to do someth
 - [About](https://dreamlab.org.uk/about/): Mission, manifesto, principles, history
 - [Expertise](https://dreamlab.org.uk/expertise/): What we deliver
 - [Work](https://dreamlab.org.uk/work/): Clients, partners and sectors
-- [Team](https://dreamlab.org.uk/team/): The 48 specialists in the collective
+- [Team](https://dreamlab.org.uk/team/): The 49 specialists in the collective
 - [Contact](https://dreamlab.org.uk/contact/): Start a project, book training, explore a residency
 
 ## Contact
