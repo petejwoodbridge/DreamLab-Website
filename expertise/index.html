@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expertise — AI, Creative Technology &amp; Innovation | dreamlab</title>
-  <meta name="description" content="AI &amp; automation, creative AI workflows, model fine-tuning, immersive experiences, virtual production, data and R&amp;D — from dreamlab's 49+ specialists.">
+  <title>Agentic AI, Sovereign AI &amp; Creative Technology Services | dreamlab</title>
+  <meta name="description" content="Agentic AI systems, sovereign AI, knowledge graphs, AI workflows, immersive experiences, virtual production and bid writing — from dreamlab's 49+ specialists in Manchester, Liverpool, Cumbria &amp; London.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="https://dreamlab.org.uk/expertise/">
   <link rel="alternate" type="text/plain" href="https://dreamlab.org.uk/llms.txt" title="dreamlab — machine-readable overview for AI assistants">
@@ -12,8 +12,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="dreamlab">
-  <meta property="og:title" content="Expertise — AI, Creative Technology &amp; Innovation | dreamlab Manchester, Liverpool, Cumbria, London">
-  <meta property="og:description" content="dreamlab services: AI &amp; automation, creative AI workflows, model finetuning, immersive experiences, virtual production, data &amp; intelligence, content creation and R&amp;D. Manchester, Liverpool, Cumbria &amp; London.">
+  <meta property="og:title" content="Agentic AI, Sovereign AI &amp; Creative Technology Services | dreamlab">
+  <meta property="og:description" content="dreamlab services: agentic AI and harness engineering, sovereign AI, private knowledge graphs, AI workflows, immersive experiences, virtual production, training and bid writing. Manchester, Liverpool, Cumbria &amp; London.">
   <meta property="og:url" content="https://dreamlab.org.uk/expertise/">
   <meta property="og:image" content="https://dreamlab.org.uk/img/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -21,8 +21,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Expertise — AI, Creative Technology &amp; Innovation | dreamlab">
-  <meta name="twitter:description" content="AI &amp; automation, immersive experiences, virtual production, data intelligence and content creation — dreamlab Manchester, Liverpool, Cumbria &amp; London.">
+  <meta name="twitter:title" content="Agentic AI, Sovereign AI &amp; Creative Technology Services | dreamlab">
+  <meta name="twitter:description" content="Agentic AI, sovereign AI, knowledge graphs, AI workflows, immersive experiences and virtual production — dreamlab Manchester, Liverpool, Cumbria &amp; London.">
   <meta name="twitter:image" content="https://dreamlab.org.uk/img/og-image.png">
 
   <!-- JSON-LD: BreadcrumbList + Service -->
@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&amp;family=Bebas+Neue&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap">
   <!-- Extra display faces for the work page "you?" filler tiles: non-blocking -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Playfair+Display:ital,wght@1,700&amp;family=Pacifico&amp;family=Space+Mono:wght@700&amp;family=Lobster&amp;family=Righteous&amp;display=swap" media="print" onload="this.media=&#39;all&#39;">
-  <link rel="stylesheet" href="../css/style.css?v=175140a4">
+  <link rel="stylesheet" href="../css/style.css?v=8a22e091">
   <style>
     .service-section {
       position: relative;
@@ -77,6 +77,8 @@
     .si-2 { background: rgba(238,62,201,0.15); box-shadow: 0 0 40px rgba(238,62,201,0.1); }
     .si-3 { background: rgba(0,255,255,0.15);  box-shadow: 0 0 40px rgba(0,255,255,0.1); }
     .si-4 { background: rgba(126,217,87,0.15); box-shadow: 0 0 40px rgba(126,217,87,0.1); }
+    .si-5 { background: rgba(0,255,255,0.15);  box-shadow: 0 0 40px rgba(0,255,255,0.1); }
+    .si-6 { background: rgba(107,31,173,0.25); box-shadow: 0 0 40px rgba(107,31,173,0.15); }
     .service-section__desc {
       color: var(--text-dim);
       font-size: 16px;
@@ -118,6 +120,15 @@
     }
     .highlight-box h4 { font-size: 16px; margin-bottom: 12px; }
     .highlight-box p { font-size: 14px; color: var(--text-dim); }
+    .exp-faq .headline { margin-bottom: 48px; }
+    .exp-faq__list { display: flex; flex-direction: column; gap: 12px; max-width: 880px; }
+    .exp-faq__item { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+    .exp-faq__item summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; }
+    .exp-faq__item summary::-webkit-details-marker { display: none; }
+    .exp-faq__item summary::after { content: '+'; font-size: 22px; color: var(--text-dim); transition: transform 0.25s var(--ease-out); }
+    .exp-faq__item[open] summary::after { transform: rotate(45deg); }
+    .exp-faq__item h3 { font-size: 17px; font-weight: 600; margin: 0; }
+    .exp-faq__item p { padding: 0 24px 22px; margin: 0; color: var(--text-dim); font-size: 15px; line-height: 1.7; }
   </style>
 <!-- AUTO-SEO:HEAD START -->
 <script type="application/ld+json">
@@ -138,7 +149,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "Workflows & Automation",
-        "description": "From proprietary studio tooling and infrastructure to multi-agent AI systems and generative content pipelines for video, image and audio — we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.",
+        "description": "From proprietary studio tooling and infrastructure to LLM integration, intelligent automation and generative content pipelines for video, image and audio — we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.",
         "provider": {
           "@type": "Organization",
           "@id": "https://dreamlab.org.uk/#organization",
@@ -178,30 +189,6 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "AI Agent Development",
-                "description": "Custom LLM-powered agents for complex, multi-step tasks"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Agentic AI Systems",
-                "description": "Autonomous AI pipelines for research, analysis and action"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "RAG Systems",
-                "description": "Retrieval-augmented generation for enterprise knowledge"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
                 "name": "LLM Integration",
                 "description": "Embed AI into existing tools and platforms seamlessly"
               }
@@ -220,6 +207,224 @@
                 "@type": "Service",
                 "name": "Intelligent Document Processing",
                 "description": "Extract, classify and act on unstructured data at scale"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Agentic Systems & Sovereign AI",
+        "description": "We design, build and run agentic AI systems that take on real multi-step work — researching, deciding and acting across your tools and data. We engineer the harness around the model — context, memory, tools, permissions, evals and guardrails — so your agents are dependable in production, not just impressive in a demo. And where your data, IP or regulation demands it, we deliver sovereign AI: open-weight models running privately on infrastructure you control.",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dreamlab.org.uk/#organization",
+          "name": "dreamlab",
+          "url": "https://dreamlab.org.uk/"
+        },
+        "serviceType": "Agentic Systems & Sovereign AI",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Agentic Systems & Sovereign AI capabilities",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Agent Development",
+                "description": "Custom LLM-powered agents for complex, multi-step tasks"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Agentic AI Systems",
+                "description": "Autonomous AI pipelines for research, analysis and action"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Agent Harness Engineering",
+                "description": "The runtime around the model — tools, memory, permissions, loops and checks that make agents dependable in production"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Context Engineering & Agent Memory",
+                "description": "Shaping what agents know and when — retrieval, long-term memory and context management for grounded output"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Multi-Agent Orchestration",
+                "description": "Teams of specialist agents that plan, delegate and check each other's work"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MCP, A2A & Agent Tooling",
+                "description": "Connect agents to your data, APIs and each other via Model Context Protocol and Agent-to-Agent standards"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Computer-Use & Browser Agents",
+                "description": "Agents that operate software, websites and desktops the way your people do"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Agent Skills & Playbooks",
+                "description": "Package your team's expertise as reusable skills that agents load on demand"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Agent Evals, Observability & Governance",
+                "description": "AgentOps — eval suites, tracing, guardrails and human-in-the-loop controls that keep agents reliable and accountable"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sovereign AI",
+                "description": "Self-hosted and open-weight models on your own infrastructure — your data, IP and models stay under your control"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Private LLMs & Fine-Tuning",
+                "description": "Open-weight models adapted to your domain, voice and data, and run privately"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Secure & Air-Gapped Deployment",
+                "description": "On-premise and UK-hosted AI for regulated, sensitive and public sector work"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Data & Intelligence",
+        "description": "We design and build the strategic information systems that underpin your business — knowledge graphs, data pipelines and insight platforms that turn scattered documents, data and know-how into a connected, AI-ready asset. Your company knowledge stays sovereign: private, secure and under your control, while giving your people and your agents the context to make better decisions, move faster and build a lasting competitive advantage.",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dreamlab.org.uk/#organization",
+          "name": "dreamlab",
+          "url": "https://dreamlab.org.uk/"
+        },
+        "serviceType": "Data & Intelligence",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Data & Intelligence capabilities",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sovereign Company Knowledge",
+                "description": "Your documents, data and know-how in a private, secure knowledge base your AI can use — without it ever leaving your control"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Enterprise Knowledge Graphs",
+                "description": "Connected, machine-readable maps of your people, projects, clients, products and IP"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "GraphRAG & RAG Systems",
+                "description": "Retrieval-augmented generation grounded in your knowledge graph and documents, with sources cited"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Data Strategy & AI Readiness",
+                "description": "Audit, structure and govern your data so it's ready to power AI"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Data Governance, Privacy & Compliance",
+                "description": "GDPR-aligned access controls, lineage and audit trails for every piece of data your AI touches"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Strategic Information Architecture",
+                "description": "The information systems that underpin how your business decides and acts"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Data Engineering & Pipelines",
+                "description": "Ingestion, cleaning, ETL and transformation pipelines that turn scattered data into a reliable asset"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Analytics, Dashboards & Insight Platforms",
+                "description": "AI-powered business intelligence and visualisation that turns numbers into decisions"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Predictive Modelling & Forecasting",
+                "description": "Models that anticipate demand, risk and opportunity"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Competitive Intelligence Systems",
+                "description": "Automated monitoring of markets, competitors, funding and opportunities"
               }
             }
           ]
@@ -497,12 +702,84 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
+                "name": "Bid Support & Writing",
+                "description": "Commercial tenders, public sector procurement and partnership bids — strategy, writing, review and compliance"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
                 "name": "Media Production Training",
                 "description": "Avid certified post-production and broadcast workflow training"
               }
             }
           ]
         }
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is agentic AI, and how can dreamlab help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agentic AI systems don't just answer questions — they plan, use tools and take actions to complete multi-step work, such as researching a market, processing documents or running a production pipeline. dreamlab designs, builds and runs agentic systems for studios, enterprises and public sector teams across the UK, from single task agents to orchestrated teams of specialist agents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is an agent harness?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An agent harness is everything around the AI model that makes an agent reliable: the tools it can use, its memory and context, permissions, feedback loops, evals and guardrails. The model provides the intelligence; the harness makes it dependable in production. Harness engineering is where most of the work — and most of the value — in a real agent sits, and it's a core part of what we build."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is sovereign AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sovereign AI means running AI on infrastructure you control — typically open-weight models hosted on your own servers, in a UK data centre or fully air-gapped — so your data, IP and models never pass through a third-party AI provider. It suits regulated industries, public sector bodies and any organisation whose data is too sensitive or valuable to send elsewhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build AI on our company data without it leaving our control?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We build private knowledge bases and knowledge graphs from your documents, data and know-how, and connect them to sovereign or privately hosted models. Access controls, audit trails and GDPR-aligned governance are designed in from the start, so your people and your agents get the full context of your business while your company data stays safe and under your control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a knowledge graph, and why does it matter for AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A knowledge graph is a connected, machine-readable map of your organisation — the people, projects, clients, products and ideas, and how they relate. Grounding AI in a knowledge graph (GraphRAG) gives far more accurate, explainable answers than searching documents alone, with sources the AI can cite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help us write funding bids and tenders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We support grant applications (Innovate UK, UKRI, Heritage Fund, Arts Council), investment business cases, and commercial and public sector tenders — from bid strategy and technical writing through to review and compliance checks. We also built Bearings, a free funding finder for North West businesses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is dreamlab based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dreamlab has labs at MediaCity in Manchester, in Liverpool, in the Lake District (Cumbria) and in London, and works with organisations across the UK and internationally."
       }
     }
   ]
@@ -594,10 +871,11 @@
     <div class="container" style="padding-top: 0; padding-bottom: 0;">
       <div class="services-nav" style="margin: 0; padding: 16px 0; flex-wrap: nowrap; overflow-x: auto;">
         <button class="services-nav__btn active" data-target="workflows" style="white-space: nowrap;">AI Workflows &amp; Tooling</button>
+        <button class="services-nav__btn" data-target="agentic" style="white-space: nowrap;">Agentic &amp; Sovereign AI</button>
+        <button class="services-nav__btn" data-target="data" style="white-space: nowrap;">Data &amp; Knowledge</button>
         <button class="services-nav__btn" data-target="creative" style="white-space: nowrap;">Creative Production</button>
         <button class="services-nav__btn" data-target="product" style="white-space: nowrap;">Product &amp; IP</button>
         <button class="services-nav__btn" data-target="training" style="white-space: nowrap;">Training &amp; Consultancy</button>
-        <button class="services-nav__btn" data-target="data" style="white-space: nowrap;">Data &amp; Intelligence</button>
       </div>
     </div>
   </div>
@@ -612,7 +890,7 @@
           <div class="service-icon-large si-1"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <h2 class="title service-section__title">Transform how<br>your studio works</h2>
           <p class="service-section__desc">
-            From proprietary studio tooling and infrastructure to multi-agent AI systems and generative content pipelines for video, image and audio &mdash; we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.
+            From proprietary studio tooling and infrastructure to LLM integration, intelligent automation and generative content pipelines for video, image and audio &mdash; we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.
           </p>
           <a href="/contact/" class="service-section__cta">
             Discuss a project
@@ -626,13 +904,61 @@
     </div>
   </section>
 
-  <!-- ── SERVICE 2: CREATIVE SERVICES ─────────────────────── -->
-  <section class="service-section" id="creative">
+  <!-- ── SERVICE 02: AGENTIC SYSTEMS & SOVEREIGN AI ─────────────── -->
+  <section class="service-section" id="agentic">
     <span class="service-section__bg-num" aria-hidden="true">02</span>
     <div class="container">
       <div class="service-section__header">
         <div class="reveal">
-          <span class="label service-section__label">02 — Creative Services</span>
+          <span class="label service-section__label">02 — Agentic Systems &amp; Sovereign AI</span>
+          <div class="service-icon-large si-5"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5l-5.2 5.6M12 11.5l5.2 5.6M7.5 19h9"/></svg></div>
+          <h2 class="title service-section__title">Agents that do<br>the real work</h2>
+          <p class="service-section__desc">
+            We design, build and run agentic AI systems that take on real multi-step work &mdash; researching, deciding and acting across your tools and data. We engineer the harness around the model &mdash; context, memory, tools, permissions, evals and guardrails &mdash; so your agents are dependable in production, not just impressive in a demo. And where your data, IP or regulation demands it, we deliver sovereign AI: open-weight models running privately on infrastructure you control.
+          </p>
+          <a href="/contact/" class="service-section__cta">
+            Discuss a project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="service-capabilities" id="capabilities-agentic"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICE 03: DATA & INTELLIGENCE ─────────────── -->
+  <section class="service-section" id="data">
+    <span class="service-section__bg-num" aria-hidden="true">03</span>
+    <div class="container">
+      <div class="service-section__header">
+        <div class="reveal">
+          <span class="label service-section__label">03 — Data &amp; Intelligence</span>
+          <div class="service-icon-large si-6"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+          <h2 class="title service-section__title">Your company knowledge,<br>safe and working for you</h2>
+          <p class="service-section__desc">
+            We design and build the strategic information systems that underpin your business &mdash; knowledge graphs, data pipelines and insight platforms that turn scattered documents, data and know-how into a connected, AI-ready asset. Your company knowledge stays sovereign: private, secure and under your control, while giving your people and your agents the context to make better decisions, move faster and build a lasting competitive advantage.
+          </p>
+          <a href="/contact/" class="service-section__cta">
+            Discuss a project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="service-capabilities" id="capabilities-data"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICE 4: CREATIVE SERVICES ─────────────────────── -->
+  <section class="service-section" id="creative">
+    <span class="service-section__bg-num" aria-hidden="true">04</span>
+    <div class="container">
+      <div class="service-section__header">
+        <div class="reveal">
+          <span class="label service-section__label">04 — Creative Services</span>
           <div class="service-icon-large si-2"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></div>
           <h2 class="title service-section__title">Technology in service<br>of extraordinary talent</h2>
           <p class="service-section__desc">
@@ -650,13 +976,13 @@
     </div>
   </section>
 
-  <!-- ── SERVICE 3: PRODUCT DEVELOPMENT ───────────────────── -->
+  <!-- ── SERVICE 5: PRODUCT DEVELOPMENT ───────────────────── -->
   <section class="service-section" id="product">
-    <span class="service-section__bg-num" aria-hidden="true">03</span>
+    <span class="service-section__bg-num" aria-hidden="true">05</span>
     <div class="container">
       <div class="service-section__header">
         <div class="reveal">
-          <span class="label service-section__label">03 — Product Development</span>
+          <span class="label service-section__label">05 — Product Development</span>
           <div class="service-icon-large si-3"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
           <h2 class="title service-section__title">From bold idea to<br>brilliant product</h2>
           <p class="service-section__desc">
@@ -677,13 +1003,13 @@
     </div>
   </section>
 
-  <!-- ── SERVICE 4: CONSULTANCY & TRAINING ─────────────────── -->
+  <!-- ── SERVICE 6: CONSULTANCY & TRAINING ─────────────────── -->
   <section class="service-section" id="training">
-    <span class="service-section__bg-num" aria-hidden="true">04</span>
+    <span class="service-section__bg-num" aria-hidden="true">06</span>
     <div class="container">
       <div class="service-section__header">
         <div class="reveal">
-          <span class="label service-section__label">04 — Consultancy &amp; Training</span>
+          <span class="label service-section__label">06 — Consultancy &amp; Training</span>
           <div class="service-icon-large si-4"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <h2 class="title service-section__title">Build the capability<br>within your team</h2>
           <p class="service-section__desc">
@@ -701,38 +1027,44 @@
     </div>
   </section>
 
-  <!-- ── SERVICE 5: DATA & INTELLIGENCE ─────────────────── -->
-  <section class="service-section" id="data">
-    <span class="service-section__bg-num" aria-hidden="true">05</span>
+<!-- AUTO-SEO:FAQ START -->
+  <section class="section exp-faq" id="faq">
     <div class="container">
-      <div class="service-section__header">
-        <div class="reveal">
-          <span class="label service-section__label">05 — Data &amp; Intelligence</span>
-          <div class="service-icon-large si-1"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <h2 class="title service-section__title">Strategic information systems<br>for competitive advantage</h2>
-          <p class="service-section__desc">
-            We design and build the strategic information systems that underpin your entire business &mdash; giving you the data infrastructure, intelligence and insight platforms to make better decisions, move faster and build a lasting competitive advantage. We put scale at the heart of your business.
-          </p>
-          <a href="/contact/" class="service-section__cta">
-            Discuss a project
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-        <div class="reveal reveal-delay-1">
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:12px; padding:0; margin:0;">
-            <li style="padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-sm);">Strategic information architecture</li>
-            <li style="padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-sm);">Business intelligence &amp; insight platforms</li>
-            <li style="padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-sm);">AI-powered analytics &amp; dashboards</li>
-            <li style="padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-sm);">Predictive modelling &amp; forecasting</li>
-            <li style="padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-sm);">Data pipeline &amp; ETL engineering</li>
-            <li style="padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-sm);">Competitive intelligence systems</li>
-            <li style="padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-sm);">AI consultancy &amp; insight advisory</li>
-          </ul>
-        </div>
+      <div class="section-label-row reveal"><span class="label">Questions</span></div>
+      <h2 class="headline reveal reveal-delay-1">AGENTIC, SOVEREIGN<br><span class="grad-text">&amp; EVERYTHING ELSE</span></h2>
+      <div class="exp-faq__list">
+        <details class="exp-faq__item">
+          <summary><h3>What is agentic AI, and how can dreamlab help?</h3></summary>
+          <p>Agentic AI systems don't just answer questions — they plan, use tools and take actions to complete multi-step work, such as researching a market, processing documents or running a production pipeline. dreamlab designs, builds and runs agentic systems for studios, enterprises and public sector teams across the UK, from single task agents to orchestrated teams of specialist agents.</p>
+        </details>
+        <details class="exp-faq__item">
+          <summary><h3>What is an agent harness?</h3></summary>
+          <p>An agent harness is everything around the AI model that makes an agent reliable: the tools it can use, its memory and context, permissions, feedback loops, evals and guardrails. The model provides the intelligence; the harness makes it dependable in production. Harness engineering is where most of the work — and most of the value — in a real agent sits, and it's a core part of what we build.</p>
+        </details>
+        <details class="exp-faq__item">
+          <summary><h3>What is sovereign AI?</h3></summary>
+          <p>Sovereign AI means running AI on infrastructure you control — typically open-weight models hosted on your own servers, in a UK data centre or fully air-gapped — so your data, IP and models never pass through a third-party AI provider. It suits regulated industries, public sector bodies and any organisation whose data is too sensitive or valuable to send elsewhere.</p>
+        </details>
+        <details class="exp-faq__item">
+          <summary><h3>Can you build AI on our company data without it leaving our control?</h3></summary>
+          <p>Yes. We build private knowledge bases and knowledge graphs from your documents, data and know-how, and connect them to sovereign or privately hosted models. Access controls, audit trails and GDPR-aligned governance are designed in from the start, so your people and your agents get the full context of your business while your company data stays safe and under your control.</p>
+        </details>
+        <details class="exp-faq__item">
+          <summary><h3>What is a knowledge graph, and why does it matter for AI?</h3></summary>
+          <p>A knowledge graph is a connected, machine-readable map of your organisation — the people, projects, clients, products and ideas, and how they relate. Grounding AI in a knowledge graph (GraphRAG) gives far more accurate, explainable answers than searching documents alone, with sources the AI can cite.</p>
+        </details>
+        <details class="exp-faq__item">
+          <summary><h3>Can you help us write funding bids and tenders?</h3></summary>
+          <p>Yes. We support grant applications (Innovate UK, UKRI, Heritage Fund, Arts Council), investment business cases, and commercial and public sector tenders — from bid strategy and technical writing through to review and compliance checks. We also built Bearings, a free funding finder for North West businesses.</p>
+        </details>
+        <details class="exp-faq__item">
+          <summary><h3>Where is dreamlab based?</h3></summary>
+          <p>dreamlab has labs at MediaCity in Manchester, in Liverpool, in the Lake District (Cumbria) and in London, and works with organisations across the UK and internationally.</p>
+        </details>
       </div>
     </div>
   </section>
-
+<!-- AUTO-SEO:FAQ END -->
   <!-- ── CTA ───────────────────────────────────────────────── -->
   <section class="section">
     <div class="container">
@@ -754,16 +1086,39 @@
 <!-- AUTO-SEO:BODY START -->
 <noscript class="seo-fallback">
 <h2>dreamlab expertise &amp; capabilities</h2>
-<div><h3>Workflows &amp; Automation</h3><p>From proprietary studio tooling and infrastructure to multi-agent AI systems and generative content pipelines for video, image and audio — we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.</p><ul>
+<div><h3>Workflows &amp; Automation</h3><p>From proprietary studio tooling and infrastructure to LLM integration, intelligent automation and generative content pipelines for video, image and audio — we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.</p><ul>
 <li><strong>Proprietary Studio Tooling &amp; IP</strong> — Custom-built tools and systems that become your studio's competitive advantage</li>
 <li><strong>Studio Infrastructure &amp; Scaling</strong> — The architecture and automation that scales your team's output and capabilities</li>
 <li><strong>Creative AI Workflows</strong> — Generative video, image and audio pipelines for production teams</li>
-<li><strong>AI Agent Development</strong> — Custom LLM-powered agents for complex, multi-step tasks</li>
-<li><strong>Agentic AI Systems</strong> — Autonomous AI pipelines for research, analysis and action</li>
-<li><strong>RAG Systems</strong> — Retrieval-augmented generation for enterprise knowledge</li>
 <li><strong>LLM Integration</strong> — Embed AI into existing tools and platforms seamlessly</li>
 <li><strong>Process Automation</strong> — End-to-end pipeline automation and workflow redesign</li>
 <li><strong>Intelligent Document Processing</strong> — Extract, classify and act on unstructured data at scale</li>
+</ul></div>
+<div><h3>Agentic Systems &amp; Sovereign AI</h3><p>We design, build and run agentic AI systems that take on real multi-step work — researching, deciding and acting across your tools and data. We engineer the harness around the model — context, memory, tools, permissions, evals and guardrails — so your agents are dependable in production, not just impressive in a demo. And where your data, IP or regulation demands it, we deliver sovereign AI: open-weight models running privately on infrastructure you control.</p><ul>
+<li><strong>AI Agent Development</strong> — Custom LLM-powered agents for complex, multi-step tasks</li>
+<li><strong>Agentic AI Systems</strong> — Autonomous AI pipelines for research, analysis and action</li>
+<li><strong>Agent Harness Engineering</strong> — The runtime around the model — tools, memory, permissions, loops and checks that make agents dependable in production</li>
+<li><strong>Context Engineering &amp; Agent Memory</strong> — Shaping what agents know and when — retrieval, long-term memory and context management for grounded output</li>
+<li><strong>Multi-Agent Orchestration</strong> — Teams of specialist agents that plan, delegate and check each other's work</li>
+<li><strong>MCP, A2A &amp; Agent Tooling</strong> — Connect agents to your data, APIs and each other via Model Context Protocol and Agent-to-Agent standards</li>
+<li><strong>Computer-Use &amp; Browser Agents</strong> — Agents that operate software, websites and desktops the way your people do</li>
+<li><strong>Agent Skills &amp; Playbooks</strong> — Package your team's expertise as reusable skills that agents load on demand</li>
+<li><strong>Agent Evals, Observability &amp; Governance</strong> — AgentOps — eval suites, tracing, guardrails and human-in-the-loop controls that keep agents reliable and accountable</li>
+<li><strong>Sovereign AI</strong> — Self-hosted and open-weight models on your own infrastructure — your data, IP and models stay under your control</li>
+<li><strong>Private LLMs &amp; Fine-Tuning</strong> — Open-weight models adapted to your domain, voice and data, and run privately</li>
+<li><strong>Secure &amp; Air-Gapped Deployment</strong> — On-premise and UK-hosted AI for regulated, sensitive and public sector work</li>
+</ul></div>
+<div><h3>Data &amp; Intelligence</h3><p>We design and build the strategic information systems that underpin your business — knowledge graphs, data pipelines and insight platforms that turn scattered documents, data and know-how into a connected, AI-ready asset. Your company knowledge stays sovereign: private, secure and under your control, while giving your people and your agents the context to make better decisions, move faster and build a lasting competitive advantage.</p><ul>
+<li><strong>Sovereign Company Knowledge</strong> — Your documents, data and know-how in a private, secure knowledge base your AI can use — without it ever leaving your control</li>
+<li><strong>Enterprise Knowledge Graphs</strong> — Connected, machine-readable maps of your people, projects, clients, products and IP</li>
+<li><strong>GraphRAG &amp; RAG Systems</strong> — Retrieval-augmented generation grounded in your knowledge graph and documents, with sources cited</li>
+<li><strong>Data Strategy &amp; AI Readiness</strong> — Audit, structure and govern your data so it's ready to power AI</li>
+<li><strong>Data Governance, Privacy &amp; Compliance</strong> — GDPR-aligned access controls, lineage and audit trails for every piece of data your AI touches</li>
+<li><strong>Strategic Information Architecture</strong> — The information systems that underpin how your business decides and acts</li>
+<li><strong>Data Engineering &amp; Pipelines</strong> — Ingestion, cleaning, ETL and transformation pipelines that turn scattered data into a reliable asset</li>
+<li><strong>Analytics, Dashboards &amp; Insight Platforms</strong> — AI-powered business intelligence and visualisation that turns numbers into decisions</li>
+<li><strong>Predictive Modelling &amp; Forecasting</strong> — Models that anticipate demand, risk and opportunity</li>
+<li><strong>Competitive Intelligence Systems</strong> — Automated monitoring of markets, competitors, funding and opportunities</li>
 </ul></div>
 <div><h3>Creative Services</h3><p>We put technology in service of extraordinary people and ideas. Our creative services amplify what your studio and your talent can achieve — immersive experiences, XR environments, virtual productions, interactive installations and generative content that moves people — whether in a gallery, a game, a broadcast or a brand activation.</p><ul>
 <li><strong>AI Native &amp; Technology Enhanced Creative Campaigns</strong> — Using the power of AI to create impact for your brand</li>
@@ -798,6 +1153,7 @@ We specialise in AI native products — harnessing personalisation, contextualis
 <li><strong>Immersive Tech Training</strong> — XR, virtual production, Unreal Engine and spatial computing</li>
 <li><strong>Innovation Programme Design</strong> — Build internal innovation capability and culture</li>
 <li><strong>Funding Bids &amp; Investment Readiness</strong> — Grant bids (Innovate UK, UKRI, Heritage Fund, Arts Council), investment business cases and pitch preparation</li>
+<li><strong>Bid Support &amp; Writing</strong> — Commercial tenders, public sector procurement and partnership bids — strategy, writing, review and compliance</li>
 <li><strong>Media Production Training</strong> — Avid certified post-production and broadcast workflow training</li>
 </ul></div>
 </noscript>
@@ -827,6 +1183,8 @@ We specialise in AI native products — harnessing personalisation, contextualis
           <h4>Expertise</h4>
           <ul>
             <li><a href="#workflows">Workflows &amp; Automation</a></li>
+            <li><a href="#agentic">Agentic &amp; Sovereign AI</a></li>
+            <li><a href="#data">Data &amp; Intelligence</a></li>
             <li><a href="#creative">Creative Services</a></li>
             <li><a href="#product">Product Development</a></li>
             <li><a href="#training">Consultancy &amp; Training</a></li>
@@ -856,7 +1214,7 @@ We specialise in AI native products — harnessing personalisation, contextualis
 
   </div><!-- #page-content -->
 
-  <script src="../js/content.js?v=67173e16"></script>
+  <script src="../js/content.js?v=9505cb43"></script>
   <script src="../js/render.js?v=72d7f6d8"></script>
   <script src="../js/main.js?v=11ebeb93"></script>
 </body>

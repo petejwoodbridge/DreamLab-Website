@@ -129,11 +129,11 @@ function teamJsonLd() {
   });
 }
 
-function faqJsonLd() {
+function faqJsonLd(faqs = C.faqs) {
   return jsonLd({
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: C.faqs.map((f) => ({
+    mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.q,
       acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -237,6 +237,29 @@ function servicesNoscript() {
   return `<noscript${NS_STYLE}>\n<h2>dreamlab expertise &amp; capabilities</h2>\n${blocks}\n</noscript>`;
 }
 
+// Visible (not noscript) Q&A block on the expertise page — static HTML so
+// both Google and non-JS AI crawlers can read and quote it.
+function expertiseFaqHtml() {
+  const items = (C.expertiseFaqs || [])
+    .map(
+      (f) =>
+        `        <details class="exp-faq__item">\n` +
+        `          <summary><h3>${escHtml(f.q)}</h3></summary>\n` +
+        `          <p>${escHtml(f.a)}</p>\n` +
+        `        </details>`
+    )
+    .join('\n');
+  return (
+    `  <section class="section exp-faq" id="faq">\n` +
+    `    <div class="container">\n` +
+    `      <div class="section-label-row reveal"><span class="label">Questions</span></div>\n` +
+    `      <h2 class="headline reveal reveal-delay-1">AGENTIC, SOVEREIGN<br><span class="grad-text">&amp; EVERYTHING ELSE</span></h2>\n` +
+    `      <div class="exp-faq__list">\n${items}\n      </div>\n` +
+    `    </div>\n` +
+    `  </section>`
+  );
+}
+
 function workNoscript() {
   const clients = C.clients
     .map((c) => (typeof c === 'string' ? c : c.name))
@@ -308,7 +331,8 @@ writePage('contact/index.html', (html) => {
 });
 
 writePage('expertise/index.html', (html) => {
-  html = upsertRegion(html, 'HEAD', servicesJsonLd(), HEAD_ANCHOR);
+  html = upsertRegion(html, 'HEAD', servicesJsonLd() + '\n' + faqJsonLd(C.expertiseFaqs), HEAD_ANCHOR);
+  html = upsertRegion(html, 'FAQ', expertiseFaqHtml(), '  <!-- ── CTA');
   html = upsertRegion(html, 'BODY', servicesNoscript(), FOOTER_ANCHOR);
   return html;
 });
@@ -397,7 +421,7 @@ function buildLlmsTxt() {
   L.push('');
   L.push('## Frequently asked questions');
   L.push('');
-  C.faqs.forEach((f) => {
+  C.faqs.concat(C.expertiseFaqs || []).forEach((f) => {
     L.push(`### ${f.q}`);
     L.push(f.a);
     L.push('');

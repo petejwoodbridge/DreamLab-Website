@@ -1122,7 +1122,7 @@ window.dreamlab_CONTENT = {
   ],
 
   // ──────────────────────────────────────────────────────────
-  // SERVICES — the four main service sections
+  // SERVICES — the six main service sections (expertise page)
   // ──────────────────────────────────────────────────────────
   services: [
     {
@@ -1133,22 +1133,65 @@ window.dreamlab_CONTENT = {
       iconClass: 'si-1',
       dotColor: 'purple',
       title: 'Transform how<br>your studio works',
-      description: `From proprietary studio tooling and infrastructure to multi-agent AI systems and generative content pipelines for video, image and audio — we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.`,
+      description: `From proprietary studio tooling and infrastructure to LLM integration, intelligent automation and generative content pipelines for video, image and audio — we design and build the automation and workflows that amplify your team and scale your capabilities. We create the IP and systems that give your studio an unfair advantage.`,
       capabilities: [
         { title: 'Proprietary Studio Tooling & IP',  desc: 'Custom-built tools and systems that become your studio\'s competitive advantage' },
         { title: 'Studio Infrastructure & Scaling',  desc: 'The architecture and automation that scales your team\'s output and capabilities' },
         { title: 'Creative AI Workflows',            desc: 'Generative video, image and audio pipelines for production teams' },
-        { title: 'AI Agent Development',             desc: 'Custom LLM-powered agents for complex, multi-step tasks' },
-        { title: 'Agentic AI Systems',               desc: 'Autonomous AI pipelines for research, analysis and action' },
-        { title: 'RAG Systems',                      desc: 'Retrieval-augmented generation for enterprise knowledge' },
         { title: 'LLM Integration',                  desc: 'Embed AI into existing tools and platforms seamlessly' },
         { title: 'Process Automation',               desc: 'End-to-end pipeline automation and workflow redesign' },
         { title: 'Intelligent Document Processing',  desc: 'Extract, classify and act on unstructured data at scale' },
       ],
     },
     {
-      id: 'creative',
+      id: 'agentic',
       number: '02',
+      label: 'Agentic Systems & Sovereign AI',
+      icon: '',
+      iconClass: 'si-5',
+      dotColor: 'cyan',
+      title: 'Agents that do<br>the real work',
+      description: `We design, build and run agentic AI systems that take on real multi-step work — researching, deciding and acting across your tools and data. We engineer the harness around the model — context, memory, tools, permissions, evals and guardrails — so your agents are dependable in production, not just impressive in a demo. And where your data, IP or regulation demands it, we deliver sovereign AI: open-weight models running privately on infrastructure you control.`,
+      capabilities: [
+        { title: 'AI Agent Development',             desc: 'Custom LLM-powered agents for complex, multi-step tasks' },
+        { title: 'Agentic AI Systems',               desc: 'Autonomous AI pipelines for research, analysis and action' },
+        { title: 'Agent Harness Engineering',        desc: 'The runtime around the model — tools, memory, permissions, loops and checks that make agents dependable in production' },
+        { title: 'Context Engineering & Agent Memory', desc: 'Shaping what agents know and when — retrieval, long-term memory and context management for grounded output' },
+        { title: 'Multi-Agent Orchestration',        desc: 'Teams of specialist agents that plan, delegate and check each other\'s work' },
+        { title: 'MCP, A2A & Agent Tooling',         desc: 'Connect agents to your data, APIs and each other via Model Context Protocol and Agent-to-Agent standards' },
+        { title: 'Computer-Use & Browser Agents',    desc: 'Agents that operate software, websites and desktops the way your people do' },
+        { title: 'Agent Skills & Playbooks',         desc: 'Package your team\'s expertise as reusable skills that agents load on demand' },
+        { title: 'Agent Evals, Observability & Governance', desc: 'AgentOps — eval suites, tracing, guardrails and human-in-the-loop controls that keep agents reliable and accountable' },
+        { title: 'Sovereign AI',                     desc: 'Self-hosted and open-weight models on your own infrastructure — your data, IP and models stay under your control' },
+        { title: 'Private LLMs & Fine-Tuning',       desc: 'Open-weight models adapted to your domain, voice and data, and run privately' },
+        { title: 'Secure & Air-Gapped Deployment',   desc: 'On-premise and UK-hosted AI for regulated, sensitive and public sector work' },
+      ],
+    },
+    {
+      id: 'data',
+      number: '03',
+      label: 'Data & Intelligence',
+      icon: '',
+      iconClass: 'si-6',
+      dotColor: 'purple',
+      title: 'Your company knowledge,<br>safe and working for you',
+      description: `We design and build the strategic information systems that underpin your business — knowledge graphs, data pipelines and insight platforms that turn scattered documents, data and know-how into a connected, AI-ready asset. Your company knowledge stays sovereign: private, secure and under your control, while giving your people and your agents the context to make better decisions, move faster and build a lasting competitive advantage.`,
+      capabilities: [
+        { title: 'Sovereign Company Knowledge',      desc: 'Your documents, data and know-how in a private, secure knowledge base your AI can use — without it ever leaving your control' },
+        { title: 'Enterprise Knowledge Graphs',      desc: 'Connected, machine-readable maps of your people, projects, clients, products and IP' },
+        { title: 'GraphRAG & RAG Systems',           desc: 'Retrieval-augmented generation grounded in your knowledge graph and documents, with sources cited' },
+        { title: 'Data Strategy & AI Readiness',     desc: 'Audit, structure and govern your data so it\'s ready to power AI' },
+        { title: 'Data Governance, Privacy & Compliance', desc: 'GDPR-aligned access controls, lineage and audit trails for every piece of data your AI touches' },
+        { title: 'Strategic Information Architecture', desc: 'The information systems that underpin how your business decides and acts' },
+        { title: 'Data Engineering & Pipelines',     desc: 'Ingestion, cleaning, ETL and transformation pipelines that turn scattered data into a reliable asset' },
+        { title: 'Analytics, Dashboards & Insight Platforms', desc: 'AI-powered business intelligence and visualisation that turns numbers into decisions' },
+        { title: 'Predictive Modelling & Forecasting', desc: 'Models that anticipate demand, risk and opportunity' },
+        { title: 'Competitive Intelligence Systems', desc: 'Automated monitoring of markets, competitors, funding and opportunities' },
+      ],
+    },
+    {
+      id: 'creative',
+      number: '04',
       label: 'Creative Services',
       icon: '',
       iconClass: 'si-2',
@@ -1170,7 +1213,7 @@ window.dreamlab_CONTENT = {
     },
     {
       id: 'product',
-      number: '03',
+      number: '05',
       label: 'Product Development',
       icon: '',
       iconClass: 'si-3',
@@ -1190,7 +1233,7 @@ window.dreamlab_CONTENT = {
     },
     {
       id: 'training',
-      number: '04',
+      number: '06',
       label: 'Consultancy & Training',
       icon: '',
       iconClass: 'si-4',
@@ -1206,6 +1249,7 @@ window.dreamlab_CONTENT = {
         { title: 'Immersive Tech Training',  desc: 'XR, virtual production, Unreal Engine and spatial computing' },
         { title: 'Innovation Programme Design', desc: 'Build internal innovation capability and culture' },
         { title: 'Funding Bids & Investment Readiness', desc: 'Grant bids (Innovate UK, UKRI, Heritage Fund, Arts Council), investment business cases and pitch preparation' },
+        { title: 'Bid Support & Writing',  desc: 'Commercial tenders, public sector procurement and partnership bids — strategy, writing, review and compliance' },
         { title: 'Media Production Training', desc: 'Avid certified post-production and broadcast workflow training' },
       ],
     },
@@ -1326,6 +1370,42 @@ window.dreamlab_CONTENT = {
     {
       q: "Can you help if we're not sure what we need?",
       a: 'Absolutely. Some of our best projects started with "we know we need to do something with AI but we\'re not sure what." We\'re happy to start with a discovery conversation and help shape the right approach before any commitment is made.',
+    },
+  ],
+
+  // ──────────────────────────────────────────────────────────
+  // EXPERTISE FAQs — answer-first Q&As shown on the expertise page.
+  // build-seo.js bakes these into static HTML + FAQPage JSON-LD so
+  // Google and AI search engines can quote them directly.
+  // ──────────────────────────────────────────────────────────
+  expertiseFaqs: [
+    {
+      q: 'What is agentic AI, and how can dreamlab help?',
+      a: 'Agentic AI systems don\'t just answer questions — they plan, use tools and take actions to complete multi-step work, such as researching a market, processing documents or running a production pipeline. dreamlab designs, builds and runs agentic systems for studios, enterprises and public sector teams across the UK, from single task agents to orchestrated teams of specialist agents.',
+    },
+    {
+      q: 'What is an agent harness?',
+      a: 'An agent harness is everything around the AI model that makes an agent reliable: the tools it can use, its memory and context, permissions, feedback loops, evals and guardrails. The model provides the intelligence; the harness makes it dependable in production. Harness engineering is where most of the work — and most of the value — in a real agent sits, and it\'s a core part of what we build.',
+    },
+    {
+      q: 'What is sovereign AI?',
+      a: 'Sovereign AI means running AI on infrastructure you control — typically open-weight models hosted on your own servers, in a UK data centre or fully air-gapped — so your data, IP and models never pass through a third-party AI provider. It suits regulated industries, public sector bodies and any organisation whose data is too sensitive or valuable to send elsewhere.',
+    },
+    {
+      q: 'Can you build AI on our company data without it leaving our control?',
+      a: 'Yes. We build private knowledge bases and knowledge graphs from your documents, data and know-how, and connect them to sovereign or privately hosted models. Access controls, audit trails and GDPR-aligned governance are designed in from the start, so your people and your agents get the full context of your business while your company data stays safe and under your control.',
+    },
+    {
+      q: 'What is a knowledge graph, and why does it matter for AI?',
+      a: 'A knowledge graph is a connected, machine-readable map of your organisation — the people, projects, clients, products and ideas, and how they relate. Grounding AI in a knowledge graph (GraphRAG) gives far more accurate, explainable answers than searching documents alone, with sources the AI can cite.',
+    },
+    {
+      q: 'Can you help us write funding bids and tenders?',
+      a: 'Yes. We support grant applications (Innovate UK, UKRI, Heritage Fund, Arts Council), investment business cases, and commercial and public sector tenders — from bid strategy and technical writing through to review and compliance checks. We also built Bearings, a free funding finder for North West businesses.',
+    },
+    {
+      q: 'Where is dreamlab based?',
+      a: 'dreamlab has labs at MediaCity in Manchester, in Liverpool, in the Lake District (Cumbria) and in London, and works with organisations across the UK and internationally.',
     },
   ],
 
