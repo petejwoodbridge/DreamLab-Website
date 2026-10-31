@@ -47,7 +47,7 @@ We design, build and run agentic AI systems that take on real multi-step work �
 - Secure & Air-Gapped Deployment: On-premise and UK-hosted AI for regulated, sensitive and public sector work
 
 ### Data & Intelligence
-We design and build the strategic information systems that underpin your business — knowledge graphs, data pipelines and insight platforms that turn scattered documents, data and know-how into a connected, AI-ready asset. Your company knowledge stays sovereign: private, secure and under your control, while giving your people and your agents the context to make better decisions, move faster and build a lasting competitive advantage.
+We design and build the strategic information systems that underpin your business — data engineering, knowledge graphs, data visualisation, digital twins and insight platforms that turn scattered documents, data and know-how into a connected, AI-ready asset. Your company knowledge stays sovereign: private, secure and under your control, while giving your people and your agents the context to make better decisions, move faster and build a lasting competitive advantage.
 - Sovereign Company Knowledge: Your documents, data and know-how in a private, secure knowledge base your AI can use — without it ever leaving your control
 - Enterprise Knowledge Graphs: Connected, machine-readable maps of your people, projects, clients, products and IP
 - GraphRAG & RAG Systems: Retrieval-augmented generation grounded in your knowledge graph and documents, with sources cited
@@ -55,17 +55,20 @@ We design and build the strategic information systems that underpin your busines
 - Data Governance, Privacy & Compliance: GDPR-aligned access controls, lineage and audit trails for every piece of data your AI touches
 - Strategic Information Architecture: The information systems that underpin how your business decides and acts
 - Data Engineering & Pipelines: Ingestion, cleaning, ETL and transformation pipelines that turn scattered data into a reliable asset
+- Data Visualisation: Clear, interactive charts, maps and dashboards that make complex data easy to read and act on
 - Analytics, Dashboards & Insight Platforms: AI-powered business intelligence and visualisation that turns numbers into decisions
+- Data-Driven Digital Twins: Live digital twins fed by sensor, operational and business data to monitor, simulate and optimise
 - Predictive Modelling & Forecasting: Models that anticipate demand, risk and opportunity
 - Competitive Intelligence Systems: Automated monitoring of markets, competitors, funding and opportunities
 
 ### Creative Services
-We put technology in service of extraordinary people and ideas. Our creative services amplify what your studio and your talent can achieve — immersive experiences, XR environments, virtual productions, interactive installations and generative content that moves people — whether in a gallery, a game, a broadcast or a brand activation.
+We put technology in service of extraordinary people and ideas. Our creative services amplify what your studio and your talent can achieve — immersive experiences, XR environments, virtual productions, visualisation and pre-visualisation, interactive installations and generative content that moves people — whether in a gallery, a game, a broadcast or a brand activation.
 - AI Native & Technology Enhanced Creative Campaigns: Using the power of AI to create impact for your brand
 - Creative AI Workflows: Generative video, image and audio pipelines for production teams
 - Generative Content & AI Art: Creative AI tools for image, video, sound and text
 - Immersive XR Experiences: VR, AR and MR design and production
 - Virtual Production: Unreal Engine LED volume and real-time filmmaking
+- Visualisation & Pre-visualisation: Previs, techvis and pitchvis for film, TV, live events and architecture — realtime and AI-assisted
 - Interactive Installations: Sensor-driven, projection mapped and generative art
 - AI-Assisted Animation: Real-time characters, procedural animation, motion AI
 - Game Development: Concept to launch across platforms and engines
